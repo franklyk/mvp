@@ -1,0 +1,313 @@
+@charset "UTF-8";
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  width: 10px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f2f2f2;
+  border: 1px solid rgba(155, 155, 158, 0.9647058824);
+  border-radius: 1px;
+  cursor: pointer;
+  width: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(141, 139, 139, 0.5333333333);
+}
+
+/* Reset */
+* {
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  transition: 0.1s ease-in-out;
+  -moz-border-sizing: border-box;
+  -webkit-border-sizing: border-box;
+  -moz-border-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+  max-width: 100vw;
+}
+
+body {
+  height: 100vh;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+input {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul, li {
+  list-style: none;
+}
+
+/* Classes Gerais */
+.clear {
+  clear: both;
+}
+
+.text-margin {
+  margin: 0 30px;
+}
+
+.radius {
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+.title-folder {
+  background-image: linear-gradient(to right, #fafa61, #de0c11);
+  -moz-background-image: linear-gradient(to right, #fafa61, #de0c11);
+  -webkit-background-image: linear-gradient(to right, #fafa61, #de0c11);
+  margin: 50px 10%;
+}
+
+/* Mensagens Dinâmicas */
+.alert-error {
+  background: #de0c11;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.alert-success {
+  background: #00ff08;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.alert-info {
+  background: #235580;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.alert-warning {
+  background: #ff5e10;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+/* Planos de Fundo */
+.bgcolor-red {
+  background: #de0c11;
+}
+
+.bgcolor-red-dark {
+  background: #555;
+}
+
+.bgcolor-blue {
+  background: #235580;
+}
+
+.bgcolor-blue-dark {
+  background: #09316f;
+}
+
+.bgcolor-green {
+  background: #00ff08;
+}
+
+.bgcolor-green-dark {
+  background: #247c40;
+}
+
+.bgcolor-gray {
+  background: #b0acac;
+}
+
+.bgcolor-orange {
+  background: #ff5e10;
+}
+
+.bgcolor-white {
+  background: #fff;
+}
+
+.bgcolor-white-dark {
+  background: #eee;
+}
+
+.bgcolor-white-light {
+  background: #f2f2f2;
+}
+
+.bgcolor-yellow {
+  background: #fafa61;
+}
+
+.bgcolor-dark {
+  background: #555;
+}
+
+.bgcolor-yellow-dark {
+  background: #645f0f;
+}
+
+/* Botões e Cores */
+.btn_green {
+  background: #00ff08;
+  color: #fff;
+  padding: 1% 2%;
+}
+.btn_green:hover {
+  background: #247c40;
+}
+
+.btn_blue {
+  background: #235580;
+  color: #fff;
+  padding: 1% 2%;
+}
+.btn_blue:hover {
+  background: #09316f;
+}
+
+.btn_red {
+  background: #de0c11;
+  color: #fff;
+  padding: 1% 2%;
+}
+.btn_red:hover {
+  background: #f70e13;
+}
+
+.btn_orange {
+  background: #ff5e10;
+  color: #fff;
+  padding: 1% 2%;
+}
+.btn_orange:hover {
+  background: #cc4b0c;
+}
+
+.btn_gray {
+  background: #b0acac;
+  color: #fff;
+  padding: 1% 2%;
+}
+.btn_gray:hover {
+  background: #8c8989;
+}
+
+.btn_dark {
+  background: #555;
+  color: #fff;
+  padding: 1% 2%;
+}
+.btn_dark:hover {
+  background: #8c8989;
+}
+
+/* Cores das Fontes */
+.color-red {
+  color: #de0c11;
+}
+
+.color-red-dark {
+  color: #f70e13;
+}
+
+.color-blue {
+  color: #235580;
+}
+
+.color-blue-dark {
+  color: #09316f;
+}
+
+.color-green {
+  color: #00ff08;
+}
+
+.color-green-dark {
+  color: #247c40;
+}
+
+.color-gray {
+  color: #b0acac;
+}
+
+.color-orange {
+  color: #ff5e10;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.color-white-dark {
+  color: #eee;
+}
+
+.color-yellow {
+  color: #fafa61;
+}
+
+.color-yellow-dark {
+  color: #645f0f;
+}
+
+.color-dark {
+  color: #555;
+}
+
+/* Estilo da Fonte */
+.font-weight-min {
+  font-weight: 300;
+}
+
+.font-weight-medium {
+  font-weight: 600;
+}
+
+.font-weight-max {
+  font-weight: 900;
+}
+
+/* Flutuação dos Elementos */
+/* Modais */
+.modal_fade_blur {
+  backdrop-filter: blur(2px);
+  background: rgba(142, 142, 142, 0.8);
+  height: 0%;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+/*# sourceMappingURL=Style.css.map */
