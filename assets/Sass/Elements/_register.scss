@@ -1,0 +1,85 @@
+@import "../LibScss/index";
+
+.modal_form_register{
+    background: $white-light;
+    border: 1px solid  $blue;
+    display: block;
+    left: 50%;
+    opacity: 0;
+    padding: 20px;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    transform: translate(-50%, -50%);
+    transition: .1s;
+    width: 65%;
+    z-index: 6;
+    .header_form{
+        display: flex;
+        width: 100%;
+        h1{
+            @include config;
+            margin: 10px auto;
+            text-align: center;
+        }
+        .btn_close_register{
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            height: 30px;
+            justify-content: center;
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 50px;
+            span{
+                background: $white-dark;
+                display: block;
+                height: 2px;
+                transform-origin: center;
+                width: 30px;
+            }
+            
+            .line1{
+                transform: translateY(3px) rotate(-45deg);
+            }
+            .line2{
+                transform: translateY(-6px) rotate(45deg);
+            }
+        }
+    }
+    .form_general{
+        // @include config;
+        height: 100%;
+        .div_input{
+            // @include config;
+            height: 40px;
+            position: relative;
+            width: 100%;
+            input{
+                // @include config;
+                background: none;
+                border-bottom: 2px solid $gray;
+                bottom: 3px;
+                font-size: 1rem;
+                height: 100%;
+                left: 0;
+                position: absolute;
+                width: 100%;
+                &:focus ~ label,
+                &:valid ~ label{
+                    bottom: 40px;
+                    color: $red;
+                    font-size: 0.7rem;
+                }
+            }
+            label{
+                bottom: 3px;
+                left: 10px;
+                position: absolute;
+                transition: .5s;
+            }
+        }
+    }   
+}

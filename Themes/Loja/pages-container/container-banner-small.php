@@ -1,9 +1,8 @@
-<div class="divisor1">
+<div class="divisor1 img_tenis">
     <img src="<?= $configBase?>Images/Banners/banner-medium.png" title="<?= $titleSite?>: Banner de Promoções da Loja."
          alt="<?= $titleSite?>: Banner de Promoções da Loja.">
 </div>
 
-<div class="clear"></div>
 
 <div class="container_banner">
     <?php for($i = 1; $i < 3; $i++): ?>
@@ -13,5 +12,3 @@
         </div>
     <?php endfor; ?>
 </div>
-
-<div class="clear"></div>

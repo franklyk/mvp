@@ -1,0 +1,89 @@
+.header_container{
+    // @include config;
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    padding: 10px 30px;
+    position: relative;
+    width: 100%;
+    .logo{
+        height: 100%;
+        width: 20%;
+        img{
+            margin: auto;
+            width: 100px;
+        }
+    }
+    .form_search{
+        // @include config;
+        align-items: center;
+        border: 1px solid $blue;
+        display: flex;
+        font-size: 1rem;
+        gap: 1px;
+        left: 50%;
+        justify-content: end;
+        position: absolute;
+        top: 30px;
+        transform: translateX(-50%);
+        width: 50%;
+        input{
+            align-items: center;
+            // border-bottom: 2px solid #ccc;
+            display: flex;
+            font-size: 20px;
+            justify-self: end;
+            height: 40px;
+            width: 100%;
+            background: none;
+        }
+    }
+    .menu_container{
+        // @include config;
+        align-items: center;
+        display: flex;
+        #btn_socials_close{
+            display: none;
+        }
+        ul{
+            align-items: center;
+            display:flex;
+            li{
+                // margin: 0 5px;
+                padding: 3px 5px;
+                img{
+                    @include config;
+                    width: 50px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .socials_container{
+        // @include config;
+        display: flex;
+        justify-content: end;
+        height: 0;
+        overflow-y: hidden;
+        position: absolute;
+        right: 20px;
+        text-align: right;
+        top: 110px;
+        transition: 0.5s;
+        width: 10%;
+        .menu_list{
+            display: block;
+            // height: 0;
+            justify-content: space-around; 
+            width: 100%;
+            li{
+                padding: 6px 5px;
+                a{
+                    img{
+                        width: 50px;
+                    }
+                }
+            }
+        } 
+    }
+}

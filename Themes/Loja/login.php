@@ -1,94 +1,51 @@
-<?php
-require 'header.php';
-?>
+<div class="modal_fade_blur"></div>
 
-<div class="result"></div>
+<fieldset class="modal_form_login radius container_login" id="modal_form_container">
 
-<main class="container">
-    <div class="container_controller bgcolor-gray">
-        <div class="container_details">
-            <p class="paragraph_navigator">
-                <a href="<?= $configBase?>index" title="Retornar a página inicial" class="color-white">
-                    <i class="fa fa-home"></i>Home
-                </a>/ Login
-            </p>
+    <div class="header_form">
+
+        <h1 class=" color-green-dark font-text-extra">Login</h1>
+
+        <div class="btn_close_login btn_red radius" id="btn_close_login">
+            <span class="line1"></span>
+            <span class="line2"></span>
         </div>
+
     </div>
 
-    <section class="container_main">
-        <div class="container_controller">
-            <div class="container_details">
-                <!--Login-->
-                <div class="divisor2">
-                    <div class="main_login">
-                        <h1 class="text-center main_login_h1">Já Sou Cliente</h1>
+    <form action="" method="post" class="form_general form_login_user">
 
-                        <form method="post" id="form_login">
-                            <label for="login_email">E-mail: </label>
-                            <input type="email" name="login_email" id="login_email" value="" required>
-
-                            <div class="viewer">
-                                <label for="login_password">Senha: </label>
-                                <input type="password" name="login_password" id="login_password" value="" required>
-                                <span class="showHide">
-                                    <i class="fa fa-eye" aria-hidden="true"></i>
-                                </span>
-                            </div>
-
-                            <div class="main_login_btns">
-                                <div class="divisor2">
-                                    <button class="btn_edit radius" id="btn_login" name="btn_login">
-                                        <i class="fa fa-sign-in-alt"></i> Entrar
-                                    </button>
-                                </div>
-
-                                <div class="divisor2 text-right m-text-center">
-                                    <a href="<?= $configBase?>recovery" id="btn_recovery"
-                                       title="Recuperar Senha" class="color-dark font-text-sub radius">
-                                        Esqueci Senha
-                                    </a>
-                                </div>
-
-                                <div class="clear"></div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-                <!--Cadastro-->
-                <div class="divisor2">
-                    <div class="main_login">
-                        <h1 class="text-center main_login_h1">Quero Me Cadastrar</h1>
-
-                        <form method="post" id="form_register">
-                            <label for="user_name">Nome Completo: </label>
-                            <input type="text" name="user_name" id="user_name" required>
-
-                            <label for="user_email">E-mail: </label>
-                            <input type="email" name="user_email" id="user_email" required>
-
-                            <label for="user_pass">Senha: </label>
-                            <input type="password" name="user_pass" id="user_pass" required>
-
-                            <div class="main_login_btns">
-                                <button class="btn_new radius" id="btn_register" name="btn_register">
-                                    <i class="fa fa-user-plus"></i> Criar Conta
-                                </button>
-                            </div>
-
-                                <div class="clear"></div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-            <?php require 'pages-container/container-bestsellers.php'; ?>
-            <?php require 'pages-container/container-thebest.php'; ?>
-            </div>
+        <div class="input_email div_input  radius">
+            <input class="radius" type="email" class="user_email" name="user_email" id="user_email" required>
+            <label for="user_email">E-mail: </label>
         </div>
-    </section>
-</main>
 
-<?php
-require 'footer.php';
-?>
+        <div class="input_pass div_input  radius">
+            <input type="password" class="user_pass radius" name="user_pass" id="user_pass" required>
+            <label for="user_pass">Senha:</label>
+            <span class="showHide">
+                <i class="fa fa-eye"></i>
+            </span>
+        </div>
+        <div class="input_confirm radius ">
+            <a href="#" class="radius font-text-medium text-center btn_green">
+                Entrar
+            </a>
+        </div>
+
+        <div class="remember">
+            <label for="remeber">Salvar Senha</label>
+            <input type="checkbox" id="remeber" name="remeber" value="Remember">
+        </div>
+
+        <div class="create" id="btn_open_register">
+            <a href="#">Criar Conta</a>
+        </div>
+        <div class="recovery">
+            <a href="#">Esqueceu a senha?</a>
+        </div>
+
+        <div class="result_message"></div>
+
+    </form>
+</fieldset>

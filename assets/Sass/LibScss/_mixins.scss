@@ -3,3 +3,6 @@
 @mixin config(){
     border: 1px solid black;
 }
+@mixin border($color){
+    border: 1px solid $color;
+}

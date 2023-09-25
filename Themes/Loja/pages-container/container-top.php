@@ -1,90 +1,81 @@
-<div class="container_top">
-    <div class="container_top_info">
-        <ul>
-            <li>
-                <p class="text-center font-tex-max">
-                    <i class="fa fa-truck"></i>
-                </p>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Views/Css/Views.css">
+</head>
+<body>
+    <!-- <div class="container_top_info radius">
+        <div class="bgcolor-white-light radius color-orange">
+            <p class="font-text-sub ">
+                <i class="fa fa-truck font-text-max "></i>
+            <p class="text-center font-text-sub font-weight-medium color-orange">Frete Gratuito</p>
+            <p class="text-center font-text-sub color-orange">Compras a partir de R$200,00</p>
+        </div>
+        <div class="bgcolor-white-light color-blue radius">
+            <p class="text-center font-text-sub">
+                    <i class="fa fa-credit-card font-text-max"></i>
+            </p>
+            <p class="text-center font-text-sub font-weight-medium">Pagamento no Cartão</p>
+            <p class="text-center font-text-sub ">Pague no Cartão de Crédito em até 12x</p>
+        </div>
+        <div class="bgcolor-white-light color-red radius">
+            <p class="text-center font-text-sub">
+                    <i class="fa fa-gift font-text-max "></i>
+            </p>
+            <p class="text-center font-text-sub font-weight-min">Ganhe Descontos nas Suas Próximas Compras</p>
+        </div>
+        <div class="bgcolor-white-light color-green radius">
+            <p class="text-center font-text-sub">
+                <i class="fa fa-phone font-text-max "></i>
+            </p>
+            <p class="text-center font-text-sub font-weight-medium">
+                <span class="none"></span>Central de Atendimento
+            </p>
+            <p class="text-center font-text-sub ">Todos os Dias 24h/dia</p>
+        </div>
+    </div> -->
 
-                <p class="text-center font-text-sub font-weight-medium"> Frete Gratuito</p>
+    <h1 class="font-text-max font-weight-max color-blue-dark text-margin title-folder ">Mais vendidos da semana:</h1>
+    
+    <div class="container_top radius">
 
-                <p class="text-center font-text-sub">Compras a partir de R$ 200,00</p>
-            </li>
+        <?php for($i=0; $i < 6; $i++): ?>
 
-            <li>
-                <p class="text-center font-tex-max">
-                    <i class="fa fa-credit-card"></i>
-                </p>
+        <div class="exposed bgcolor-white-light">
 
-                <p class="text-center font-text-sub font-weight-medium"> Pagamento no Cartão</p>
+            <img class="product_img" src="<?php $configBase ?>Images/Products/product.png" title="Imagem do produto: Tênis Adidas Sporting" alt="Imagem do produto: Tênis Adidas Sporting">
 
-                <p class="text-center font-text-sub">Pague no cartão de crédito até 12x</p>
-            </li>
+            <h2 class="product_title color-green font-text-extra text-right">
+                Tênis Adidas Sporting
+            </h2>
 
-            <li>
-                <p class="text-center font-tex-max">
-                    <i class="fa fa-gift"></i>
-                </p>
+            <!-- <p class="product_description font-text-min">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quam iste facere aperiam labore distinctio nemo aspernatur.
+            </p> -->
 
-                <p class="text-center font-text-sub font-weight-medium"> Ganhe descontos nas suas próximas compras</p>
-            </li>
+            <span class="discount_off color-red font-weight-max text-right">
+                10% OFF
+            </span>
 
-            <li>
-                <p class="text-center font-tex-max">
-                    <i class="fa fa-phone"></i>
-                </p>
+            <p class="prices">
+                <span class="old_price color-red font-text-sub"><s> R$ 450,00</s></span>
 
-                <p class="text-center font-text-sub font-weight-medium">
-                    <span class="none"></span> Central de Atendimento
-                </p>
+                <span class="new_price font-weight-max font-text-extra color-green-dark"> R$ 320,00</span>
+            </p>
 
-                <p class="text-center font-text-sub">Todos os dias - 24h por dia</p>
-            </li>
+            <p class="btn_actions">
+                <a href="#" title="Visualize os detalhes deste produto." class="btn_datails bgcolor-blue color-white radius font-text-extra">
+                    <i class="fa fa-images"></i>
+                </a>
+                <a class="btn_cart bgcolor-green color-white radius font-text-extra" href="#" title="Adicione este produto ao carrinho.">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+            </p>
+        </div>
+        <?php endfor; ?>
 
-        </ul>
-        <div class="clear"></div>
     </div>
-
-    <h1 class="font-text-medium font-weight-medium text-left m-text-center">Mais Vendidos da Semana:</h1>
-
-    <div class="container_top_info">
-        <ul class="caroussel">
-            <?php for($i = 0; $i < 2; $i++): ?>
-                <li class="img-caroussel">
-                    <div class="divisor2">
-                        <p class="text-left font-weight-medium price_discount radius">10% OFF</p>
-
-                        <img src="<?= $configBase?>Images/Products/product.png" title="Imagem do produto: Tênis Adidas Sporting"
-                             alt="Imagem do produto: Tênis Adidas Sporting">
-                    </div>
-
-                    <div class="divisor2">
-                        <h2 class="text-left m-text-center font-weight-medium font-text-min">Tênis Adidas Sporting</h2>
-
-                        <p class="text-left m-text-center font-weight-min">
-                            <span class="price_old radius font-text-sub"><s>R$ 450,00</s></span>
-
-                            <span class="price_off radius font-text-min font-weight-medium"><s>R$ 320,00</s></span>
-                        </p>
-
-                        <p class="text-left m-text-center font-text-sub">Lorem Ipsum is simply dummy text of the printing
-                        and typesetting. Lorem Ipsum has been the industry's</p>
-                        <p class="text-center font-weight-min font-text-sub actions">
-                            <a href="<?= $configBase ?>details/<?= $i ?>" title="Visualize os detalhes deste produto"
-                            class="btn_edit radius">
-                                <i class="fa fa-images"></i>
-                            </a>
-
-                            <a href="#" title="Acrescentar este produto ao seu pedido." class="btn_new radius open_buy" data-id="<?= $i ?>">
-                                <i class="fa fa-shopping-cart"></i>
-                            </a>
-                        </p>
-                    </div>
-                </li>
-            <?php endfor; ?>
-
-            <div class="clear"></div>
-        </ul>
-        <div class="clear"></div>
-    </div>
-</div>
+</body>
+</html>
