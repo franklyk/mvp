@@ -84,59 +84,59 @@
 //     }   
 // }
 //CADASTRO
-.container_register{
-    height: 80%;
-    .form_register_user{
-        align-content: center;
-        display: grid;
-        gap: 10px;
-        grid-template-areas: 
-        "input_firstname input_lastname input_lastname"
-        "input_email input_email input_email"
-        "input_ender input_ender input_cep"
-        "input_phone input_city input_uf"
-        "input_nasc input_pass ..."
-        "result_message result_message input_confirm_create"
-        ;
-        grid-template-columns: repeat(3, 1fr);
-        .input_firstname{
-            grid-area: input_firstname;
-        }
-        .input_lastname{
-            grid-area: input_lastname;
-        }
-        .input_email{
-            grid-area: input_email;
-        }
-        .input_ender{
-            grid-area: input_ender;
-        }
-        .input_cep{
-            grid-area: input_cep;
-        }
-        .input_phone{
-            grid-area: input_phone;
-        }
-        .input_city{
-            grid-area: input_city;
-        }
-        .input_uf{
-            grid-area: input_uf;
-        }
-        .input_nasc{
-            grid-area: input_nasc;
-        }
-        .input_pass{
-            grid-area: input_pass;
-        }
-        .input_confirm_create{
-            @include config;
-            align-items: center;
-            display: flex;
-            grid-area: input_confirm_create;
-            justify-content: center;
-            text-align: center;
-        }
+// .container_register{
+//     height: 80%;
+//     .form_register_user{
+//         align-content: center;
+//         display: grid;
+//         gap: 10px;
+//         grid-template-areas: 
+//         "input_firstname input_lastname input_lastname"
+//         "input_email input_email input_email"
+//         "input_ender input_ender input_cep"
+//         "input_phone input_city input_uf"
+//         "input_nasc input_pass ..."
+//         "result_message result_message input_confirm_create"
+//         ;
+//         grid-template-columns: repeat(3, 1fr);
+//         .input_firstname{
+//             grid-area: input_firstname;
+//         }
+//         .input_lastname{
+//             grid-area: input_lastname;
+//         }
+//         .input_email{
+//             grid-area: input_email;
+//         }
+//         .input_ender{
+//             grid-area: input_ender;
+//         }
+//         .input_cep{
+//             grid-area: input_cep;
+//         }
+//         .input_phone{
+//             grid-area: input_phone;
+//         }
+//         .input_city{
+//             grid-area: input_city;
+//         }
+//         .input_uf{
+//             grid-area: input_uf;
+//         }
+//         .input_nasc{
+//             grid-area: input_nasc;
+//         }
+//         .input_pass{
+//             grid-area: input_pass;
+//         }
+//         .input_confirm_create{
+//             @include config;
+//             align-items: center;
+//             display: flex;
+//             grid-area: input_confirm_create;
+//             justify-content: center;
+//             text-align: center;
+//         }
         
-    }
-}
+//     }
+// }

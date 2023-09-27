@@ -1,7 +1,7 @@
 @import "../LibScss/index";
 
 .container_login{
-    height: 50%;
+    height: auto;
     width: 30%;
     .form_login_user{
         padding-bottom: 20px;
@@ -13,6 +13,7 @@
         "create create input_confirm"
         ;
         grid-template-columns: repeat(3, 1fr);
+        height: auto;
 
         .input_email{
             grid-area: input_email;
@@ -22,7 +23,7 @@
 
         }
         .input_confirm{
-            // @include config;
+            align-items: center;
             display: flex;
             grid-area: input_confirm;
             a{
@@ -32,7 +33,6 @@
         }
         .remember{
             grid-area: remember;
-
         }
         .recovery{
             grid-area: recovery;
