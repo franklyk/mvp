@@ -45,5 +45,15 @@ $(document).ready(function(){
         $(".modal_fade_blur").css("opacity","0");
 
     })
+
+    // $("#btn_open_register").click(()=>{
+    //     $("#container_register").fadeIn(400)
+    //     $("#container_register").css("top", "50%")
+    //     $("#container_register").css("pointer-events", "all")
+    // })
+    // $("#btn_close_register").click(()=>{
+    //     $("#container_register").fadeOut(200)
+    //     $("#container_register").css("top", "0")
+    // })
     
 })

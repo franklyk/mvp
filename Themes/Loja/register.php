@@ -1,12 +1,14 @@
+<!-- 
+
 <div class="modal_fade_blur"></div>
 
-<fieldset class="modal_form_register container_register radius" id="container_register">
+<fieldset class="modal_form_container container_register border radius" id="container_register">
 
-    <div class="header_register header_form">
+    <div class="header_form">
 
-        <h1 class=" color-green-dark font-text-extra">Faça seu Cadastro</h1>
+        <h1 class="title_modal color-green-dark font-text-extra">Faça seu Cadastro</h1>
 
-        <div class="btn_close_register btn_green radius" id="btn_close_register">
+        <div class="btn_close_container btn_red radius" id="btn_close_register">
             <span class="line1"></span>
             <span class="line2"></span>
         </div>
@@ -70,4 +72,4 @@
         <div class="result_message"></div>
 
     </form>
-</fieldset>
+</fieldset> -->

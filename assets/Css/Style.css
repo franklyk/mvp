@@ -178,7 +178,7 @@ ul, li {
 .btn_green {
   background: #00ff08;
   color: #fff;
-  padding: 2% 3%;
+  padding: 1% 2%;
 }
 .btn_green:hover {
   background: #247c40;
@@ -187,7 +187,7 @@ ul, li {
 .btn_blue {
   background: #0aaaff;
   color: #fff;
-  padding: 2% 3%;
+  padding: 1% 2%;
 }
 .btn_blue:hover {
   background: #09316f;
@@ -196,7 +196,7 @@ ul, li {
 .btn_red {
   background: #de0c11;
   color: #fff;
-  padding: 2% 3%;
+  padding: 1% 2%;
 }
 .btn_red:hover {
   background: #f70e13;
@@ -205,7 +205,7 @@ ul, li {
 .btn_orange {
   background: #ff5e10;
   color: #fff;
-  padding: 2% 3%;
+  padding: 1% 2%;
 }
 .btn_orange:hover {
   background: #cc4b0c;
@@ -214,7 +214,7 @@ ul, li {
 .btn_gray {
   background: #b0acac;
   color: #fff;
-  padding: 2% 3%;
+  padding: 1% 2%;
 }
 .btn_gray:hover {
   background: #8c8989;
@@ -223,7 +223,7 @@ ul, li {
 .btn_dark {
   background: #555;
   color: #fff;
-  padding: 2% 3%;
+  padding: 1% 2%;
 }
 .btn_dark:hover {
   background: #8c8989;
@@ -348,25 +348,29 @@ ul, li {
 }
 .header_container .form_search {
   align-items: center;
-  border: 1px solid #0aaaff;
   display: flex;
   font-size: 1rem;
-  gap: 1px;
+  height: 2rem;
   left: 50%;
-  justify-content: end;
+  justify-content: space-between;
   position: absolute;
   top: 30px;
   transform: translateX(-50%);
-  width: 50%;
+  width: 30%;
 }
-.header_container .form_search input {
-  align-items: center;
-  display: flex;
+.header_container .form_search .input_form_search {
   font-size: 20px;
-  justify-self: end;
-  height: 40px;
-  width: 100%;
+  color: black;
+  height: auto;
+  left: 0;
+  position: fixed;
+  width: 80%;
   background: none;
+}
+.header_container .form_search .btn_form_search {
+  position: fixed;
+  right: 0;
+  width: 19%;
 }
 .header_container .menu_container {
   align-items: center;
@@ -590,7 +594,7 @@ ul, li {
 .btn_green {
   background: #00ff08;
   color: #fff;
-  padding: 2% 3%;
+  padding: 1% 2%;
 }
 .btn_green:hover {
   background: #247c40;
@@ -599,7 +603,7 @@ ul, li {
 .btn_blue {
   background: #0aaaff;
   color: #fff;
-  padding: 2% 3%;
+  padding: 1% 2%;
 }
 .btn_blue:hover {
   background: #09316f;
@@ -608,7 +612,7 @@ ul, li {
 .btn_red {
   background: #de0c11;
   color: #fff;
-  padding: 2% 3%;
+  padding: 1% 2%;
 }
 .btn_red:hover {
   background: #f70e13;
@@ -617,7 +621,7 @@ ul, li {
 .btn_orange {
   background: #ff5e10;
   color: #fff;
-  padding: 2% 3%;
+  padding: 1% 2%;
 }
 .btn_orange:hover {
   background: #cc4b0c;
@@ -626,7 +630,7 @@ ul, li {
 .btn_gray {
   background: #b0acac;
   color: #fff;
-  padding: 2% 3%;
+  padding: 1% 2%;
 }
 .btn_gray:hover {
   background: #8c8989;
@@ -635,7 +639,7 @@ ul, li {
 .btn_dark {
   background: #555;
   color: #fff;
-  padding: 2% 3%;
+  padding: 1% 2%;
 }
 .btn_dark:hover {
   background: #8c8989;
@@ -742,82 +746,35 @@ ul, li {
   z-index: 5;
 }
 
-.modal_form_login {
-  background: #f2f2f2;
-  border: 1px solid #0aaaff;
-  display: block;
-  height: auto;
-  left: 50%;
-  opacity: 0;
-  padding: 20px;
-  pointer-events: all;
-  position: fixed;
-  top: 0;
-  transform: translate(-50%, -50%);
-  transition: 0.1s;
-  z-index: 6;
+.container_login {
+  height: 50%;
+  width: 30%;
 }
-.modal_form_login .header_form {
+.container_login .form_login_user {
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-areas: "input_email input_email input_email" "input_pass input_pass input_pass" "recovery recovery remember" "create create input_confirm";
+  grid-template-columns: repeat(3, 1fr);
+}
+.container_login .form_login_user .input_email {
+  grid-area: input_email;
+}
+.container_login .form_login_user .input_pass {
+  grid-area: input_pass;
+}
+.container_login .form_login_user .input_confirm {
   display: flex;
-  width: 100%;
+  grid-area: input_confirm;
 }
-.modal_form_login .header_form h1 {
-  margin: 0 auto;
-  text-align: center;
+.container_login .form_login_user .input_confirm a {
+  margin: auto;
+  padding: 5px 10px;
 }
-.modal_form_login .header_form .btn_close_login {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  height: 30px;
-  justify-content: center;
-  position: fixed;
-  right: 0;
-  top: 0;
+.container_login .form_login_user .remember {
+  grid-area: remember;
 }
-.modal_form_login .header_form .btn_close_login span {
-  background: #eee;
-  display: block;
-  height: 2px;
-  transform-origin: center;
-  width: 15px;
-}
-.modal_form_login .header_form .btn_close_login .line1 {
-  transform: translateY(3px) rotate(-45deg);
-}
-.modal_form_login .header_form .btn_close_login .line2 {
-  transform: translateY(-4px) rotate(45deg);
-}
-.modal_form_login .form_general {
-  height: 95%;
-}
-.modal_form_login .form_general .div_input {
-  height: 40px;
-  margin-bottom: 15px;
-  position: relative;
-  width: 100%;
-}
-.modal_form_login .form_general .div_input input {
-  background: none;
-  border-bottom: 2px solid #b0acac;
-  bottom: 3px;
-  font-size: 1rem;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  width: 100%;
-}
-.modal_form_login .form_general .div_input input:focus ~ label, .modal_form_login .form_general .div_input input:valid ~ label {
-  bottom: 40px;
-  color: #de0c11;
-  font-size: 0.7rem;
-}
-.modal_form_login .form_general .div_input label {
-  bottom: 3px;
-  left: 10px;
-  position: absolute;
-  transition: 0.5s;
+.container_login .form_login_user .recovery {
+  grid-area: recovery;
 }
 
 ::-webkit-scrollbar {
@@ -999,7 +956,7 @@ ul, li {
 .btn_green {
   background: #00ff08;
   color: #fff;
-  padding: 2% 3%;
+  padding: 1% 2%;
 }
 .btn_green:hover {
   background: #247c40;
@@ -1008,7 +965,7 @@ ul, li {
 .btn_blue {
   background: #0aaaff;
   color: #fff;
-  padding: 2% 3%;
+  padding: 1% 2%;
 }
 .btn_blue:hover {
   background: #09316f;
@@ -1017,7 +974,7 @@ ul, li {
 .btn_red {
   background: #de0c11;
   color: #fff;
-  padding: 2% 3%;
+  padding: 1% 2%;
 }
 .btn_red:hover {
   background: #f70e13;
@@ -1026,7 +983,7 @@ ul, li {
 .btn_orange {
   background: #ff5e10;
   color: #fff;
-  padding: 2% 3%;
+  padding: 1% 2%;
 }
 .btn_orange:hover {
   background: #cc4b0c;
@@ -1035,7 +992,7 @@ ul, li {
 .btn_gray {
   background: #b0acac;
   color: #fff;
-  padding: 2% 3%;
+  padding: 1% 2%;
 }
 .btn_gray:hover {
   background: #8c8989;
@@ -1044,7 +1001,7 @@ ul, li {
 .btn_dark {
   background: #555;
   color: #fff;
-  padding: 2% 3%;
+  padding: 1% 2%;
 }
 .btn_dark:hover {
   background: #8c8989;
@@ -1151,66 +1108,466 @@ ul, li {
   z-index: 5;
 }
 
-.modal_form_register {
+.container_register {
+  height: 80%;
+}
+.container_register .form_register_user {
+  align-content: center;
+  display: grid;
+  gap: 10px;
+  grid-template-areas: "input_firstname input_lastname input_lastname" "input_email input_email input_email" "input_ender input_ender input_cep" "input_phone input_city input_uf" "input_nasc input_pass ..." "result_message result_message input_confirm_create";
+  grid-template-columns: repeat(3, 1fr);
+}
+.container_register .form_register_user .input_firstname {
+  grid-area: input_firstname;
+}
+.container_register .form_register_user .input_lastname {
+  grid-area: input_lastname;
+}
+.container_register .form_register_user .input_email {
+  grid-area: input_email;
+}
+.container_register .form_register_user .input_ender {
+  grid-area: input_ender;
+}
+.container_register .form_register_user .input_cep {
+  grid-area: input_cep;
+}
+.container_register .form_register_user .input_phone {
+  grid-area: input_phone;
+}
+.container_register .form_register_user .input_city {
+  grid-area: input_city;
+}
+.container_register .form_register_user .input_uf {
+  grid-area: input_uf;
+}
+.container_register .form_register_user .input_nasc {
+  grid-area: input_nasc;
+}
+.container_register .form_register_user .input_pass {
+  grid-area: input_pass;
+}
+.container_register .form_register_user .input_confirm_create {
+  border: 1px solid black;
+  align-items: center;
+  display: flex;
+  grid-area: input_confirm_create;
+  justify-content: center;
+  text-align: center;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  width: 10px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
   background: #f2f2f2;
-  border: 1px solid #0aaaff;
-  display: block;
-  left: 50%;
+  border: 1px solid rgba(155, 155, 158, 0.9647058824);
+  border-radius: 1px;
+  cursor: pointer;
+  width: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(141, 139, 139, 0.5333333333);
+}
+
+/* Reset */
+* {
+  border: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  transition: 0.1s ease-in-out;
+  -moz-border-sizing: border-box;
+  -webkit-border-sizing: border-box;
+  -moz-border-sizing: border-box;
+}
+
+html, body {
+  height: 100vh;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+input {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul, li {
+  list-style: none;
+}
+
+/* Classes Gerais */
+.clear {
+  clear: both;
+}
+
+.text-margin {
+  margin: 0 30px;
+}
+
+.radius {
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+.title-folder {
+  background-image: linear-gradient(to right, #fafa61, #de0c11);
+  -moz-background-image: linear-gradient(to right, #fafa61, #de0c11);
+  -webkit-background-image: linear-gradient(to right, #fafa61, #de0c11);
+  margin: 50px 10%;
+}
+
+.border {
+  border: 1px solid black;
+}
+
+/* Mensagens Dinâmicas */
+.alert-error {
+  background: #de0c11;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.alert-success {
+  background: #00ff08;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.alert-info {
+  background: #0aaaff;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.alert-warning {
+  background: #ff5e10;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+/* Planos de Fundo */
+.bgcolor-red {
+  background: #de0c11;
+}
+
+.bgcolor-red-dark {
+  background: #555;
+}
+
+.bgcolor-blue {
+  background: #0aaaff;
+}
+
+.bgcolor-blue-dark {
+  background: #09316f;
+}
+
+.bgcolor-green {
+  background: #00ff08;
+}
+
+.bgcolor-green-dark {
+  background: #247c40;
+}
+
+.bgcolor-gray {
+  background: #b0acac;
+}
+
+.bgcolor-orange {
+  background: #ff5e10;
+}
+
+.bgcolor-white {
+  background: #fff;
+}
+
+.bgcolor-white-dark {
+  background: #eee;
+}
+
+.bgcolor-white-light {
+  background: #f2f2f2;
+}
+
+.bgcolor-yellow {
+  background: #fafa61;
+}
+
+.bgcolor-dark {
+  background: #555;
+}
+
+.bgcolor-yellow-dark {
+  background: #645f0f;
+}
+
+/* Botões e Cores */
+.btn_green {
+  background: #00ff08;
+  color: #fff;
+  padding: 1% 2%;
+}
+.btn_green:hover {
+  background: #247c40;
+}
+
+.btn_blue {
+  background: #0aaaff;
+  color: #fff;
+  padding: 1% 2%;
+}
+.btn_blue:hover {
+  background: #09316f;
+}
+
+.btn_red {
+  background: #de0c11;
+  color: #fff;
+  padding: 1% 2%;
+}
+.btn_red:hover {
+  background: #f70e13;
+}
+
+.btn_orange {
+  background: #ff5e10;
+  color: #fff;
+  padding: 1% 2%;
+}
+.btn_orange:hover {
+  background: #cc4b0c;
+}
+
+.btn_gray {
+  background: #b0acac;
+  color: #fff;
+  padding: 1% 2%;
+}
+.btn_gray:hover {
+  background: #8c8989;
+}
+
+.btn_dark {
+  background: #555;
+  color: #fff;
+  padding: 1% 2%;
+}
+.btn_dark:hover {
+  background: #8c8989;
+}
+
+/* Cores das Fontes */
+.color-red {
+  color: #de0c11;
+}
+
+.color-red-dark {
+  color: #f70e13;
+}
+
+.color-blue {
+  color: #0aaaff;
+}
+
+.color-blue-dark {
+  color: #09316f;
+}
+
+.color-green {
+  color: #00ff08;
+}
+
+.color-green-dark {
+  color: #247c40;
+}
+
+.color-gray {
+  color: #b0acac;
+}
+
+.color-orange {
+  color: #ff5e10;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.color-white-dark {
+  color: #eee;
+}
+
+.color-yellow {
+  color: #fafa61;
+}
+
+.color-yellow-dark {
+  color: #645f0f;
+}
+
+.color-dark {
+  color: #555;
+}
+
+/* Tamanho da fonte*/
+.font-sub {
+  font-size: 0.8em;
+}
+
+.font-min {
+  font-size: 1em;
+}
+
+.font-medium {
+  font-size: 1.2em;
+}
+
+.font-extra {
+  font-size: 1.5em;
+}
+
+.font-max {
+  font-size: 2em;
+}
+
+/* Estilo da Fonte */
+.font-weight-min {
+  font-weight: 300;
+}
+
+.font-weight-medium {
+  font-weight: 600;
+}
+
+.font-weight-max {
+  font-weight: 900;
+}
+
+/* Flutuação dos Elementos */
+/* Modais */
+.modal_fade_blur {
+  backdrop-filter: blur(1px);
+  background: rgba(142, 142, 142, 0.6156862745);
+  height: 0;
+  left: 0;
   opacity: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+/* Modais */
+.modal_fade_blur {
+  backdrop-filter: blur(2px);
+  background: rgba(142, 142, 142, 0.8);
+  height: 0%;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+.modal_form_container {
+  background: #f2f2f2;
+  display: block;
+  height: auto;
+  left: 50%;
   padding: 20px;
   pointer-events: none;
   position: fixed;
-  top: 0;
+  top: 50%;
   transform: translate(-50%, -50%);
-  transition: 0.1s;
+  transition: 0.2s ease-out;
   width: 65%;
   z-index: 6;
 }
-.modal_form_register .header_form {
+
+.herder_form {
   display: flex;
   width: 100%;
 }
-.modal_form_register .header_form h1 {
-  border: 1px solid black;
+
+h1 {
   margin: 10px auto;
   text-align: center;
 }
-.modal_form_register .header_form .btn_close_register {
+
+.btn_close_container {
   align-items: center;
   display: flex;
   flex-direction: column;
   gap: 5px;
-  height: 30px;
+  height: 35px;
   justify-content: center;
   position: fixed;
   right: 0;
   top: 0;
-  width: 50px;
+  width: 35px;
 }
-.modal_form_register .header_form .btn_close_register span {
-  background: #eee;
+
+.lines {
   display: block;
   height: 2px;
   transform-origin: center;
-  width: 30px;
+  width: 25px;
 }
-.modal_form_register .header_form .btn_close_register .line1 {
+
+.line1 {
   transform: translateY(3px) rotate(-45deg);
 }
-.modal_form_register .header_form .btn_close_register .line2 {
-  transform: translateY(-6px) rotate(45deg);
+
+.line2 {
+  transform: translateY(-4px) rotate(45deg);
 }
-.modal_form_register .form_general {
+
+.form_general {
+  display: grid;
+  gap: 5px;
   height: 100%;
 }
-.modal_form_register .form_general .div_input {
+
+.div_input {
   height: 40px;
   position: relative;
   width: 100%;
 }
-.modal_form_register .form_general .div_input input {
+
+input {
   background: none;
-  border-bottom: 2px solid #b0acac;
   bottom: 3px;
   font-size: 1rem;
   height: 100%;
@@ -1218,12 +1575,15 @@ ul, li {
   position: absolute;
   width: 100%;
 }
-.modal_form_register .form_general .div_input input:focus ~ label, .modal_form_register .form_general .div_input input:valid ~ label {
-  bottom: 40px;
-  color: #de0c11;
+
+input:focus ~ label,
+input:valid ~ label {
+  bottom: 30px;
+  color: red;
   font-size: 0.7rem;
 }
-.modal_form_register .form_general .div_input label {
+
+label {
   bottom: 3px;
   left: 10px;
   position: absolute;

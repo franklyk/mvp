@@ -2,9 +2,9 @@
     <a class="logo" href="#">
         <img src="Images/k.png">
     </a>
-    <form class="form_search  radius font-max">
-        <button class="btn_form_search btn_blue radius" type="button">OK</button>
-        <input type="text" class="input_form_search radius " name="input_form_search" id="input_form_search">
+    <form class="form_search radius font-max">
+        <button type="button" class="btn_form_search btn_blue border radius">OK</button>
+        <input type="text" class="input_form_search border radius " name="input_form_search" id="input_form_search">
     </form>
 
     <nav class="menu_container">

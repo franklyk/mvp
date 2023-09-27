@@ -17,25 +17,29 @@
     .form_search{
         // @include config;
         align-items: center;
-        border: 1px solid $blue;
         display: flex;
         font-size: 1rem;
-        gap: 1px;
+        height: 2rem;
         left: 50%;
-        justify-content: end;
+        justify-content: space-between;
         position: absolute;
         top: 30px;
         transform: translateX(-50%);
-        width: 50%;
-        input{
-            align-items: center;
-            // border-bottom: 2px solid #ccc;
-            display: flex;
+        width: 30%;
+        .input_form_search{
             font-size: 20px;
-            justify-self: end;
-            height: 40px;
-            width: 100%;
+            color: black;
+            height: auto;
+            left: 0;
+            position: fixed;
+            width: 80%;
             background: none;
+        }
+        .btn_form_search{
+            position: fixed;
+            right: 0;
+            width: 19%;
+
         }
     }
     .menu_container{

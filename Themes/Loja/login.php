@@ -1,6 +1,10 @@
+<?php 
+    require "Core/Ctdb.php";
+?>
+
 <div class="modal_fade_blur"></div>
 
-<fieldset class="modal_form_login radius container_login" id="modal_form_container">
+<fieldset class="modal_form_container radius container_login" id="container_login">
 
     <div class="header_form">
 

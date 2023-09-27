@@ -11,85 +11,86 @@
     top: 0;
     width: 100%;
     z-index: 5;
-}
-
-.modal_form_container {
+  }
+  
+  .modal_form_container {
     background: #f2f2f2;
-    border: 1px solid #235580;
     display: block;
-    height: 80%;
+    height: auto;
     left: 50%;
-    opacity: 0;
     padding: 20px;
-    pointer-events: all;
+    pointer-events: none;
     position: fixed;
+    top: 50%;
     transform: translate(-50%, -50%);
-    transition: 0.2s ease-in-out;
+    transition: 0.2s ease-out;
     width: 65%;
     z-index: 6;
-}
-.herder_form{
-    display: flex;
-    width: 100%;
-}
-.title_modal{
-    margin: 10px auto;
-    text-align: center;
-}
-.btn_close_container{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+  }
+  .herder_form{
+      display: flex;
+      width: 100%;
+  }
+  h1{
+      margin: 10px auto;
+      text-align: center;
+  }
+  .btn_close_container{
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      height: 35px;
+      justify-content: center;
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 35px;
+  }
+  .lines{
+      display: block;
+      height: 2px;
+      transform-origin: center;
+      width: 25px;
+  }
+  
+  .line1{
+      transform: translateY(3px) rotate(-45deg);
+  }
+  .line2{
+      transform: translateY(-4px) rotate(45deg);
+  }
+  .form_general{
+    display: grid;
     gap: 5px;
-    height: 30px;
-    justify-content: center;
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 30px;
-}
-.lines{
-    background: #ccc;
-    display: block;
-    height: 2px;
-    transform-origin: center;
-    width: 15px;
-}
-
-.line1{
-    transform: translateY(3px) rotate(-45deg);
-}
-.line2{
-    transform: translateY(-6px) rotate(45deg);
-}
-.form_general{
-    height: 100%;
-}
-.div_input{
-    height: 40px;
-    position: relative;
-    width: 100%;
-}
-input{
-    background: none;
-    border-bottom: 2px solid gray;
-    bottom: 3px;
-    font-size: 1rem;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    width: 100%;
-}
-input:focus ~ label,
-input:valid ~ label{
-    bottom: 40px;
-    color: red;
-    font-size: 0.7rem;
-}
-
-label{
-    bottom: 3px;
-    left: 10px;
-    position: absolute;
-    transition: .5s;
-}
+      height: 100%;
+  }
+  .div_input{
+      height: 40px;
+      position: relative;
+      width: 100%;
+  }
+  input{
+      background: none;
+      bottom: 3px;
+      font-size: 1rem;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      width: 100%;
+  }
+  input:focus ~ label,
+  input:valid ~ label{
+      bottom: 30px;
+      color: red;
+      font-size: 0.7rem;
+  }
+  
+  label{
+      bottom: 3px;
+      left: 10px;
+      position: absolute;
+      transition: .5s;
+  }
+      
+  

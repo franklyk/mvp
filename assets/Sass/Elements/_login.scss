@@ -1,85 +1,43 @@
 @import "../LibScss/index";
 
-.modal_form_login{
-    background: $white-light;
-    border: 1px solid  $blue;
-    display: block;
-    height: auto;
-    left: 50%;
-    opacity: 0;
-    padding: 20px;
-    pointer-events: all;
-    position: fixed;
-    top: 0;
-    transform: translate(-50%, -50%);
-    transition: .1s;
-    z-index: 6;
-    .header_form{
-        h1{
-            margin: 0 auto;
-            text-align: center;
+.container_login{
+    height: 50%;
+    width: 30%;
+    .form_login_user{
+        padding-bottom: 20px;
+        display: grid;
+        grid-template-areas: 
+        "input_email input_email input_email"
+        "input_pass input_pass input_pass"
+        "recovery recovery remember"
+        "create create input_confirm"
+        ;
+        grid-template-columns: repeat(3, 1fr);
+
+        .input_email{
+            grid-area: input_email;
         }
-        display: flex;
-        width: 100%;
-        .btn_close_login{
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-            height: 30px;
-            justify-content: center;
-            position: fixed;
-            right: 0;
-            top: 0;
-            
-            span{
-                background: $white-dark;
-                display: block;
-                height: 2px;
-                transform-origin: center;
-                width: 15px;
-            }
-            
-            .line1{
-                transform: translateY(3px) rotate(-45deg);
-            }
-            .line2{
-                transform: translateY(-4px) rotate(45deg);
-            }
+        .input_pass{
+            grid-area: input_pass;
+
         }
-    }
-    .form_general{
-        // @include config;
-        height: 95%;
-        .div_input{
+        .input_confirm{
             // @include config;
-            height: 40px;
-            margin-bottom: 15px;
-            position: relative;
-            width: 100%;
-            input{
-                // @include config;
-                background: none;
-                border-bottom: 2px solid $gray;
-                bottom: 3px;
-                font-size: 1rem;
-                height: 100%;
-                left: 0;
-                position: absolute;
-                width: 100%;
-                &:focus ~ label,
-                &:valid ~ label{
-                    bottom: 40px;
-                    color: $red;
-                    font-size: 0.7rem;
-                }
+            display: flex;
+            grid-area: input_confirm;
+            a{
+                margin: auto;
+                padding: 5px 10px;
             }
-            label{
-                bottom: 3px;
-                left: 10px;
-                position: absolute;
-                transition: .5s;
-            }
+        }
+        .remember{
+            grid-area: remember;
+
+        }
+        .recovery{
+            grid-area: recovery;
+            
+
         }
     }
 }
