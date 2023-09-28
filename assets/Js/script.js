@@ -1,72 +1,53 @@
-$(document).ready(function(){
-    // // MODAL REDES SOCIAIS
-    // $("#btn_socials_open").click(()=>{
-    //     $(".socials_container").css("height", "200px")
-    //     $("#btn_socials_open").css("display", "none")
-    //     $("#btn_socials_close").css("display", "block")
-    // })
-    // $("#btn_socials_close").click(()=>{
-    //     $(".socials_container").css("height", "0")
-    //     $("#btn_socials_close").css("display", "none")
-    //     $("#btn_socials_open").css("display", "block")
-    // })
 
-    // // MODAL LOGIN
-    // $("#btn_open_login").click(()=>{
-        
-    //     $(".container_login").css("opacity","1");
-    //     $(".container_login").css("pointer-events", "all");
-    //     $(".container_login").css("top", "50%");
-    //     $(".modal_fade_blur").css("opacity","1");
-    //     $(".modal_fade_blur").css("height","100%");
-    // });
+    // MODAL REDES SOCIAIS
+    $("#btn_socials_open").click(
+        function(){
+            $('#socials_container').animate({right: "30px"}, 300)
+            $('#btn_socials_open').css("display", "none")
+            $('#btn_socials_close').css("display", "block")
+        }
+    )
+    $("#btn_socials_close").click(
+        function(){
+            $('#socials_container').animate({right: "-100px"}, 300)
+            $('#btn_socials_close').css("display", "none")
+            $('#btn_socials_open').css("display", "block")
 
-    // $("#btn_close_login").click(()=>{
-    //     $(".container_login").css("pointer-events", "none");
-    //     $(".container_login").css("top", "0");
-    //     $(".container_login").css("opacity","0");
-    //     $(".modal_fade_blur").css("height","0");
-    //     $(".modal_fade_blur").css("opacity","0");
-    // })
-    // $("#btn_open_register").click(()=>{
-    //     $(".container_login").css("top", "0");
-    //     $(".container_login").css("opacity","0");
-    //     $(".container_login").css("pointer-events","none");
-    //     $(".container_register").css("opacity","1");
-    //     $(".container_register").css("pointer-events","all");
-    //     $(".container_register").css("top","50%");
+        }
+    )
 
-    // })
-    // $("#btn_close_register").click(()=>{
-    //     $(".container_register").css("opacity","0");
-    //     $(".container_register").css("pointer-events","none");
-    //     $(".container_register").css("top","0");
-    //     $(".modal_fade_blur").css("height","0");
-    //     $(".modal_fade_blur").css("opacity","0");
+    $('#btn_open_login').click(
+        function(){
+            $('#container_login').animate({top: "30%"},300)
+            $('#container_login').css("pointer-events", "all")
+            $('#modal_fade_blur').css("z-index", "5")
+            $('#modal_fade_blur').animate({height: "100%"})
+            $('#modal_fade_blur').animate({opacity: "0.3"})
+        }
+    )
 
-    // })
-
-    $("#btn_open_login").click(()=>{
-        $("#container_login").fadeIn(400)
-        // $("#container_login").css("display", "block")
-        $("#container_login").css("top", "30%")
-        $(".modal_fade_blur").css("height", "100%")
-        $(".modal_fade_blur").css("z-index", "5")
-    })
-    $("#btn_close_login").click(()=>{
-        $("#container_login").fadeOut(300)
-        $("#container_login").css("top", "20%")
-        $(".modal_fade_blur").css("z-index", "-1")
-        // $(".modal_fade_blur").css("opacity", "0")
-    })
-    // $("#btn_open_register").click(()=>{
-    //     $("#container_register").fadeIn(400)
-    //     $("#container_register").css("top", "50%")
-    //     $("#container_register").css("pointer-events", "all")
-    // })
-    // $("#btn_close_register").click(()=>{
-    //     $("#container_register").fadeOut(200)
-    //     $("#container_register").css("top", "0")
-    // })
-    
-})
+    $("#btn_close_login").click(
+        function(){
+            $('#container_login').animate({top: "-100%"},700)
+            $("#container_login").css("pointer-events", "none")
+            $('#modal_fade_blur').animate({height: "0"})
+            $("#modal_fade_blur").css("z-index", "-1")
+            $("#modal_fade_blur").css("opacity", "0")
+        }
+    )
+    $("#btn_open_register").click(
+        function(){
+            $('#container_login').animate({top: "-100%"},700)
+            $("#container_login").css("pointer-events", "none")
+            $("#container_register").animate({top: "50%"},300)
+            $("#container_register").css("pointer-events", "all")
+        }
+    )
+    $("#btn_close_register").click(
+        function(){
+            $("#container_register").animate({top: "-100%"},700)
+            $("#container_register").css("pointer-events", "none")
+            $('#modal_fade_blur').animate({height: "0"})
+            $("#modal_fade_blur").css("z-index", "-1")
+        }
+    )

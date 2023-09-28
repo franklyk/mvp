@@ -170,7 +170,7 @@ ul, li {
 .btn_green{
     background: $green;
     color: $white;
-    padding: 1% 2%;
+    padding: 10px 20px;
     &:hover{
         background: $green-dark;
     }
@@ -178,7 +178,7 @@ ul, li {
 .btn_blue{
     background: $blue;
     color: $white;
-    padding: 1% 2%;
+    padding: 10px 20px;
     &:hover{
         background: $blue-dark;
     }
@@ -289,19 +289,17 @@ ul, li {
     font-weight: 900;
 }
 
-/* Flutuação dos Elementos */
-/* Modais */
 
-// .modal_fade_blur{
-//     backdrop-filter: blur(1px);
-//     background: #8e8e8e9d;
-//     height: 0;
-//     left: 0;
-//     opacity: 0;
-//     position: fixed;
-//     top: 0;
-//     width: 100%;
-//     z-index: 5;
+
+/* Opção para testes*/
+// .teste_modal{
+//     display: block;
+//     opacity: 1;
+// }
+// .teste_neutro{
+//     display: none;
+//     pointer-events: none;
+    
 // }
 
 

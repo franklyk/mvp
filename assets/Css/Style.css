@@ -178,7 +178,7 @@ ul, li {
 .btn_green {
   background: #00ff08;
   color: #fff;
-  padding: 1% 2%;
+  padding: 10px 20px;
 }
 .btn_green:hover {
   background: #247c40;
@@ -187,7 +187,7 @@ ul, li {
 .btn_blue {
   background: #0aaaff;
   color: #fff;
-  padding: 1% 2%;
+  padding: 10px 20px;
 }
 .btn_blue:hover {
   background: #09316f;
@@ -316,8 +316,7 @@ ul, li {
   font-weight: 900;
 }
 
-/* Flutuação dos Elementos */
-/* Modais */
+/* Opção para testes*/
 .header_container {
   display: flex;
   height: auto;
@@ -351,6 +350,7 @@ ul, li {
   color: black;
   height: auto;
   left: 0;
+  padding: 6px 20px;
   position: fixed;
   width: 80%;
   background: none;
@@ -380,16 +380,17 @@ ul, li {
   cursor: pointer;
 }
 .header_container .socials_container {
+  border: 1px solid black;
   display: flex;
-  justify-content: end;
-  height: 0;
+  justify-content: center;
+  height: 260px;
   overflow-y: hidden;
   position: absolute;
-  right: 20px;
+  right: -100px;
   text-align: right;
   top: 110px;
   transition: 0.5s;
-  width: 10%;
+  width: auto;
 }
 .header_container .socials_container .menu_list {
   display: block;
@@ -582,7 +583,7 @@ ul, li {
 .btn_green {
   background: #00ff08;
   color: #fff;
-  padding: 1% 2%;
+  padding: 10px 20px;
 }
 .btn_green:hover {
   background: #247c40;
@@ -591,7 +592,7 @@ ul, li {
 .btn_blue {
   background: #0aaaff;
   color: #fff;
-  padding: 1% 2%;
+  padding: 10px 20px;
 }
 .btn_blue:hover {
   background: #09316f;
@@ -720,8 +721,7 @@ ul, li {
   font-weight: 900;
 }
 
-/* Flutuação dos Elementos */
-/* Modais */
+/* Opção para testes*/
 .container_login {
   height: auto;
   width: 30%;
@@ -934,7 +934,7 @@ ul, li {
 .btn_green {
   background: #00ff08;
   color: #fff;
-  padding: 1% 2%;
+  padding: 10px 20px;
 }
 .btn_green:hover {
   background: #247c40;
@@ -943,7 +943,7 @@ ul, li {
 .btn_blue {
   background: #0aaaff;
   color: #fff;
-  padding: 1% 2%;
+  padding: 10px 20px;
 }
 .btn_blue:hover {
   background: #09316f;
@@ -1072,8 +1072,7 @@ ul, li {
   font-weight: 900;
 }
 
-/* Flutuação dos Elementos */
-/* Modais */
+/* Opção para testes*/
 /* Modais */
 .modal_fade_blur {
   backdrop-filter: blur(1px);
@@ -1081,6 +1080,7 @@ ul, li {
   display: block;
   height: 100%;
   left: 0;
+  opacity: 0;
   position: fixed;
   top: 0;
   transition: 0.4s;
@@ -1090,27 +1090,24 @@ ul, li {
 
 .modal_form_container {
   background: #f2f2f2;
-  display: none;
+  display: block;
   left: 50%;
   padding: 20px;
+  pointer-events: none;
   position: fixed;
-  top: 20%;
+  top: -100%;
   transform: translate(-50%, -50%);
-  transition: 0.4s;
-  z-index: 6;
+  z-index: 100;
 }
-
-.herder_form {
+.modal_form_container .header_form {
   display: flex;
   width: 100%;
 }
-
-.title_form {
+.modal_form_container .header_form .title_form {
   margin: 10px auto;
   text-align: center;
 }
-
-.btn_close_container {
+.modal_form_container .header_form .btn_close_container {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -1122,19 +1119,16 @@ ul, li {
   top: 0;
   width: 35px;
 }
-
-.lines {
+.modal_form_container .header_form .btn_close_container .lines {
   display: block;
   height: 2px;
   transform-origin: center;
   width: 25px;
 }
-
-.line1 {
+.modal_form_container .header_form .btn_close_container .line1 {
   transform: translateY(3px) rotate(-45deg);
 }
-
-.line2 {
+.modal_form_container .header_form .btn_close_container .line2 {
   transform: translateY(-4px) rotate(45deg);
 }
 
@@ -1143,31 +1137,27 @@ ul, li {
   gap: 5px;
   height: 100%;
 }
-
-.div_input {
+.form_general .div_input {
   height: 40px;
   position: relative;
   width: 100%;
 }
-
-.input_data {
+.form_general .input_data {
   background: none;
-  bottom: 3px;
+  bottom: 0;
   font-size: 1rem;
   height: 100%;
   left: 0;
   position: absolute;
   width: 100%;
 }
-
-.input_data:focus ~ label,
-.input_data:valid ~ label {
-  bottom: 30px;
-  color: red;
+.form_general .input_data:focus ~ label,
+.form_general .input_data:valid ~ label {
+  background: #f2f2f2;
+  bottom: 33px;
   font-size: 0.7rem;
 }
-
-.label_input {
+.form_general .label_input {
   bottom: 3px;
   left: 10px;
   position: absolute;
@@ -1353,7 +1343,7 @@ ul, li {
 .btn_green {
   background: #00ff08;
   color: #fff;
-  padding: 1% 2%;
+  padding: 10px 20px;
 }
 .btn_green:hover {
   background: #247c40;
@@ -1362,7 +1352,7 @@ ul, li {
 .btn_blue {
   background: #0aaaff;
   color: #fff;
-  padding: 1% 2%;
+  padding: 10px 20px;
 }
 .btn_blue:hover {
   background: #09316f;
@@ -1491,7 +1481,59 @@ ul, li {
   font-weight: 900;
 }
 
-/* Flutuação dos Elementos */
-/* Modais */
+/* Opção para testes*/
+.container_register {
+  height: auto;
+  width: 45%;
+}
+.container_register .form_register_user {
+  align-content: center;
+  display: grid;
+  gap: 10px;
+  grid-template-areas: "input_firstname input_lastname input_lastname" "input_email input_email input_email" "input_ender input_ender input_cep" "input_phone input_city input_uf" "input_nasc input_pass input_confirm_create" "result_message result_message result_message";
+  grid-template-columns: repeat(3, 1fr);
+  height: auto;
+}
+.container_register .form_register_user .input_firstname {
+  grid-area: input_firstname;
+}
+.container_register .form_register_user .input_lastname {
+  grid-area: input_lastname;
+}
+.container_register .form_register_user .input_email {
+  grid-area: input_email;
+}
+.container_register .form_register_user .input_ender {
+  grid-area: input_ender;
+}
+.container_register .form_register_user .input_cep {
+  grid-area: input_cep;
+}
+.container_register .form_register_user .input_phone {
+  grid-area: input_phone;
+}
+.container_register .form_register_user .input_city {
+  grid-area: input_city;
+}
+.container_register .form_register_user .input_uf {
+  grid-area: input_uf;
+}
+.container_register .form_register_user .input_nasc {
+  grid-area: input_nasc;
+}
+.container_register .form_register_user .input_pass {
+  grid-area: input_pass;
+}
+.container_register .form_register_user .input_confirm_create {
+  align-items: center;
+  display: flex;
+  grid-area: input_confirm_create;
+  justify-content: center;
+  text-align: center;
+}
+.container_register .result_message {
+  height: 10%;
+  width: 100%;
+}
 
 /*# sourceMappingURL=Style.css.map */

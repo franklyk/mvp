@@ -31,6 +31,7 @@
             color: black;
             height: auto;
             left: 0;
+            padding: 6px 20px;
             position: fixed;
             width: 80%;
             background: none;
@@ -64,17 +65,17 @@
         }
     }
     .socials_container{
-        // @include config;
+        @include config;
         display: flex;
-        justify-content: end;
-        height: 0;
+        justify-content: center;
+        height: 260px;
         overflow-y: hidden;
         position: absolute;
-        right: 20px;
+        right: -100px;
         text-align: right;
         top: 110px;
         transition: 0.5s;
-        width: 10%;
+        width: auto;
         .menu_list{
             display: block;
             // height: 0;

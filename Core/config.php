@@ -29,8 +29,6 @@ echo '
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title> klyk Web Service </title>
 <link rel="stylesheet" href="assets/Css/Style.css">
-<link rel="shortcut icon" href="image/k.ico" type="image/x-icon">
-<link rel="shortcut icon" href="../img/k.ico" type="image/x-icon">
 ';
 
 /*Configuações da Aplicação */

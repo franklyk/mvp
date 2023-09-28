@@ -1,142 +1,66 @@
 @import "../LibScss/index";
 
-// .modal_form_register{
-//     background: $white-light;
-//     border: 1px solid  $blue;
-//     display: block;
-//     left: 50%;
-//     opacity: 0;
-//     padding: 20px;
-//     pointer-events: none;
-//     position: fixed;
-//     top: 0;
-//     transform: translate(-50%, -50%);
-//     transition: .1s;
-//     width: 65%;
-//     z-index: 6;
-//     .header_form{
-//         display: flex;
-//         width: 100%;
-//         h1{
-//             @include config;
-//             margin: 10px auto;
-//             text-align: center;
-//         }
-//         .btn_close_register{
-//             align-items: center;
-//             display: flex;
-//             flex-direction: column;
-//             gap: 5px;
-//             height: 30px;
-//             justify-content: center;
-//             position: fixed;
-//             right: 0;
-//             top: 0;
-//             width: 50px;
-//             span{
-//                 background: $white-dark;
-//                 display: block;
-//                 height: 2px;
-//                 transform-origin: center;
-//                 width: 30px;
-//             }
-            
-//             .line1{
-//                 transform: translateY(3px) rotate(-45deg);
-//             }
-//             .line2{
-//                 transform: translateY(-6px) rotate(45deg);
-//             }
-//         }
-//     }
-//     .form_general{
-//         // @include config;
-//         height: 100%;
-//         .div_input{
-//             // @include config;
-//             height: 40px;
-//             position: relative;
-//             width: 100%;
-//             input{
-//                 // @include config;
-//                 background: none;
-//                 border-bottom: 2px solid $gray;
-//                 bottom: 3px;
-//                 font-size: 1rem;
-//                 height: 100%;
-//                 left: 0;
-//                 position: absolute;
-//                 width: 100%;
-//                 &:focus ~ label,
-//                 &:valid ~ label{
-//                     bottom: 40px;
-//                     color: $red;
-//                     font-size: 0.7rem;
-//                 }
-//             }
-//             label{
-//                 bottom: 3px;
-//                 left: 10px;
-//                 position: absolute;
-//                 transition: .5s;
-//             }
-//         }
-//     }   
-// }
-//CADASTRO
-// .container_register{
-//     height: 80%;
-//     .form_register_user{
-//         align-content: center;
-//         display: grid;
-//         gap: 10px;
-//         grid-template-areas: 
-//         "input_firstname input_lastname input_lastname"
-//         "input_email input_email input_email"
-//         "input_ender input_ender input_cep"
-//         "input_phone input_city input_uf"
-//         "input_nasc input_pass ..."
-//         "result_message result_message input_confirm_create"
-//         ;
-//         grid-template-columns: repeat(3, 1fr);
-//         .input_firstname{
-//             grid-area: input_firstname;
-//         }
-//         .input_lastname{
-//             grid-area: input_lastname;
-//         }
-//         .input_email{
-//             grid-area: input_email;
-//         }
-//         .input_ender{
-//             grid-area: input_ender;
-//         }
-//         .input_cep{
-//             grid-area: input_cep;
-//         }
-//         .input_phone{
-//             grid-area: input_phone;
-//         }
-//         .input_city{
-//             grid-area: input_city;
-//         }
-//         .input_uf{
-//             grid-area: input_uf;
-//         }
-//         .input_nasc{
-//             grid-area: input_nasc;
-//         }
-//         .input_pass{
-//             grid-area: input_pass;
-//         }
-//         .input_confirm_create{
-//             @include config;
-//             align-items: center;
-//             display: flex;
-//             grid-area: input_confirm_create;
-//             justify-content: center;
-//             text-align: center;
-//         }
+// CADASTRO
+.container_register{
+    height: auto;
+    width: 45%;
+    .form_register_user{
+        // @include config;
+        align-content: center;
+        display: grid;
+        gap: 10px;
+        grid-template-areas: 
+        "input_firstname input_lastname input_lastname"
+        "input_email input_email input_email"
+        "input_ender input_ender input_cep"
+        "input_phone input_city input_uf"
+        "input_nasc input_pass input_confirm_create"
+        "result_message result_message result_message"
+        ;
+        grid-template-columns: repeat(3, 1fr);
+        height: auto;
+        .input_firstname{
+            grid-area: input_firstname;
+        }
+        .input_lastname{
+            grid-area: input_lastname;
+        }
+        .input_email{
+            grid-area: input_email;
+        }
+        .input_ender{
+            grid-area: input_ender;
+        }
+        .input_cep{
+            grid-area: input_cep;
+        }
+        .input_phone{
+            grid-area: input_phone;
+        }
+        .input_city{
+            grid-area: input_city;
+        }
+        .input_uf{
+            grid-area: input_uf;
+        }
+        .input_nasc{
+            grid-area: input_nasc;
+        }
+        .input_pass{
+            grid-area: input_pass;
+        }
+        .input_confirm_create{
+            // @include config;
+            align-items: center;
+            display: flex;
+            grid-area: input_confirm_create;
+            justify-content: center;
+            text-align: center;
+        }
         
-//     }
-// }
+    }
+    .result_message{
+        height: 10%;
+        width: 100%;
+    }
+}

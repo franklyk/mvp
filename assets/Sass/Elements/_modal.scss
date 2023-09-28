@@ -7,6 +7,7 @@
     display: block;
     height: 100%;
     left: 0;
+    opacity: 0;
     position: fixed;
     top: 0;
     transition: 0.4s;
@@ -16,80 +17,79 @@
   
 .modal_form_container {
 background: $white-light;
-display: none;
+display: block;
 left: 50%;
 padding: 20px;
-// pointer-events: none;
+pointer-events: none;
 position: fixed;
-top: 20%;
+top: -100%;
 transform: translate(-50%, -50%);
-transition: 0.4s;
-// width: 65%;
-z-index: 6;
-}
-.herder_form{
-    display: flex;
-    width: 100%;
-}
-.title_form{
-    margin: 10px auto;
-    text-align: center;
-}
-.btn_close_container{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    height: 35px;
-    justify-content: center;
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 35px;
-}
-.lines{
-    display: block;
-    height: 2px;
-    transform-origin: center;
-    width: 25px;
+// transition: 0.2s;
+z-index: 100;
+    .header_form{
+        display: flex;
+        width: 100%;
+        .title_form{
+            margin: 10px auto;
+            text-align: center;
+        }
+        .btn_close_container{
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            height: 35px;
+            justify-content: center;
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 35px;
+            .lines{
+                display: block;
+                height: 2px;
+                transform-origin: center;
+                width: 25px;
+            }
+            .line1{
+                transform: translateY(3px) rotate(-45deg);
+            }
+            .line2{
+                transform: translateY(-4px) rotate(45deg);
+            }
+        }
+    }
 }
 
-.line1{
-    transform: translateY(3px) rotate(-45deg);
-}
-.line2{
-    transform: translateY(-4px) rotate(45deg);
-}
 .form_general{
     display: grid;
     gap: 5px;
     height: 100%;
-}
-.div_input{
-    height: 40px;
-    position: relative;
-    width: 100%;
-}
-.input_data{
-    background: none;
-    bottom: 3px;
-    font-size: 1rem;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    width: 100%;
-}
-.input_data:focus ~ label,
-.input_data:valid ~ label{
-    bottom: 30px;
-    color: red;
-    font-size: 0.7rem;
+    .div_input{
+        height: 40px;
+        position: relative;
+        width: 100%;
+    }
+    .input_data{
+        background: none;
+        bottom: 0;
+        font-size: 1rem;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        width: 100%;
+    }
+    .input_data:focus ~ label,
+    .input_data:valid ~ label{
+        background: $white-light;
+        bottom: 33px;
+        font-size: 0.7rem;
+    }
+    .label_input{
+        bottom: 3px;
+        left: 10px;
+        position: absolute;
+        transition: .5s;
+    }
 }
 
-.label_input{
-    bottom: 3px;
-    left: 10px;
-    position: absolute;
-    transition: .5s;
-}
     

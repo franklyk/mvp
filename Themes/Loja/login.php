@@ -31,12 +31,7 @@
                 <i class="fa fa-eye"></i>
             </span>
         </div>
-        <div class="input_confirm radius ">
-            <a href="#" class="radius font-text-medium text-center btn_green">
-                Entrar
-            </a>
-        </div>
-
+        
         <div class="remember">
             <input type="checkbox" id="remember" name="remember" value="remember">
             <label class="label_checkbox" for="remember">Salvar Senha</label>
@@ -47,6 +42,12 @@
         </div>
         <div class="recovery">
             <a href="#">Esqueceu a senha?</a>
+        </div>
+
+        <div class="input_confirm radius ">
+            <button type="submit" id="submit" name="submit" class="radius font-text-medium text-center btn_green">
+                Entrar
+            </button>
         </div>
 
         <div class="result_message"></div>
