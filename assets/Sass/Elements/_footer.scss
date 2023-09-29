@@ -1,0 +1,76 @@
+@import "../LibScss/index";
+
+
+
+//footer
+.footer_bg{
+    height: auto;
+    margin: 0;
+    width: 100%;
+    .footer_main{
+        align-items: center;
+        display: flex;
+        font-size: 0.8rem;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        padding: 50px 0;
+        width: 80%;
+        ul{
+            display: block;
+            margin: 0 auto;
+            padding: 5px 10px;
+            a{
+                padding: 10px 15px;
+                display: block;
+                text-align: center;
+                position: relative;
+                &::after{
+                    transition: .5s;
+                    background: $green-dark;
+                    content: " ";
+                    height: 1px;
+                    left: 0;
+                    position: absolute;
+                    bottom: 0;
+                    width: 0;
+                }
+                &:hover{
+                    &::after{
+                    width: 100%;
+                    } 
+                } 
+            }
+            .footer_socials{
+                display: inline-block;
+            }
+            .footer_contact{
+                padding: 3px 0;
+            }
+        }
+        li{
+            display: block;
+            // &:hover{
+            //     text-decoration: underline;
+            //     color: #fff;
+            // }
+        }
+    }
+    .footer_down{
+        width: 100%;
+        margin: 0;
+        font-size: 0.8em;
+        background-color: $dark;
+        padding: 20px 0;
+        h1{
+            font-size: 1em;
+            font-weight: bold;
+            text-align: center;
+            color: #fff;
+        }
+        p{
+            font-size: 0.8em;
+            text-align: center;
+            color: #fff;
+        }
+    }
+}

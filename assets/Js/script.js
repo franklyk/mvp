@@ -22,7 +22,7 @@
             $('#container_login').css("pointer-events", "all")
             $('#modal_fade_blur').css("z-index", "5")
             $('#modal_fade_blur').animate({height: "100%"})
-            $('#modal_fade_blur').animate({opacity: "0.3"})
+            $('#modal_fade_blur').animate({opacity: "1"})
         }
     )
 

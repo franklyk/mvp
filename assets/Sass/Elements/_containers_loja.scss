@@ -1,0 +1,79 @@
+@import "../LibScss/index";
+
+
+.container_top{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    width: 80%;
+    .exposed{
+        display: grid;
+        grid-template-areas: 
+        "product_img discount_off discount_off"
+        "product_img discount_off discount_off"
+        "product_title  product_title product_title"
+        // "discount_off old_price old_price"
+        "new_price new_price new_price"
+        "btn_actions prices prices"
+        ;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 1%;
+        width: 100%;
+        .product_img{
+            grid-area: product_img;
+            padding: 2% 5%;
+            width: 250px;
+        }
+        .product_title{
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            grid-area: product_title;
+            padding: 2% 5%;
+        
+        }
+        .product_description{
+            align-items: center;
+            display: grid;
+            justify-content: center;
+            grid-area: product_description;
+            padding: 2% 5%;
+            text-align: justify;
+        }
+        .discount_off{
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            grid-area: discount_off;
+            padding: 2% 5%;
+        
+        }
+        .prices{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            grid-area: prices;
+            padding: 2% 5%;
+            span{
+                padding: 0 10px;
+            }
+        
+        }
+        .btn_actions{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            grid-area: btn_actions;
+            padding: 2% 5%;
+            a{
+                margin: 0 5%;
+                padding: 3% 5%;
+                img{
+                    width: 30px;
+                }
+            }
+        }
+    }
+}
