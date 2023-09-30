@@ -74,8 +74,15 @@ ul, li {
     -webkit-background-image: linear-gradient(to right, $yellow, $red);
     margin: 50px 10%;
 }
+
 .border{
-    border: 1px solid black;
+    border: 1px solid #000000a8;
+}
+.rules{
+    margin: 15px auto;
+}
+.text_shadow{
+    text-shadow: 1px 1px 2px #00000083;
 }
 
 

@@ -3,79 +3,65 @@
 ?>
 
 <body>
-    <footer class="footer_bg">
+    <footer class="footer_bg bgcolor-white-dark">
         <div class="footer_main">
             <ul>
-                <li><a href="#">Categorias</a></li>
-                <li><a href="#">Promoções</a></li>
-                <li><a href="#">Calçados</a></li>
-                <li><a href="#">Roupas</a></li>
+                <li><a href="#" class="color-white font-extra font-weight-medium text_shadow rules">Categorias</a></li>
+                <li><a href="#" class="color-white font-extra font-weight-medium text_shadow rules">Promoções</a></li>
+                <li><a href="#" class="color-white font-extra font-weight-medium text_shadow rules">Calçados</a></li>
+                <li><a href="#" class="color-white font-extra font-weight-medium text_shadow rules">Roupas</a></li>
                 <li>
-                    <a href="#">
+                    <a href="#" class="security">
                         <img src="images/user.png" alt="">
-                        Cadastre-se
+                        <p class="color-white font-extra font-weight-medium text_shadow">Cadastre-se</p>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#" class="security">
                         <img src="images/login.png" alt="">
-                        Entrar
+                        <p class="color-white font-extra font-weight-medium text_shadow">Entrar</p>
                     </a>
                 </li>
             </ul>
 
             <ul>
-               <li><a href="#">Sobre Nós</a></li>
-                <li><a href="#">Política de Privacidade</a></li>
-                <li><a href="#">Troca e Devolução</a></li>
-                <li><a href="#">Formas de Envio</a></li>
-                <li><a href="#">Formas de Pagamento</a></li>
+                <li><a href="#" class="color-white font-extra font-weight-medium text_shadow rules">Sobre Nós</a></li>
+                <li><a href="#" class="color-white font-extra font-weight-medium text_shadow rules">Política de Privacidade</a></li>
+                <li><a href="#" class="color-white font-extra font-weight-medium text_shadow rules">Troca e Devolução</a></li>
+                <li><a href="#" class="color-white font-extra font-weight-medium text_shadow rules">Formas de Envio</a></li>
+                <li><a href="#" class="color-white font-extra font-weight-medium text_shadow rules">Formas de Pagamento</a></li>
             </ul>
 
-            <ul></ul>
-
-            <div>
-                <p class="text-center color_dark font-text-min">
+            <ul >
+                
+                <p class="color-white font-extra font-weight-medium text_shadow">CANAIS DE CONTATO:</p>
+                <div class="footer_contact">
+                    <div>
+                        <a href=""><img src="images/msg.png" alt=""></a>
+                        <p class="color-white font-extra font-weight-medium text_shadow"><?= $mailSite; ?></p>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/whatsapp.png" alt=""></a>
+                        <p class="color-white font-extra font-weight-medium text_shadow"><?= $whatsappSite ?></p>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/telefone.png" alt=""></a>
+                        <p class="color-white font-extra font-weight-medium text_shadow"><?= $phoneSite ?></p>
+                    </div>
+                </div>
+                <p class="color-white font-extra font-weight-medium text_shadow">
                     NOSSAS REDES SOCIAIS:
                 </p>
-                <ul>
+                <div class="footer_socials">
+                    <a href="#"><img src="images/facebook.png" alt=""></a>
+                    <a href="#"><img src="images/instagram.png" alt=""></a>
+                </div>
 
-                </ul>
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-instagram"></i>
-                <p class="font-text-min color_dark text-center">CANAIS DE CONTATO:</p>
-                <i class="fa fa-envelope"></i>
-                <li>
-                    <?= $mailSite; ?>
-                </li>
-                <i class="fab fa-whatsapp"></i>
-                <li>
-                    <?= $whatsappSite ?>
-                </li>
-                <li>
-                    <i class="fa fa-phone"></i>
-                    <?= $phoneSite ?>
-                </li>
-                <p>
-                    <a href="mailto:<?= $mailSite ?>" title="Entre em contato via e-mail" class="radius footer_contact">
-                    </a>
-                </p>
-                <p>
-                    <a href="mailto:<?= $whatsappSite ?>" title="Entre em contato via whatsapp"
-                        class="radius footer_contact">
-                    </a>
-                </p>
-                <p>
-                    <a href="mailto:<?= $phoneSite ?>" title="Entre em contato via telefone"
-                        class="radius footer_contact">
-                    </a>
-                </p>
-            </div>
-
+            </ul>
         </div>
         <div class="footer_down">
             <h1 class="text-center"><?= $titleSite ?> -&copy; <?= date('Y') ?> Todos os direitos Reservados </h1>
-            <p class="text-center"> Desenvolvido por Klykweb/SITES</p>
+            <p class="text-center"> Desenvolvido por KLYK WEB SERVICE</p>
         </div>
     </footer>
 </body>

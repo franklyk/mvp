@@ -1,0 +1,124 @@
+@import "../LibScss/index";
+
+.container_cart{
+    background: $white-light;
+    display: grid;
+    grid-template-areas: 
+    "td_img td_title td_quantity td_price td_actions"
+    ;
+    grid-template-columns: auto;
+    max-height: 80%;
+    left: 50%;
+    overflow-y: scroll;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    width: 60%;
+    .table{
+        border-collapse: collapse;
+        td{
+            border-bottom: 1px solid black;
+        }
+        width: 100%;
+        .td_img{
+            grid-area: td_img;
+            padding: 10px;
+            .img_cart{
+                width: 300px;
+            }
+        }
+        .td_title{
+            grid-area: td_title;
+            text-align: center;
+            width: 300px;
+        }
+        .td_quantity{
+            grid-area: td_quantity;
+            text-align: center;
+            width: 10%;
+            input[type=number]{
+                font-size: 1.2rem;
+                width: 50%
+            }
+        }
+        .td_price{
+            grid-area: td_price;
+            text-align: center;
+            width: 15%;
+        }
+        .td_actions{
+            grid-area: td_actions;
+            width: 15%;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .container_cart{
+//     @include config;
+//     background: $white-light;
+//     display: block;
+//     left: 50%;
+//     margin: auto;
+//     // padding: 20px;
+//     pointer-events: none;
+//     position: fixed;
+//     top: 50%;
+//     transform: translate(-50%, -50%);
+//     // transition: 0.2s;
+//     width: 60%;
+//     z-index: 100;
+//     td{
+//         @include config;
+//         height: 70px !important;
+
+//     }
+//     .table{
+//         @include config;
+//         margin: auto;
+//         width: 100%;
+//     }
+//     .td_img{
+//         padding: 10px;
+//     }
+//     .td_title{
+//         align-items: center;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         width: 300px;
+//     }
+//     .td_quantity{
+//         text-align: center;
+//         width: 20%;
+//         input[type=number]{
+//             width: 30%;
+//         }
+//     }
+//     .td_actions{
+//         width: 10%;
+//     }
+//     .td_price{
+//         text-align: center;
+//     }
+
+// }

@@ -30,12 +30,10 @@
             </p>
 
             <p class="btn_actions">
-                <a href="#" title="Visualize os detalhes deste produto."
-                    class="btn_datails bgcolor-blue color-white radius font-text-extra">
+                <a href="#" class="radius">
                     <img src="images/imagens.png" alt="">
                 </a>
-                <a class="btn_cart bgcolor-green color-white radius font-text-extra" href="#"
-                    title="Adicione este produto ao carrinho.">
+                <a href="#" class="radius">
                     <img src="images/cart.png" alt="">
                 </a>
             </p>

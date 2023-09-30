@@ -5,7 +5,7 @@
 //footer
 .footer_bg{
     height: auto;
-    margin: 0;
+    margin: 50px 0 0 0;
     width: 100%;
     .footer_main{
         align-items: center;
@@ -16,43 +16,54 @@
         padding: 50px 0;
         width: 80%;
         ul{
-            display: block;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
             margin: 0 auto;
             padding: 5px 10px;
-            a{
-                padding: 10px 15px;
-                display: block;
+            p{
                 text-align: center;
-                position: relative;
-                &::after{
-                    transition: .5s;
-                    background: $green-dark;
-                    content: " ";
-                    height: 1px;
-                    left: 0;
-                    position: absolute;
-                    bottom: 0;
-                    width: 0;
-                }
-                &:hover{
-                    &::after{
-                    width: 100%;
-                    } 
-                } 
             }
             .footer_socials{
-                display: inline-block;
+                margin: 10px;
             }
             .footer_contact{
-                padding: 3px 0;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 10px;
             }
-        }
-        li{
-            display: block;
-            // &:hover{
-            //     text-decoration: underline;
-            //     color: #fff;
-            // }
+            img{
+                width: 30px;
+            }
+            li{
+                a{
+                    display: block;
+                }
+            }
+            .security{
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+            }
+            .footer_socials{
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                margin: 10px;
+            }
+            .footer_contact{
+                div{
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin: 10px;
+                }
+            }
         }
     }
     .footer_down{
