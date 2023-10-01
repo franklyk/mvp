@@ -9,7 +9,7 @@
 
     <nav class="menu_container">
         <ul>
-            <li><img src="Images/cart.png" alt=""></li>
+            <li id="btn_open_cart"><img src="Images/cart.png" alt=""></li>
             <li id="btn_open_login"><img src="Images/user.png" alt=""></li>
             <li id="btn_socials_open"><img src="Images/internet.png" alt=""></li>
             <li id="btn_socials_close"><img src="Images/internet.png" alt=""></li>

@@ -51,3 +51,12 @@
             $("#modal_fade_blur").css("z-index", "-1")
         }
     )
+    $("#btn_open_cart").click(
+        function(){
+            $('#container_cart').animate({top: "50%"},700)
+            $('#container_cart').css("pointer-events", "all")
+            $('#modal_fade_blur').css("z-index", "5")
+            $('#modal_fade_blur').animate({height: "100%"})
+            $('#modal_fade_blur').animate({opacity: "1"})
+        }
+    )
