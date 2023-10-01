@@ -204,7 +204,7 @@ ul, li {
 .btn_red {
   background: #de0c11;
   color: #fff;
-  padding: 1% 2%;
+  padding: 10px 20px;
 }
 .btn_red:hover {
   background: #f70e13;
@@ -213,7 +213,7 @@ ul, li {
 .btn_orange {
   background: #ff5e10;
   color: #fff;
-  padding: 1% 2%;
+  padding: 10px 20px;
 }
 .btn_orange:hover {
   background: #cc4b0c;
@@ -617,7 +617,7 @@ ul, li {
 .btn_red {
   background: #de0c11;
   color: #fff;
-  padding: 1% 2%;
+  padding: 10px 20px;
 }
 .btn_red:hover {
   background: #f70e13;
@@ -626,7 +626,7 @@ ul, li {
 .btn_orange {
   background: #ff5e10;
   color: #fff;
-  padding: 1% 2%;
+  padding: 10px 20px;
 }
 .btn_orange:hover {
   background: #cc4b0c;
@@ -976,7 +976,7 @@ ul, li {
 .btn_red {
   background: #de0c11;
   color: #fff;
-  padding: 1% 2%;
+  padding: 10px 20px;
 }
 .btn_red:hover {
   background: #f70e13;
@@ -985,7 +985,7 @@ ul, li {
 .btn_orange {
   background: #ff5e10;
   color: #fff;
-  padding: 1% 2%;
+  padding: 10px 20px;
 }
 .btn_orange:hover {
   background: #cc4b0c;
@@ -1393,7 +1393,7 @@ ul, li {
 .btn_red {
   background: #de0c11;
   color: #fff;
-  padding: 1% 2%;
+  padding: 10px 20px;
 }
 .btn_red:hover {
   background: #f70e13;
@@ -1402,7 +1402,7 @@ ul, li {
 .btn_orange {
   background: #ff5e10;
   color: #fff;
-  padding: 1% 2%;
+  padding: 10px 20px;
 }
 .btn_orange:hover {
   background: #cc4b0c;
@@ -1773,7 +1773,7 @@ ul, li {
 .btn_red {
   background: #de0c11;
   color: #fff;
-  padding: 1% 2%;
+  padding: 10px 20px;
 }
 .btn_red:hover {
   background: #f70e13;
@@ -1782,7 +1782,7 @@ ul, li {
 .btn_orange {
   background: #ff5e10;
   color: #fff;
-  padding: 1% 2%;
+  padding: 10px 20px;
 }
 .btn_orange:hover {
   background: #cc4b0c;
@@ -2166,7 +2166,7 @@ ul, li {
 .btn_red {
   background: #de0c11;
   color: #fff;
-  padding: 1% 2%;
+  padding: 10px 20px;
 }
 .btn_red:hover {
   background: #f70e13;
@@ -2175,7 +2175,7 @@ ul, li {
 .btn_orange {
   background: #ff5e10;
   color: #fff;
-  padding: 1% 2%;
+  padding: 10px 20px;
 }
 .btn_orange:hover {
   background: #cc4b0c;
@@ -2506,7 +2506,7 @@ ul, li {
 .btn_red {
   background: #de0c11;
   color: #fff;
-  padding: 1% 2%;
+  padding: 10px 20px;
 }
 .btn_red:hover {
   background: #f70e13;
@@ -2515,7 +2515,7 @@ ul, li {
 .btn_orange {
   background: #ff5e10;
   color: #fff;
-  padding: 1% 2%;
+  padding: 10px 20px;
 }
 .btn_orange:hover {
   background: #cc4b0c;
@@ -2910,7 +2910,7 @@ ul, li {
 .btn_red {
   background: #de0c11;
   color: #fff;
-  padding: 1% 2%;
+  padding: 10px 20px;
 }
 .btn_red:hover {
   background: #f70e13;
@@ -2919,7 +2919,7 @@ ul, li {
 .btn_orange {
   background: #ff5e10;
   color: #fff;
-  padding: 1% 2%;
+  padding: 10px 20px;
 }
 .btn_orange:hover {
   background: #cc4b0c;
@@ -3033,53 +3033,92 @@ ul, li {
 /* Opção para testes*/
 .container_cart {
   background: #f2f2f2;
-  display: grid;
-  grid-template-areas: "td_img td_title td_quantity td_price td_actions";
-  grid-template-columns: auto;
   max-height: 80%;
   left: 50%;
   overflow-y: scroll;
+  pointer-events: none;
   position: fixed;
   transform: translate(-50%, -50%);
-  top: 50%;
+  top: -100%;
   width: 60%;
+  z-index: 100;
 }
 .container_cart .table {
   border-collapse: collapse;
   width: 100%;
 }
-.container_cart .table td {
+.container_cart .table .title_cart {
+  padding: 5px 0;
+}
+.container_cart .table .thead {
   border-bottom: 1px solid black;
 }
-.container_cart .table .td_img {
-  grid-area: td_img;
-  padding: 10px;
+.container_cart .table .thead tr th {
+  padding: 10px 0;
 }
-.container_cart .table .td_img .img_cart {
-  width: 300px;
-}
-.container_cart .table .td_title {
-  grid-area: td_title;
+.container_cart .table .tbody {
+  border-bottom: 1px solid black;
   text-align: center;
-  width: 300px;
 }
-.container_cart .table .td_quantity {
-  grid-area: td_quantity;
-  text-align: center;
-  width: 10%;
+.container_cart .table .tbody .td_img {
+  padding: 5px;
+  text-align: left;
+  width: 20%;
 }
-.container_cart .table .td_quantity input[type=number] {
-  font-size: 1.2rem;
+.container_cart .table .tbody .td_img img {
+  height: 50%;
+}
+.container_cart .table .tbody .td_product {
   width: 50%;
 }
-.container_cart .table .td_price {
-  grid-area: td_price;
+.container_cart .table .tbody .td_quantity {
   text-align: center;
-  width: 15%;
+  width: 70px;
 }
-.container_cart .table .td_actions {
-  grid-area: td_actions;
-  width: 15%;
+.container_cart .table .tbody .td_quantity input[type=number] {
+  text-align: center;
+  width: 50%;
+}
+.container_cart .table .tbody .td_delete {
+  position: relative;
+}
+.container_cart .table .tbody .td_delete .btn_delete {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 35px;
+  justify-content: center;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 35px;
+}
+.container_cart .table .tbody .td_delete .btn_delete .lines {
+  display: block;
+  height: 2px;
+  transform-origin: center;
+  width: 25px;
+}
+.container_cart .table .tbody .td_delete .btn_delete .line1 {
+  transform: translateY(3px) rotate(-45deg);
+}
+.container_cart .table .tbody .td_delete .btn_delete .line2 {
+  transform: translateY(-4px) rotate(45deg);
+}
+.container_cart .table .tfoot tr td {
+  padding: 10px 0;
+}
+.container_cart .table .tfoot .cupom {
+  width: 50%;
+}
+.container_cart .table .tfoot .td_confirm {
+  text-align: center;
+}
+.container_cart .table .tfoot .total_valor {
+  padding: 10px;
+  text-align: right;
 }
 
 /*# sourceMappingURL=Style.css.map */
