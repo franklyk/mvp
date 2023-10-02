@@ -69,20 +69,21 @@ ul, li {
     -webkit-border-radius: 5px;
 }
 .title-folder{
-    background-image: linear-gradient(to right, $yellow, $red);
-    -moz-background-image: linear-gradient(to right, $yellow, $red);
-    -webkit-background-image: linear-gradient(to right, $yellow, $red);
+    background-image: linear-gradient(to right, $blue, $blue-dark);
+    -moz-background-image: linear-gradient(to right, $blue, $blue-dark);
+    -webkit-background-image: linear-gradient(to right, $blue, $blue-dark);
     margin: 50px 10%;
+    text-indent: 30px;
 }
 
 .border{
-    border: 1px solid #000000a8;
+    border: 1px solid #68686859;
 }
 .rules{
     margin: 15px auto;
 }
 .text_shadow{
-    text-shadow: 1px 1px 2px #00000083;
+    text-shadow: 1px 1px 2px #3b3b3b83;
 }
 
 
@@ -217,7 +218,7 @@ ul, li {
 .btn_dark{
     background: $dark;
     color: $white;
-    padding: 1% 2%;
+    padding: 10px 20px;
     &:hover{
         background: $gray-dark;
     }

@@ -17,8 +17,31 @@
         border-collapse: collapse;
         width: 100%;
         .title_cart{
-            
             padding: 5px 0;
+            .btn_close_container{
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                height: 35px;
+                justify-content: center;
+                position: fixed;
+                right: 0;
+                top: 0;
+                width: 35px;
+                .lines{
+                    display: block;
+                    height: 2px;
+                    transform-origin: center;
+                    width: 25px;
+                }
+                .line1{
+                    transform: translateY(3px) rotate(-45deg);
+                }
+                .line2{
+                    transform: translateY(-4px) rotate(45deg);
+                }
+            }
         }
         .thead{
             border-bottom: 1px solid black;

@@ -10,6 +10,10 @@
     <table class="table">
         <caption class="title_cart color-green-dark">
             <h1>Finalizar compra</h1>
+            <div class="btn_close_container btn_red radius" id="btn_close_cart">
+            <span class="lines line1 bgcolor-white"></span>
+            <span class="lines line2 bgcolor-white"></span>
+        </div>
         </caption>
         <thead class="thead color-green-dark">
             <tr>
@@ -27,7 +31,7 @@
                 </th>
             </tr>
         </thead>
-        <?php for($i = 0; $i < 20; $i++): ?>
+        <?php for($i = 0; $i < 2; $i++): ?>
 
         <tbody class="tbody">
             <tr>
@@ -41,7 +45,7 @@
                     <input type="number" value="1">
                 </td>
                 <td rowspan="3" class="td_value">
-                    R$ 315,00
+                    <span>R$</span>315,00
                 </td>
                 <td rowspan="3" class="td_delete">
                     <div class="btn_delete btn_red radius">
@@ -70,7 +74,7 @@
                 <td rowspan="2">
                     <h3>Total</h3>
                 </td>
-                <td colspan="2" rowspan="2" class="total_valor">R$ 315,00</td>
+                <td colspan="2" rowspan="2" class="total_valor"><span>R$</span>315,00</td>
             </tr>
             <tr>
                 <td colspan="2" class="td_confirm">

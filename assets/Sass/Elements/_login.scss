@@ -6,6 +6,7 @@
     .form_login_user{
         padding-bottom: 20px;
         display: grid;
+        gap: 10px;
         grid-template-areas: 
         "input_email input_email input_email"
         "input_pass input_pass input_pass"
@@ -22,22 +23,27 @@
             grid-area: input_pass;
 
         }
+        .remember{
+            grid-area: remember;
+            margin: 10px 0;
+        }
+        .recovery{
+            grid-area: recovery;
+            margin: 10px 0;
+        }
         .input_confirm{
             align-items: center;
             display: flex;
             grid-area: input_confirm;
-            a{
+            .btn_confirm_login{
                 margin: auto;
-                padding: 5px 10px;
+                padding: 10px auto;
+                width: 100%;
             }
         }
-        .remember{
-            grid-area: remember;
-        }
-        .recovery{
-            grid-area: recovery;
-            
-
-        }
+    }
+    .result_message{
+        height: 10%;
+        width: 100%;
     }
 }

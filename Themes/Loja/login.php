@@ -37,20 +37,20 @@
             <label class="label_checkbox" for="remember">Salvar Senha</label>
         </div>
 
-        <div class="create" id="btn_open_register">
-            <a href="#">Criar Conta</a>
-        </div>
-        <div class="recovery">
+        <div class="recovery" id="btn_open_recovery">
             <a href="#">Esqueceu a senha?</a>
+        </div>
+        <div class="create" id="btn_open_register">
+            <a href="#container_register">Criar Conta</a>
         </div>
 
         <div class="input_confirm radius ">
-            <button type="submit" id="submit" name="submit" class="radius font-text-medium text-center btn_green">
+            <button type="submit" id="submit" name="submit" class="radius font-medium text-center btn_green btn_confirm_login">
                 Entrar
             </button>
         </div>
-
-        <div class="result_message"></div>
-
     </form>
+
+        
+    <div class="result_message border radius"></div>
 </fieldset>

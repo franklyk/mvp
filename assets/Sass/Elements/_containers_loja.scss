@@ -11,11 +11,10 @@
         display: grid;
         grid-template-areas: 
         "product_img discount_off discount_off"
-        "product_img discount_off discount_off"
-        "product_title  product_title product_title"
-        // "discount_off old_price old_price"
-        "new_price new_price new_price"
-        "btn_actions prices prices"
+        "product_img product_title product_title"
+        "product_img  prices prices"
+        "product_img btn_actions btn_actions"
+        // "btn_actions prices prices"
         ;
         grid-template-columns: repeat(3, 1fr);
         padding: 1%;
@@ -32,14 +31,6 @@
             grid-area: product_title;
             padding: 2% 5%;
         
-        }
-        .product_description{
-            align-items: center;
-            display: grid;
-            justify-content: center;
-            grid-area: product_description;
-            padding: 2% 5%;
-            text-align: justify;
         }
         .discount_off{
             align-items: center;
@@ -68,8 +59,8 @@
             grid-area: btn_actions;
             padding: 2% 5%;
             a{
-                margin: 0 5%;
-                padding: 3% 5%;
+                margin: 0 20px;
+                padding: 0 5%;
                 img{
                     width: 50px;
                 }

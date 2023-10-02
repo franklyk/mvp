@@ -1,0 +1,28 @@
+@import "../LibScss/index";
+
+.modal_container{
+    @include config;
+    background: #ccc; 
+    left: 50%;
+    padding: 20px;
+    position: fixed;
+    text-align: center;
+    top: -100%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    z-index: 100;
+    .title_container{
+        margin: 10px 0;
+    }
+    .msg_recovery{
+        margin: 10px 0;
+    }
+    .buttons{
+        margin: 10px 0;
+        padding: 20px 0;
+        width: 100%;
+        button{
+            margin: 0 20px;
+        }
+    }
+}
