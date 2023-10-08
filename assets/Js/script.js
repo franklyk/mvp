@@ -89,6 +89,15 @@ $(document).ready(
             $('#container_new_password').css("pointer-events", "all")
         }
     )
+    $('#btn_close_new_password').click(
+        function(){
+            $('#container_new_password').animate({top: "-100%"},300)
+            $('#container_new_password').css("pointer-events", "none")
+            $('#modal_fade_blur').css("z-index", "-1")
+            $('#modal_fade_blur').animate({height: "0"})
+            $('#modal_fade_blur').animate({opacity: "0"})
+        }
+    )
     $('#recovery_open_register').click(
         function(){
             $('#modal_container_recovery').animate({top: "-100%"},700)

@@ -1,0 +1,48 @@
+@import "../LibScss/index";
+
+// CADASTRO
+.container_address{
+    height: auto;
+    width: 60%;
+    .form_register_address{
+        // @include config;
+        grid-template-areas: 
+        "input_ender input_ender input_cep"
+        "input_num input_compl input_bairro"
+        "input_city input_uf btn_input"
+        ;
+        grid-template-columns: repeat(3, 1fr);
+        // height: auto;
+        .input_ender{
+            grid-area: input_ender;
+        }
+        .input_cep{
+            grid-area: input_cep;
+        }
+        .input_num{
+            grid-area: input_num;
+        }
+        .input_city{
+            grid-area: input_city;
+        }
+        .input_uf{
+            grid-area: input_uf;
+        }
+        .btn_input{
+            align-items: center;
+            display: flex;
+            grid-area: btn_input;
+            justify-content: center;
+            margin-bottom: 10px;
+            padding: 3px 0;
+            text-align: center;
+        }
+        
+    }
+    .result_message{
+        height: 10%;
+        text-align: center;
+        width: 100%;
+    }
+}
+
