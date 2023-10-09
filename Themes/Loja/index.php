@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <head>
 <?php 
-    require "Core/Ctdb.php";
+    include_once "Core/Ctdb.php";
 ?>
 </head>
 <body>
-    <?php include "header.php"; ?> 
-    <?php include "checklist.php"; ?>
-    <?php include "pages-container/container-top.php"; ?> 
-    <?php include "pages-container/container-bestsellers.php"; ?> 
-    <?php include "pages-container/container-banner-small.php"; ?> 
-    <?php include "pages-container/container-foryou.php"; ?> 
-    <?php include "pages-container/container-thebest.php"; ?> 
-    <?php include "footer.php"; ?> 
+    <?php include_once "header.php"; ?> 
+    <?php include_once "cart.php"; ?>
+    <?php include_once "pages-container/container-top.php"; ?> 
+    <?php include_once "pages-container/container-bestsellers.php"; ?> 
+    <?php include_once "pages-container/container-banner-small.php"; ?> 
+    <?php include_once "pages-container/container-foryou.php"; ?> 
+    <?php include_once "pages-container/container-thebest.php"; ?> 
+    <?php include_once "footer.php"; ?> 
 
 
 

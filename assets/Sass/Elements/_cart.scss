@@ -1,4 +1,4 @@
-@import "../LibScss/index";
+@use "../LibScss";
 
 .container_cart{
     
@@ -6,10 +6,10 @@
     max-height: 80%;
     left: 50%;
     overflow-y: scroll;
-    pointer-events: none;
+    pointer-events: all;
     position: fixed;
     transform: translate(-50%, -50%);
-    top: -100%;
+    top: 50%;
     width: 60%;
     z-index: 100;
     .table{

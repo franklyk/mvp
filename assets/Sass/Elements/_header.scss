@@ -1,5 +1,4 @@
 .header_container{
-    // @include config;
     display: flex;
     height: auto;
     justify-content: space-between;
@@ -15,7 +14,6 @@
         }
     }
     .form_search{
-        // @include config;
         align-items: center;
         display: flex;
         font-size: 1rem;
@@ -57,7 +55,7 @@
                 // margin: 0 5px;
                 padding: 3px 5px;
                 img{
-                    @include config;
+                    // @include config;
                     width: 50px;
                     cursor: pointer;
                 }
@@ -65,7 +63,7 @@
         }
     }
     .socials_container{
-        @include config;
+        // @include config;
         display: flex;
         justify-content: center;
         height: 260px;

@@ -31,7 +31,7 @@
                 </th>
             </tr>
         </thead>
-        <?php for($i = 0; $i < 2; $i++): ?>
+        <?php for($i = 0; $i < 20; $i++): ?>
 
         <tbody class="tbody">
             <tr>

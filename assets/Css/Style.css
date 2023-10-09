@@ -387,12 +387,10 @@ ul, li {
   padding: 3px 5px;
 }
 .header_container .menu_container ul li img {
-  border: 1px solid black;
   width: 50px;
   cursor: pointer;
 }
 .header_container .socials_container {
-  border: 1px solid black;
   display: flex;
   justify-content: center;
   height: 260px;
@@ -1115,7 +1113,6 @@ ul, li {
 
 /* Opção para testes*/
 .container_checklist {
-  background: #0aaaff;
   max-height: 80%;
   left: 50%;
   overflow-y: scroll;
@@ -1238,6 +1235,7 @@ ul, li {
   background: transparent;
   width: 10px;
 }
+
 ::-webkit-scrollbar-track:hover {
   background: #fff;
 }
@@ -1249,6 +1247,7 @@ ul, li {
   cursor: pointer;
   width: 10px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(141, 139, 139, 0.5333333333);
 }
@@ -1420,6 +1419,7 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
+
 .btn_green:hover {
   background: #247c40;
 }
@@ -1429,6 +1429,7 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
+
 .btn_blue:hover {
   background: #09316f;
 }
@@ -1438,9 +1439,11 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
+
 .btn_red:hover {
   background: #de0c11;
 }
+
 .btn_red:hover .lines {
   background: #fff;
 }
@@ -1450,6 +1453,7 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
+
 .btn_orange:hover {
   background: #cc4b0c;
 }
@@ -1459,6 +1463,7 @@ ul, li {
   color: #fff;
   padding: 1% 2%;
 }
+
 .btn_gray:hover {
   background: #8c8989;
 }
@@ -1468,6 +1473,7 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
+
 .btn_dark:hover {
   background: #8c8989;
 }
@@ -1966,6 +1972,7 @@ ul, li {
   background: transparent;
   width: 10px;
 }
+
 ::-webkit-scrollbar-track:hover {
   background: #fff;
 }
@@ -1977,6 +1984,7 @@ ul, li {
   cursor: pointer;
   width: 10px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(141, 139, 139, 0.5333333333);
 }
@@ -2148,6 +2156,7 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
+
 .btn_green:hover {
   background: #247c40;
 }
@@ -2157,6 +2166,7 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
+
 .btn_blue:hover {
   background: #09316f;
 }
@@ -2166,9 +2176,11 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
+
 .btn_red:hover {
   background: #de0c11;
 }
+
 .btn_red:hover .lines {
   background: #fff;
 }
@@ -2178,6 +2190,7 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
+
 .btn_orange:hover {
   background: #cc4b0c;
 }
@@ -2187,6 +2200,7 @@ ul, li {
   color: #fff;
   padding: 1% 2%;
 }
+
 .btn_gray:hover {
   background: #8c8989;
 }
@@ -2196,6 +2210,7 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
+
 .btn_dark:hover {
   background: #8c8989;
 }
@@ -2326,6 +2341,7 @@ ul, li {
   background: transparent;
   width: 10px;
 }
+
 ::-webkit-scrollbar-track:hover {
   background: #fff;
 }
@@ -2337,6 +2353,7 @@ ul, li {
   cursor: pointer;
   width: 10px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(141, 139, 139, 0.5333333333);
 }
@@ -2508,6 +2525,7 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
+
 .btn_green:hover {
   background: #247c40;
 }
@@ -2517,6 +2535,7 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
+
 .btn_blue:hover {
   background: #09316f;
 }
@@ -2526,9 +2545,11 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
+
 .btn_red:hover {
   background: #de0c11;
 }
+
 .btn_red:hover .lines {
   background: #fff;
 }
@@ -2538,6 +2559,7 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
+
 .btn_orange:hover {
   background: #cc4b0c;
 }
@@ -2547,6 +2569,7 @@ ul, li {
   color: #fff;
   padding: 1% 2%;
 }
+
 .btn_gray:hover {
   background: #8c8989;
 }
@@ -2556,6 +2579,7 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
+
 .btn_dark:hover {
   background: #8c8989;
 }
@@ -2746,6 +2770,7 @@ ul, li {
   background: transparent;
   width: 10px;
 }
+
 ::-webkit-scrollbar-track:hover {
   background: #fff;
 }
@@ -2757,6 +2782,7 @@ ul, li {
   cursor: pointer;
   width: 10px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(141, 139, 139, 0.5333333333);
 }
@@ -2928,6 +2954,7 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
+
 .btn_green:hover {
   background: #247c40;
 }
@@ -2937,6 +2964,7 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
+
 .btn_blue:hover {
   background: #09316f;
 }
@@ -2946,9 +2974,11 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
+
 .btn_red:hover {
   background: #de0c11;
 }
+
 .btn_red:hover .lines {
   background: #fff;
 }
@@ -2958,6 +2988,7 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
+
 .btn_orange:hover {
   background: #cc4b0c;
 }
@@ -2967,6 +2998,7 @@ ul, li {
   color: #fff;
   padding: 1% 2%;
 }
+
 .btn_gray:hover {
   background: #8c8989;
 }
@@ -2976,6 +3008,7 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
+
 .btn_dark:hover {
   background: #8c8989;
 }
@@ -3130,6 +3163,7 @@ ul, li {
   background: transparent;
   width: 10px;
 }
+
 ::-webkit-scrollbar-track:hover {
   background: #fff;
 }
@@ -3141,6 +3175,7 @@ ul, li {
   cursor: pointer;
   width: 10px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(141, 139, 139, 0.5333333333);
 }
@@ -3312,6 +3347,7 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
+
 .btn_green:hover {
   background: #247c40;
 }
@@ -3321,6 +3357,7 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
+
 .btn_blue:hover {
   background: #09316f;
 }
@@ -3330,9 +3367,11 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
+
 .btn_red:hover {
   background: #de0c11;
 }
+
 .btn_red:hover .lines {
   background: #fff;
 }
@@ -3342,6 +3381,7 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
+
 .btn_orange:hover {
   background: #cc4b0c;
 }
@@ -3351,6 +3391,7 @@ ul, li {
   color: #fff;
   padding: 1% 2%;
 }
+
 .btn_gray:hover {
   background: #8c8989;
 }
@@ -3360,6 +3401,7 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
+
 .btn_dark:hover {
   background: #8c8989;
 }
@@ -3457,10 +3499,10 @@ ul, li {
   max-height: 80%;
   left: 50%;
   overflow-y: scroll;
-  pointer-events: none;
+  pointer-events: all;
   position: fixed;
   transform: translate(-50%, -50%);
-  top: -100%;
+  top: 50%;
   width: 60%;
   z-index: 100;
 }
@@ -3574,6 +3616,7 @@ ul, li {
   background: transparent;
   width: 10px;
 }
+
 ::-webkit-scrollbar-track:hover {
   background: #fff;
 }
@@ -3585,6 +3628,7 @@ ul, li {
   cursor: pointer;
   width: 10px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(141, 139, 139, 0.5333333333);
 }
@@ -3756,6 +3800,7 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
+
 .btn_green:hover {
   background: #247c40;
 }
@@ -3765,6 +3810,7 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
+
 .btn_blue:hover {
   background: #09316f;
 }
@@ -3774,9 +3820,11 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
+
 .btn_red:hover {
   background: #de0c11;
 }
+
 .btn_red:hover .lines {
   background: #fff;
 }
@@ -3786,6 +3834,7 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
+
 .btn_orange:hover {
   background: #cc4b0c;
 }
@@ -3795,6 +3844,7 @@ ul, li {
   color: #fff;
   padding: 1% 2%;
 }
+
 .btn_gray:hover {
   background: #8c8989;
 }
@@ -3804,6 +3854,7 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
+
 .btn_dark:hover {
   background: #8c8989;
 }
@@ -3918,6 +3969,7 @@ ul, li {
   background: transparent;
   width: 10px;
 }
+
 ::-webkit-scrollbar-track:hover {
   background: #fff;
 }
@@ -3929,6 +3981,7 @@ ul, li {
   cursor: pointer;
   width: 10px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(141, 139, 139, 0.5333333333);
 }
@@ -4100,6 +4153,7 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
+
 .btn_green:hover {
   background: #247c40;
 }
@@ -4109,6 +4163,7 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
+
 .btn_blue:hover {
   background: #09316f;
 }
@@ -4118,9 +4173,11 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
+
 .btn_red:hover {
   background: #de0c11;
 }
+
 .btn_red:hover .lines {
   background: #fff;
 }
@@ -4130,6 +4187,7 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
+
 .btn_orange:hover {
   background: #cc4b0c;
 }
@@ -4139,6 +4197,7 @@ ul, li {
   color: #fff;
   padding: 1% 2%;
 }
+
 .btn_gray:hover {
   background: #8c8989;
 }
@@ -4148,6 +4207,7 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
+
 .btn_dark:hover {
   background: #8c8989;
 }
