@@ -1113,6 +1113,7 @@ ul, li {
 
 /* Opção para testes*/
 .container_checklist {
+  background: #f2f2f2;
   max-height: 80%;
   left: 50%;
   overflow-y: scroll;
@@ -1129,10 +1130,10 @@ ul, li {
   border-collapse: collapse;
   width: 100%;
 }
-.container_checklist .table .title_cart {
+.container_checklist .table .title_checklist {
   padding: 5px 0;
 }
-.container_checklist .table .title_cart .btn_close_container {
+.container_checklist .table .title_checklist .btn_close_container {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -1144,16 +1145,16 @@ ul, li {
   top: 0;
   width: 35px;
 }
-.container_checklist .table .title_cart .btn_close_container .lines {
+.container_checklist .table .title_checklist .btn_close_container .lines {
   display: block;
   height: 2px;
   transform-origin: center;
   width: 25px;
 }
-.container_checklist .table .title_cart .btn_close_container .line1 {
+.container_checklist .table .title_checklist .btn_close_container .line1 {
   transform: translateY(3px) rotate(-45deg);
 }
-.container_checklist .table .title_cart .btn_close_container .line2 {
+.container_checklist .table .title_checklist .btn_close_container .line2 {
   transform: translateY(-4px) rotate(45deg);
 }
 .container_checklist .table .thead {
@@ -1185,46 +1186,26 @@ ul, li {
   text-align: center;
   width: 50%;
 }
-.container_checklist .table .tbody .td_delete {
-  position: relative;
-}
-.container_checklist .table .tbody .td_delete .btn_delete {
+.container_checklist .details_checklist .frete_checklist,
+.container_checklist .details_checklist .desconto_cheklist,
+.container_checklist .details_checklist .total_checklist {
   align-items: center;
   display: flex;
-  flex-direction: column;
-  gap: 5px;
-  height: 35px;
-  justify-content: center;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 35px;
+  justify-content: space-between;
+  margin-top: 20px;
 }
-.container_checklist .table .tbody .td_delete .btn_delete .lines {
-  display: block;
-  height: 2px;
-  transform-origin: center;
-  width: 25px;
-}
-.container_checklist .table .tbody .td_delete .btn_delete .line1 {
-  transform: translateY(3px) rotate(-45deg);
-}
-.container_checklist .table .tbody .td_delete .btn_delete .line2 {
-  transform: translateY(-4px) rotate(45deg);
-}
-.container_checklist .table .tfoot tr td {
-  padding: 10px 0;
-}
-.container_checklist .table .tfoot .cupom {
-  width: 50%;
-}
-.container_checklist .table .tfoot .td_confirm {
-  text-align: center;
-}
-.container_checklist .table .tfoot .total_valor {
+.container_checklist .container_address_checklist {
+  margin: 20px 0;
   padding: 10px;
-  text-align: right;
+}
+.container_checklist .container_address_checklist h2 {
+  margin: 10px 0;
+}
+.container_checklist .btns_checklist {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 0;
 }
 
 ::-webkit-scrollbar {
@@ -2341,7 +2322,6 @@ ul, li {
   background: transparent;
   width: 10px;
 }
-
 ::-webkit-scrollbar-track:hover {
   background: #fff;
 }
@@ -2353,7 +2333,6 @@ ul, li {
   cursor: pointer;
   width: 10px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(141, 139, 139, 0.5333333333);
 }
@@ -2525,7 +2504,6 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
-
 .btn_green:hover {
   background: #247c40;
 }
@@ -2535,7 +2513,6 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
-
 .btn_blue:hover {
   background: #09316f;
 }
@@ -2545,11 +2522,9 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
-
 .btn_red:hover {
   background: #de0c11;
 }
-
 .btn_red:hover .lines {
   background: #fff;
 }
@@ -2559,7 +2534,6 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
-
 .btn_orange:hover {
   background: #cc4b0c;
 }
@@ -2569,7 +2543,6 @@ ul, li {
   color: #fff;
   padding: 1% 2%;
 }
-
 .btn_gray:hover {
   background: #8c8989;
 }
@@ -2579,7 +2552,6 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
-
 .btn_dark:hover {
   background: #8c8989;
 }
@@ -3499,6 +3471,7 @@ ul, li {
   max-height: 80%;
   left: 50%;
   overflow-y: scroll;
+  padding: 30px;
   pointer-events: all;
   position: fixed;
   transform: translate(-50%, -50%);
@@ -3594,18 +3567,42 @@ ul, li {
 .container_cart .table .tbody .td_delete .btn_delete .line2 {
   transform: translateY(-4px) rotate(45deg);
 }
-.container_cart .table .tfoot tr td {
-  padding: 10px 0;
+.container_cart .finality {
+  display: grid;
+  gap: 10px;
+  grid-template-areas: "container_frete container_frete container_frete container_frete" "cupom_discount cupom_discount cupom_discount cupom_discount" "frete_value frete_value frete_value frete_value" "total_value total_value total_value total_value" "... btns btns btns";
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 5%;
 }
-.container_cart .table .tfoot .cupom {
+.container_cart .finality .container_frete, .container_cart .finality .choose_shipping, .container_cart .finality .cupom_discount, .container_cart .finality .frete_value, .container_cart .finality .total_value, .container_cart .finality .btns {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.container_cart .finality .container_frete {
+  grid-area: container_frete;
+  height: auto;
+}
+.container_cart .finality .container_frete .choose_shipping {
+  justify-content: space-evenly;
   width: 50%;
 }
-.container_cart .table .tfoot .td_confirm {
-  text-align: center;
+.container_cart .finality .cupom_discount {
+  grid-area: cupom_discount;
+  width: 100%;
 }
-.container_cart .table .tfoot .total_valor {
-  padding: 10px;
-  text-align: right;
+.container_cart .finality .cupom_discount input {
+  height: 100%;
+  width: 60%;
+}
+.container_cart .finality .frete_value {
+  grid-area: frete_value;
+}
+.container_cart .finality .total_value {
+  grid-area: total_value;
+}
+.container_cart .finality .btns {
+  grid-area: btns;
 }
 
 ::-webkit-scrollbar {

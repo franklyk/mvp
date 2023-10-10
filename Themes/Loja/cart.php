@@ -31,7 +31,7 @@
                 </th>
             </tr>
         </thead>
-        <?php for($i = 0; $i < 20; $i++): ?>
+        <?php for($i = 0; $i < 2; $i++): ?>
 
         <tbody class="tbody">
             <tr>
@@ -64,53 +64,38 @@
             </td>
         </tbody>
         <?php endfor; ?>
-
-        <tfoot class="tfoot">
-            <tr>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <input type="text" class="font-medium border radius cupom" placeholder="Cupom de desconto">
-                </td>
-                <td colspan="2"><input type="text" class="font-medium border radius cupom"
-                        placeholder="Cupom de desconto"></td>
-                <button class="btn_search radius" name="btn_discount" id="btn_discount">
-                    <i class="fa fa-percent"></i> Aplicar Desconto</button>
-
-                <td rowspan="2">
-                    <h3>Total</h3>
-                </td>
-                <td colspan="2" rowspan="2" class="total_valor"><span>R$</span>315,00</td>
-                <form method="post" id="choose_shipping">
-                    <input type="radio" name="shipping_option" id="shipping_option" value="1"> <span
-                        class="font-text-sub">Sedex: </span>
-                    <span class="font-text-sub">R$ 30,00 - 7 dias úteis</span><br>
-
-                    <input type="radio" name="shipping_option" id="shipping_option" value="2"> <span
-                        class="font-text-sub">Pac: </span>
-                    <span class="font-text-sub">R$ 20,00 - 15 dias úteis</span><br>
-                    <p class="text-left font-text-sub font-weight-medium title_table">Custo do Frete:</p>
-                    <input type="text" id="input_shipping" name="input_shipping" class="radius zipcode">
-
-                    <button class="btn_search radius" name="btn_shipping" id="btn_shipping">
-                        <i class="fa fa-truck"></i> Calcular</button>
-                    <p class="text-left font-text-sub font-weight-medium title_table">Cupom de Desconto:</p>
-
-                    <form method="post" id="form_discount">
-                        <input type="text" id="input_discount" name="input_discount" class="radius">
-
-
-                    </form>
-                </form>
-            <tr>
-                <td colspan="2" class="td_confirm">
-                    <button class="btn_orange border radius">Continuar a Compra</button>
-                    <button class="btn_green border radius">COMPRAR</button>
-                </td>
-                <td>
-                </td>
-            </tr>
-        </tfoot>
     </table>
+    <div class="finality">
+        <fieldset class="container_frete">
+            <h3 class="color-green-dark font-medium">Calcular Frete</h3>
+            <form method="post" class="choose_shipping" id="choose_shipping">
+                <div>
+                    <input type="radio" name="shipping_option" id="shipping_option_pac" value="1" checked>
+                    <label for="shipping_option" class="font-medium font-weight-medium">Pac</label>
+                </div>
+                <div>
+                    <input type="radio" name="shipping_option" id="shipping_option_sedex" value="2">
+                    <label for="shipping_option" class="font-medium font-weight-medium">Sedex</label>
+                </div>
+            </form>
+        </fieldset>
+        <div class="cupom_discount">
+            <label for="cupom" class="font-medium font-weight-medium">Cupom de Desconto</label>
+            <input type="password" class="cupom font-medium border" name="cupom" id="cupom">
+        </div>
+        <div class="frete_value">
+            <h3>Frete R$</h3>
+            <span>30,00</span>
+        </div>
+        <div class="total_value">
+            <h3 class="total_total">Total R$:</h3>
+            <span class="value_total">315,00</span>
+        </div>
+        <div class="btns">
+            <!-- <button class="btn_blue">Calcular</button> -->
+            <button class="btn_orange border">Continuar a Compra</button>
+            <button class="btn_blue border">Finalizar</button>
+        </div>
+    </div>
 
 </div>

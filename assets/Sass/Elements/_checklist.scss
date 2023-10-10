@@ -2,7 +2,7 @@
 
 .container_checklist{
     
-    // background: $blue;
+    background: $white-light;
     max-height: 80%;
     left: 50%;
     overflow-y: scroll;
@@ -17,7 +17,7 @@
         background: $white-light;
         border-collapse: collapse;
         width: 100%;
-        .title_cart{
+        .title_checklist{
             padding: 5px 0;
             .btn_close_container{
                 align-items: center;
@@ -81,54 +81,31 @@
                     width: 50%
                 }
             }
-
-            .td_delete{
-                
-                position: relative;
-                .btn_delete{
-                    align-items: center;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 5px;
-                    height: 35px;
-                    justify-content: center;
-                    left: 50%;
-                    position: absolute;
-                    top: 50%;
-                    transform: translate(-50%, -50%);
-                    width: 35px;
-                    .lines{
-                        display: block;
-                        height: 2px;
-                        transform-origin: center;
-                        width: 25px;
-                    }
-                    .line1{
-                        transform: translateY(3px) rotate(-45deg);
-                    }
-                    .line2{
-                        transform: translateY(-4px) rotate(45deg);
-                    }
-                }
-            }
         }
-        .tfoot{
-            tr{
-                td{
-                    padding: 10px 0;
-                }
-            }
-            .cupom{
-                width: 50%;
-            }
-            .td_confirm{
-                text-align: center
-            }
-            .total_valor{
-                padding: 10px;
-                text-align: right;
-            }
+    }
+    .details_checklist{
+        .frete_checklist,
+        .desconto_cheklist,
+        .total_checklist{
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
         }
+    }
+    .container_address_checklist{
+        margin: 20px 0;
+        padding: 10px;
+        h2{
+            margin: 10px 0;
+        }
+    }
+    .btns_checklist{
+        align-items: center;
+        display: flex;
+        // gap: 20px;
+        justify-content: space-evenly;
+        margin: 20px 0;
     }
 }
 

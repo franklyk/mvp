@@ -2,10 +2,12 @@
 
 .container_cart{
     
+
     background: $white-light;
     max-height: 80%;
     left: 50%;
     overflow-y: scroll;
+    padding: 30px;
     pointer-events: all;
     position: fixed;
     transform: translate(-50%, -50%);
@@ -14,6 +16,7 @@
     z-index: 100;
     .table{
         
+
         border-collapse: collapse;
         width: 100%;
         .title_cart{
@@ -111,22 +114,50 @@
                 }
             }
         }
-        .tfoot{
-            tr{
-                td{
-                    padding: 10px 0;
-                }
-            }
-            .cupom{
+    }
+    .finality{
+        display: grid;
+        gap: 10px;
+        grid-template-areas: 
+        "container_frete container_frete container_frete container_frete"
+        "cupom_discount cupom_discount cupom_discount cupom_discount"
+        "frete_value frete_value frete_value frete_value"
+        "total_value total_value total_value total_value"
+        "... btns btns btns"
+        ;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 5%;
+        .container_frete, .choose_shipping, .cupom_discount, .frete_value, .total_value,.btns{
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            // padding: 0 20px;
+        }
+        .container_frete{
+            grid-area: container_frete;
+            height: auto;
+            .choose_shipping{
+                justify-content: space-evenly;
                 width: 50%;
             }
-            .td_confirm{
-                text-align: center
+
+        }
+        .cupom_discount{
+            grid-area: cupom_discount;
+            width: 100%;
+            input{
+                height: 100%;
+                width: 60%;
             }
-            .total_valor{
-                padding: 10px;
-                text-align: right;
-            }
+        }
+        .frete_value{
+            grid-area: frete_value;
+        }
+        .total_value{
+            grid-area: total_value;
+        }
+        .btns{
+            grid-area: btns;
         }
     }
 }
