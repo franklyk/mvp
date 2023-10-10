@@ -6,7 +6,7 @@
 
 <div class="modal_fade_blur" id="modal_fade_blur"></div>
 
-<div class="modal_container border radius" id="modal_container_recovery">
+<div class="container_modal border radius" id="modal_container_recovery">
     <h1 class="title_container color-dark text_shadow">Recuperar Senha</h1>
     <p class="msg_recovery font-medium color-dark text_shadow">Clique em <strong class="color-dark">Enviar</strong> para receber um link de recuperação de senha, ou <strong class="color-dark">Cadastrar</strong> para fazer o seu cadastro...</p>
     

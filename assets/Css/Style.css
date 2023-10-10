@@ -2659,7 +2659,7 @@ ul, li {
   z-index: -1;
 }
 
-.modal_form_container {
+.container_modal {
   background: #f2f2f2;
   display: block;
   gap: 10px;
@@ -2667,19 +2667,19 @@ ul, li {
   padding: 20px;
   pointer-events: all;
   position: fixed;
-  top: -100%;
+  top: 50%;
   transform: translate(-50%, -50%);
   z-index: 100;
 }
-.modal_form_container .header_form {
+.container_modal .reader_container {
   display: flex;
   width: 100%;
 }
-.modal_form_container .header_form .title_form {
+.container_modal .reader_container .title_container {
   margin: 10px auto;
   text-align: center;
 }
-.modal_form_container .header_form .btn_close_container {
+.container_modal .reader_container .btn_close_container {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -2691,30 +2691,30 @@ ul, li {
   top: 0;
   width: 35px;
 }
-.modal_form_container .header_form .btn_close_container .lines {
+.container_modal .reader_container .btn_close_container .lines {
   display: block;
   height: 4px;
   transform-origin: center;
   width: 25px;
 }
-.modal_form_container .header_form .btn_close_container .line1 {
+.container_modal .reader_container .btn_close_container .line1 {
   transform: translateY(5px) rotate(-45deg);
 }
-.modal_form_container .header_form .btn_close_container .line2 {
+.container_modal .reader_container .btn_close_container .line2 {
   transform: translateY(-5px) rotate(45deg);
 }
-.modal_form_container .form_general {
+.container_modal .form_general {
   align-content: center;
   display: grid;
   gap: 25px;
   margin: 10px;
 }
-.modal_form_container .form_general .div_input {
+.container_modal .form_general .div_input {
   height: 40px;
   position: relative;
   width: 100%;
 }
-.modal_form_container .form_general .div_input .input_data {
+.container_modal .form_general .div_input .input_data {
   background: none;
   bottom: 0;
   font-size: 1rem;
@@ -2723,11 +2723,11 @@ ul, li {
   position: absolute;
   width: 100%;
 }
-.modal_form_container .form_general .div_input .input_data:focus ~ .label_input, .modal_form_container .form_general .div_input .input_data:valid ~ .label_input {
+.container_modal .form_general .div_input .input_data:focus ~ .label_input, .container_modal .form_general .div_input .input_data:valid ~ .label_input {
   background: #f2f2f2;
   transform: translateY(-35px);
 }
-.modal_form_container .form_general .div_input .label_input {
+.container_modal .form_general .div_input .label_input {
   left: 10px;
   position: absolute;
   transition: 0.5s;
@@ -3603,6 +3603,16 @@ ul, li {
 }
 .container_cart .finality .btns {
   grid-area: btns;
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.btnThanks {
+  float: right;
+  margin: 20px auto;
 }
 
 ::-webkit-scrollbar {

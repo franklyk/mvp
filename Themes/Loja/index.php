@@ -6,7 +6,7 @@
 </head>
 <body>
     <?php include_once "header.php"; ?> 
-    <?php include_once "checklist.php"; ?>
+    <?php include_once "thanks.php"; ?> 
     <?php include_once "pages-container/container-top.php"; ?> 
     <?php include_once "pages-container/container-bestsellers.php"; ?> 
     <?php include_once "pages-container/container-banner-small.php"; ?> 

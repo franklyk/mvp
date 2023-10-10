@@ -15,7 +15,7 @@
     z-index: -1;
 }
   
-.modal_form_container {
+.container_modal {
 background: $white-light;
 display: block;
 gap: 10px;
@@ -23,13 +23,13 @@ left: 50%;
 padding: 20px;
 pointer-events: all;
 position: fixed;
-top: -100%;
+top: 50%;
 transform: translate(-50%, -50%);
 z-index: 100;
-    .header_form{
+    .reader_container{
         display: flex;
         width: 100%;
-        .title_form{
+        .title_container{
             margin: 10px auto;
             text-align: center;
         }

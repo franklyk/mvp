@@ -4,7 +4,7 @@
 
 <div class="modal_fade_blur"></div>
 
-<fieldset class="modal_form_container border radius container_address" id="container_address">
+<fieldset class="container_modal border radius container_address" id="container_address">
 
     <div class="header_address header_form">
 

@@ -4,7 +4,7 @@
 
 <div class="modal_fade_blur" id="modal_fade_blur"></div>
 
-<fieldset class="modal_form_container border radius container_new_password" id="container_new_password">
+<fieldset class="container_modal border radius container_new_password" id="container_new_password">
 
     <div class="header_form">
 
