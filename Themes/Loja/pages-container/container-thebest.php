@@ -6,7 +6,7 @@
 
     <h1 class="font-text-max font-weight-max color-white text-margin title-folder "> Produtos em Destaque:</h1>
 
-    <div class="container_top radius">
+    <div class="container_exposed radius">
 
         <?php for($i=0; $i < 6; $i++): ?>
 

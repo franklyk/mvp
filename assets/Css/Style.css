@@ -3976,7 +3976,6 @@ ul, li {
   background: transparent;
   width: 10px;
 }
-
 ::-webkit-scrollbar-track:hover {
   background: #fff;
 }
@@ -3988,7 +3987,6 @@ ul, li {
   cursor: pointer;
   width: 10px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(141, 139, 139, 0.5333333333);
 }
@@ -4160,7 +4158,6 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
-
 .btn_green:hover {
   background: #247c40;
 }
@@ -4170,7 +4167,6 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
-
 .btn_blue:hover {
   background: #09316f;
 }
@@ -4180,11 +4176,9 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
-
 .btn_red:hover {
   background: #de0c11;
 }
-
 .btn_red:hover .lines {
   background: #fff;
 }
@@ -4194,7 +4188,6 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
-
 .btn_orange:hover {
   background: #cc4b0c;
 }
@@ -4204,7 +4197,6 @@ ul, li {
   color: #fff;
   padding: 1% 2%;
 }
-
 .btn_gray:hover {
   background: #8c8989;
 }
@@ -4214,7 +4206,6 @@ ul, li {
   color: #fff;
   padding: 10px 20px;
 }
-
 .btn_dark:hover {
   background: #8c8989;
 }
@@ -4307,33 +4298,33 @@ ul, li {
 }
 
 /* Opção para testes*/
-.container_top {
+.container_exposed {
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(2, 1fr);
   margin: auto;
   width: 80%;
 }
-.container_top .exposed {
+.container_exposed .exposed {
   display: grid;
   grid-template-areas: "product_img discount_off discount_off" "product_img product_title product_title" "product_img  prices prices" "product_img btn_actions btn_actions";
   grid-template-columns: repeat(3, 1fr);
   padding: 1%;
   width: 100%;
 }
-.container_top .exposed .product_img {
+.container_exposed .exposed .product_img {
   grid-area: product_img;
   padding: 2% 5%;
   width: 250px;
 }
-.container_top .exposed .product_title {
+.container_exposed .exposed .product_title {
   display: grid;
   align-items: center;
   justify-content: center;
   grid-area: product_title;
   padding: 2% 5%;
 }
-.container_top .exposed .discount_off {
+.container_exposed .exposed .discount_off {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -4341,28 +4332,28 @@ ul, li {
   grid-area: discount_off;
   padding: 2% 5%;
 }
-.container_top .exposed .prices {
+.container_exposed .exposed .prices {
   display: flex;
   align-items: center;
   justify-content: center;
   grid-area: prices;
   padding: 2% 5%;
 }
-.container_top .exposed .prices span {
+.container_exposed .exposed .prices span {
   padding: 0 10px;
 }
-.container_top .exposed .btn_actions {
+.container_exposed .exposed .btn_actions {
   display: flex;
   align-items: center;
   justify-content: center;
   grid-area: btn_actions;
   padding: 2% 5%;
 }
-.container_top .exposed .btn_actions a {
+.container_exposed .exposed .btn_actions a {
   margin: 0 20px;
   padding: 0 5%;
 }
-.container_top .exposed .btn_actions a img {
+.container_exposed .exposed .btn_actions a img {
   width: 50px;
 }
 

@@ -3,13 +3,13 @@
         <img src="Images/k.png">
     </a>
     <form class="form_search radius font-max">
-        <button type="button" class="btn_form_search btn_blue border radius">OK</button>
-        <input type="text" class="input_form_search border radius " name="input_form_search" id="input_form_search">
+        <button type="button" class="btn_form_search btn_blue border">OK</button>
+        <input type="text" class="input_form_search border" name="input_form_search" id="input_form_search">
     </form>
 
     <nav class="menu_container">
         <ul>
-            <button type="button" class="btn_blue" id="open_address">Address</button>
+            <!-- <button type="button" class="btn_blue" id="open_address">Address</button> -->
             <li id="btn_open_cart"><img src="Images/cart.png" alt=""></li>
             <li id="btn_open_login"><img src="Images/user.png" alt=""></li>
             <li id="btn_socials_open"><img src="Images/internet.png" alt=""></li>

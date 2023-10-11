@@ -1,7 +1,7 @@
-@use "../LibScss";
+@import "../LibScss/index";
 
 
-.container_top{
+.container_exposed{
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(2, 1fr);
