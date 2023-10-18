@@ -1,6 +1,3 @@
-<?php
-require 'Core/Ctdb.php';
-?>
 
 <div class="container_checklist" id="container_checklist">
     <table class="table">
@@ -89,3 +86,4 @@ require 'Core/Ctdb.php';
         <button class="btn_blue border btn_confirmar">CONFIRMAR</button>
     </form>
 </div>
+

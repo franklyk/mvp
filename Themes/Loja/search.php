@@ -1,6 +1,3 @@
-<?php 
-    require "Core/Ctdb.php";
-?>
 
 <body>
 

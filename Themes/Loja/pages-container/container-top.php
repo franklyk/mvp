@@ -1,7 +1,3 @@
-<?php 
-    require "Core/Ctdb.php";
-?>
-
 <body>
 
     <h1 class="font-text-max font-weight-max color-white text-margin title-folder">Mais vendidos da semana:</h1>

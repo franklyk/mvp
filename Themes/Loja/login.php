@@ -1,6 +1,4 @@
-<?php 
-    require "Core/Ctdb.php";
-?>
+
 
 <div class="modal_fade_blur" id="modal_fade_blur"></div>
 
@@ -54,3 +52,4 @@
         
     <div class="result_message border radius"></div>
 </fieldset>
+

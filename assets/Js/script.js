@@ -1,7 +1,5 @@
 $(document).ready(
     function(){
-        console.log($(document))
-
     // MODAL REDES SOCIAIS
     $('#btn_socials_open').click(
         function(){

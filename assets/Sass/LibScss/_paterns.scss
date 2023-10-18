@@ -79,6 +79,9 @@ ul, li {
 .border{
     border: 1px solid #68686859;
 }
+.box_shadow{
+    box-shadow: 5px 5px 10px #66636381;
+}
 .rules{
     margin: 15px auto;
 }
@@ -120,6 +123,10 @@ ul, li {
 /* Planos de Fundo */
 .bgcolor-red{
     background: $red;
+    &:hover{
+        background: $red-dark;
+
+    }
 }
 
 .bgcolor-red-dark{
@@ -128,6 +135,10 @@ ul, li {
 
 .bgcolor-blue{
     background: $blue;
+    &:hover{
+        background: $blue-dark;
+
+    }
 }
 
 .bgcolor-blue-dark{
@@ -136,6 +147,10 @@ ul, li {
 
 .bgcolor-green{
     background: $green;
+    &:hover{
+        background: $green-dark;
+
+    }
 }
 
 .bgcolor-green-dark{
@@ -144,10 +159,18 @@ ul, li {
 
 .bgcolor-gray{
     background: $gray;
+    &:hover{
+        background: $gray-dark;
+
+    }
 }
 
 .bgcolor-orange{
     background: $orange;
+    &:hover{
+        background: $orange-dark;
+
+    }
 }
 
 .bgcolor-white{
@@ -164,15 +187,24 @@ ul, li {
 
 .bgcolor-yellow{
     background: $yellow;
+    &:hover{
+        background: $yellow-dark;
+
+    }
+}
+
+.bgcolor-yellow-dark{
+    background: $yellow-dark;
+    &:hover{
+        background: $yellow;
+
+    }
 }
 
 .bgcolor-dark{
     background: $dark;
 }
 
-.bgcolor-yellow-dark{
-    background: $yellow-dark;
-}
 
 /* Botões e Cores */
 .btn_green{

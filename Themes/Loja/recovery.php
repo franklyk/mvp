@@ -1,7 +1,3 @@
-<?php 
-    require "Core/Ctdb.php";
-
-?>
 
 
 <div class="modal_fade_blur" id="modal_fade_blur"></div>

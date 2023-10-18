@@ -1,17 +1,17 @@
 <?php
-$configUrl = explode("/", strip_tags(filter_input(INPUT_GET, "route", FILTER_DEFAULT)));
-$configUrl[0] = (!empty($configUrl[0]) ? $configUrl[0] : "index");
+$url = explode("/", strip_tags(filter_input(INPUT_GET, "url", FILTER_DEFAULT)));
+$url[0] = (!empty($url[0]) ? $url[0] : "home");
 
-if (file_exists("{$themePathSite}/{$configUrl[0]}.php") && !is_dir("{$themePathSite}/{$configUrl[0]}.php")){
-    require "{$themePathSite}/{$configUrl[0]}.php";
+if (file_exists("{$themePathSite}{$url[0]}.php") && !is_dir("{$themePathSite}{$url[0]}.php")){
+    require "{$themePathSite}{$url[0]}.php";
     
-} elseif (!empty($configUrl[1]) && file_exists("{$themePathSite}/{$configUrl[0]}/{$configUrl[1]}.php") && !is_dir("{$themePathSite}/{$configUrl[0]}/{$configUrl[1]}.php")){
+} elseif (!empty($url[1]) && file_exists("{$themePathSite}.{$url[0]}/{$url[1]}.php") && !is_dir("{$themePathSite}.{$url[0]}/{$url[1]}.php")){
     //theme folder
-    require "{$themePathSite}/{$configUrl[0]}/{$configUrl[1]}.php";
+    require "{$themePathSite}.{$url[0]}/{$url[1]}.php";
 
-}elseif(!empty($configUrl[2]) && file_exists("{$themePathSite}/{$configUrl[0]}/{$configUrl[1]}/{$configUrl[2]}.php") && !is_dir("{$themePathSite}/{$configUrl[0]}/{$configUrl[1]}/{$configUrl[2]}.php")){
+}elseif(!empty($url[2]) && file_exists("{$themePathSite}.{$url[0]}/{$url[1]}/{$url[2]}.php") && !is_dir("{$themePathSite}.{$url[0]}/{$url[1]}/{$url[2]}.php")){
     //theme folder
-    require "{$themePathSite}/{$configUrl[0]}/{$configUrl[1]}/{$configUrl[2]}.php";
+    require "{$themePathSite}.{$url[0]}/{$url[1]}/{$url[2]}.php";
 }else{
     //theme 404
     if(file_exists("{$themePathSite}/404.php") && !is_dir("{$themePathSite}/404.php")){
@@ -22,25 +22,5 @@ if (file_exists("{$themePathSite}/{$configUrl[0]}.php") && !is_dir("{$themePathS
         //echo "<div class='container'><div class='trigger trigger-error icon-error radius'>Desculpe, mas a página não existe!</div></div>";
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ?>

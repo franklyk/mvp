@@ -1,7 +1,3 @@
-<?php
-    require "Core/Ctdb.php";
-?>
-
 <body>
     <footer class="footer_bg bgcolor-white-dark">
         <div class="footer_main">
