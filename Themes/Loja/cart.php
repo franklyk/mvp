@@ -1,16 +1,10 @@
 
-<div class="modal_fade_blur"></div>
-
 <div class="container_cart" id="container_cart">
 
 
     <table class="table">
         <caption class="title_cart color-green-dark">
             <h1>Finalizar compra</h1>
-            <div class="btn_close_container btn_red radius" id="btn_close_cart">
-                <span class="lines line1 bgcolor-white"></span>
-                <span class="lines line2 bgcolor-white"></span>
-            </div>
         </caption>
         <thead class="thead color-green-dark">
             <tr>

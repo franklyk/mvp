@@ -1,17 +1,9 @@
 
-<div class="modal_fade_blur"></div>
 
-<fieldset class="container_modal border radius container_address" id="container_address">
+<fieldset class="container_documents border radius container_address" id="container_address">
 
     <div class="header_address header_form">
-
-        <h1 class="title_form color-green-dark font-extra">Faça seu Cadastro</h1>
-
-        <div class="btn_close_container border btn_red radius" id="btn_close_address">
-            <span class="lines line1 bgcolor-white-dark"></span>
-            <span class="lines line2 bgcolor-white-dark"></span>
-        </div>
-
+        <h1 class="title_form color-green-dark font-extra">Novo Endereço</h1>
     </div>
     <form method="post" class="form_general form_register_address" id="form_register_address">
 

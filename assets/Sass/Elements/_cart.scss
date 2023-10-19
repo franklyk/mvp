@@ -1,22 +1,18 @@
 @use "../LibScss";
 
 .container_cart{
-    
-
     background: $white-light;
-    max-height: 80%;
-    left: 50%;
-    overflow-y: scroll;
+    // height: 80%;
+    // left: 50%;
+    // overflow-y: scroll;
     padding: 30px;
     pointer-events: all;
-    position: fixed;
-    transform: translate(-50%, -50%);
-    top: 50%;
+    // position: fixed;
+    // transform: translate(-50%, -50%);
+    // top: 50%;
     width: 60%;
-    z-index: 100;
+    // z-index: 100;
     .table{
-        
-
         border-collapse: collapse;
         width: 100%;
         .title_cart{

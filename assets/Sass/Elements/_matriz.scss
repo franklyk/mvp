@@ -1,0 +1,25 @@
+
+.window_general{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "sidebar main"
+    "sidebar main"
+    // " main"
+    "sidebar footer"
+    ;
+    grid-template-columns: 20% minmax(80%, 1fr);
+    .header{
+        grid-area: header;
+        
+    }
+    .sidebar{
+        grid-area: sidebar;
+    }
+    .main{
+        grid-area: main;
+    }
+    .footer{
+        grid-area: footer;
+    }
+}

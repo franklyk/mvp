@@ -1,17 +1,9 @@
 
-<div class="modal_fade_blur" id="modal_fade_blur"></div>
 
-<fieldset class="container_modal border radius container_new_password" id="container_new_password">
+<fieldset class="container_documents border radius container_new_password" id="container_new_password">
 
     <div class="header_form">
-
         <h1 class="title_form color-green-dark font-extra">Nova Senha</h1>
-
-        <div class="btn_close_container btn_red radius" id="btn_close_new_password">
-            <span class="lines line1 bgcolor-white"></span>
-            <span class="lines line2 bgcolor-white"></span>
-        </div>
-
     </div>
 
     <form action="" method="post" class="form_general form_new_password">

@@ -1,17 +1,9 @@
 
-<div class="modal_fade_blur"></div>
 
-<fieldset class="container_modal border radius container_register" id="container_register">
+<fieldset class="container_documents border radius container_register" id="container_register">
 
     <div class="header_register header_form">
-
         <h1 class="title_form color-green-dark font-text-extra">Faça seu Cadastro</h1>
-
-        <div class="btn_close_container border btn_red radius" id="btn_close_register">
-            <span class="lines line1 bgcolor-white"></span>
-            <span class="lines line2 bgcolor-white"></span>
-        </div>
-
     </div>
 
     <form action="" method="post" class="form_general form_register_user">

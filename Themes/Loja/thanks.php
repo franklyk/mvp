@@ -1,12 +1,8 @@
 
-<div class="container_modal container_finality border">
+<div class="container_documents container_finality border">
 
     <div class="reader_container">
         <h2 class=" title_container font-max color-green-dark">Pedido finalizado</h2>
-        <div class="btn_close_container border btn_red" id="btn_close_register">
-            <span class="lines line1 bgcolor-white-dark"></span>
-            <span class="lines line2 bgcolor-white-dark"></span>
-        </div>
     </div>
 
     <div class="finality_information">

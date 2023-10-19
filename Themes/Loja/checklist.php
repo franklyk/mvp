@@ -3,10 +3,6 @@
     <table class="table">
         <caption class="title_checklist color-green-dark">
             <h1>Confira seu Pedido</h1>
-            <div class="btn_close_container btn_red radius" id="btn_close_checklist">
-                <span class="lines line1 bgcolor-white-dark"></span>
-                <span class="lines line2 bgcolor-white-dark"></span>
-            </div>
         </caption>
         <thead class="thead color-green-dark">
             <tr>
