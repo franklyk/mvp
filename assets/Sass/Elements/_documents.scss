@@ -16,17 +16,9 @@
 // }
   
 .container_documents {
-// background: $white-light;
 display: block;
-// gap: 10px;
-// left: 50%;
 margin: auto;
 padding: 20px;
-// pointer-events: all;
-// position: fixed;
-// top: 50%;
-// transform: translate(-50%, -50%);
-// z-index: 100;
     .form_general{
         align-content: center;
         display: grid;
@@ -42,6 +34,7 @@ padding: 20px;
                 font-size: 1rem;
                 height: 100%;
                 left: 0;
+                padding-left: 20px;
                 position: absolute;
                 width: 100%;
                 &:focus~.label_input,
@@ -59,6 +52,10 @@ padding: 20px;
 
         }
 
+    }
+    .result_message{
+        height: 70px;
+        width: 100%;
     }
 }
 

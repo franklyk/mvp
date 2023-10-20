@@ -6,6 +6,8 @@
         <h1 class="title_form color-green-dark font-text-extra">Login</h1>
     </div>
 
+    <div class="result_message border radius"></div>
+
     <form action="" method="post" class="form_general form_login_user">
 
         <div class="input_email div_input  radius">
@@ -27,10 +29,10 @@
         </div>
 
         <div class="recovery" id="btn_open_recovery">
-            <a href="#">Esqueceu a senha?</a>
+            <a href="<?= $configBase?>recovery">Esqueceu a senha?</a>
         </div>
         <div class="create" id="btn_open_register">
-            <a href="#container_register">Criar Conta</a>
+            <a href="<?= $configBase?>register">Criar Conta</a>
         </div>
 
         <div class="input_confirm radius ">
@@ -39,8 +41,5 @@
             </button>
         </div>
     </form>
-
-        
-    <div class="result_message border radius"></div>
 </fieldset>
 

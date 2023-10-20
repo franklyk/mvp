@@ -6,6 +6,8 @@
         <h1 class="title_form color-green-dark font-extra">Nova Senha</h1>
     </div>
 
+    <div class="result_message border"></div>
+
     <form action="" method="post" class="form_general form_new_password">
 
         <div class="input_pass_recovery div_input  radius">
@@ -29,9 +31,6 @@
                 Confirmar
             </button>
         </div>
-
-        <div class="result_message"></div>
-
     </form>
 </fieldset>
 

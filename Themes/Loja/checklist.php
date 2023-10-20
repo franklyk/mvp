@@ -1,4 +1,3 @@
-
 <div class="container_checklist" id="container_checklist">
     <table class="table">
         <caption class="title_checklist color-green-dark">
@@ -77,9 +76,8 @@
         </div>
         <?php endfor; ?>
     </div>
-    <form action="" class="btns_checklist">
-        <button class="btn_orange border btn_voltar">VOLTAR AO CARRINHO</button>
-        <button class="btn_blue border btn_confirmar">CONFIRMAR</button>
-    </form>
+    <div class="btns_checklist">
+        <a href="<?= $configBase ?>cart"><button class="btn_orange border btn_voltar">VOLTAR AO CARRINHO</button></a>
+        <a href="<?= $configBase ?>payment"><button class="btn_blue border btn_confirmar">CONFIRMAR</button></a>
+    </div>
 </div>
-

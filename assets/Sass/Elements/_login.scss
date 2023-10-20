@@ -1,18 +1,18 @@
 
 .container_login{
     height: auto;
-    width: 30%;
+    width: 40%;
     .form_login_user{
         padding-bottom: 20px;
         display: grid;
         gap: 10px;
         grid-template-areas: 
-        "input_email input_email input_email"
-        "input_pass input_pass input_pass"
-        "recovery recovery remember"
-        "create create input_confirm"
+        "input_email input_email"
+        "input_pass input_pass"
+        "recovery remember"
+        "create input_confirm"
         ;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         height: auto;
 
         .input_email{
@@ -41,8 +41,5 @@
             }
         }
     }
-    .result_message{
-        height: 10%;
-        width: 100%;
-    }
+
 }

@@ -6,6 +6,8 @@
         <h1 class="title_form color-green-dark font-text-extra">Faça seu Cadastro</h1>
     </div>
 
+    <div class="result_message border radius"></div>
+
     <form action="" method="post" class="form_general form_register_user">
 
         <div class="input_firstname div_input radius" >
@@ -58,6 +60,4 @@
             </a>
         </div>
     </form>
-        <div class="result_message border radius"></div>
-
 </fieldset>

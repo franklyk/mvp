@@ -8,7 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php $titleSite ?> </title>
+    <title><?= $titleSite ?> </title>
     <link rel="stylesheet" href="./assets/Css/Style.css">
 </head>
 
@@ -24,9 +24,8 @@
 
         <nav class="menu_container">
             <ul>
-                <!-- <button type="button" class="btn_blue" id="open_address">Address</button> -->
-                <li id="btn_open_cart"><img src="Images/cart.png" alt=""></li>
-                <li id="btn_open_login"><img src="Images/user.png" alt=""></li>
+                <li id="btn_open_cart"><a href="<?= $configBase?>cart"><img src="Images/cart.png"></a></li>
+                <li id="btn_open_login"><a href="<?= $configBase ?>login"><img src="Images/user.png"></a></li>
                 <li id="btn_socials_open"><img src="Images/internet.png" alt=""></li>
                 <li id="btn_socials_close"><img src="Images/internet.png" alt=""></li>
             </ul>
@@ -34,7 +33,7 @@
 
         <div class="socials_container" id="socials_container">
             <ul class="menu_list">
-                <li><a href="#"><img src="Images/login.png" alt=""></a></li>
+                <li><a href="<?= $configBase?>login"><img src="Images/login.png" alt=""></a></li>
                 <li><a href="#"><img src="Images/whatsapp.png" alt=""></a></li>
                 <li><a href="#"><img src="Images/msg.png" alt=""></a></li>
                 <li><a href="#"><img src="Images/gmail.png" alt=""></a></li>

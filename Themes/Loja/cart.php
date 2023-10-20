@@ -84,8 +84,8 @@
         </div>
         <div class="btns">
             <!-- <button class="btn_blue">Calcular</button> -->
-            <button class="btn_orange border">Continuar a Compra</button>
-            <button class="btn_blue border">Finalizar</button>
+            <a href="<?= $configBase ?>home"><button class="btn_orange border">Continuar a Compra</button></a>
+            <a href="<?= $configBase ?>checklist"><button class="btn_blue border">Finalizar</button></a>
         </div>
     </div>
 
