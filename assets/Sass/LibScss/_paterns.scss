@@ -1,4 +1,41 @@
-@import "vars";
+// @use "vars";
+@use "mixins";
+@use "breakpoints";
+
+
+//  Padrões de Cores 
+$red: #de0c11;
+$red-dark: #8b0002;
+
+$blue: #0aaaff;
+$blue-dark: #09316f;
+
+$green: #00ff08;
+$green-dark: #247c40;
+
+$white: #fff;
+$white-light: #f2f2f2;
+$white-dark: #686868;
+
+$orange: #ff5e10;
+$orange-dark: #cc4b0c;
+
+$gray: #b0acac;
+$gray-dark: #8c8989;
+
+$yellow: #fafa61;
+$yellow-dark: #645f0f;
+
+
+$dark: #555;
+
+// Shadows
+
+$box-shadow: 0px 20px 54px 0 #eee;
+
+$textShadow: 1px 1px 1px #eee;
+
+
 
 ::-webkit-scrollbar{
     width: 10px;
@@ -7,11 +44,11 @@
     background: transparent;
     width: 10px;
     &:hover{
-        background: #fff;
+        background: $white;
     }
 }
 ::-webkit-scrollbar-thumb{
-    background: #f2f2f2;
+    background: $white-light;
     border: 1px solid #9b9b9ef6;
     border-radius: 1px;
     cursor: pointer;
@@ -57,8 +94,6 @@ ul, li {
 }
 
 /* Classes Gerais */
-
-
 .clear{
     clear: both;
 }
@@ -330,8 +365,6 @@ ul, li {
 .font-weight-max{
     font-weight: 900;
 }
-
-
 
 /* Opção para testes*/
 // .teste_modal{

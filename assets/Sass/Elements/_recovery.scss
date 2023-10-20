@@ -1,8 +1,7 @@
-@import "../LibScss/index";
 
 .modal_container{
-    @include config;
-    background: #ccc; 
+    // @include config;
+    // background: #ccc; 
     left: 50%;
     padding: 20px;
     position: fixed;

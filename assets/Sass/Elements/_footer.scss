@@ -1,92 +1,86 @@
-@import "../LibScss/index";
 
-
-.footer{
+//footer
+.footer_bg{
+    background: black;
+    height: auto;
     position: absolute;
     top: 100%;
+    // margin: 50px 0 0 0;
     width: 100%;
-
-    //footer
-    .footer_bg{
-        height: auto;
-        // margin: 50px 0 0 0;
-        width: 100%;
-        .footer_main{
+    .footer_main{
+        align-items: center;
+        display: flex;
+        font-size: 0.8rem;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        padding: 50px 0;
+        width: 80%;
+        ul{
             align-items: center;
             display: flex;
-            font-size: 0.8rem;
-            justify-content: space-evenly;
+            flex-direction: column;
             margin: 0 auto;
-            padding: 50px 0;
-            width: 80%;
-            ul{
+            padding: 5px 10px;
+            p{
+                text-align: center;
+            }
+            .footer_socials{
+                margin: 10px;
+            }
+            .footer_contact{
                 align-items: center;
                 display: flex;
                 flex-direction: column;
-                margin: 0 auto;
-                padding: 5px 10px;
-                p{
-                    text-align: center;
+                justify-content: center;
+                margin: 10px;
+            }
+            img{
+                width: 30px;
+            }
+            li{
+                a{
+                    display: block;
                 }
-                .footer_socials{
-                    margin: 10px;
-                }
-                .footer_contact{
-                    align-items: center;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    margin: 10px;
-                }
-                img{
-                    width: 30px;
-                }
-                li{
-                    a{
-                        display: block;
-                    }
-                }
-                .security{
-                    align-items: center;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
+            }
+            .security{
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
 
-                }
-                .footer_socials{
+            }
+            .footer_socials{
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                margin: 10px;
+            }
+            .footer_contact{
+                div{
                     align-items: center;
                     display: flex;
+                    flex-direction: column;
                     justify-content: center;
                     margin: 10px;
-                }
-                .footer_contact{
-                    div{
-                        align-items: center;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        margin: 10px;
-                    }
                 }
             }
         }
-        .footer_down{
-            width: 100%;
-            margin: 0;
+    }
+    .footer_down{
+        width: 100%;
+        margin: 0;
+        font-size: 0.8em;
+        padding: 20px 0;
+        h1{
+            font-size: 1em;
+            font-weight: bold;
+            text-align: center;
+            color: #fff;
+        }
+        p{
             font-size: 0.8em;
-            background-color: $dark;
-            padding: 20px 0;
-            h1{
-                font-size: 1em;
-                font-weight: bold;
-                text-align: center;
-                color: #fff;
-            }
-            p{
-                font-size: 0.8em;
-                text-align: center;
-                color: #fff;
-            }
+            text-align: center;
+            color: #fff;
         }
     }
 }

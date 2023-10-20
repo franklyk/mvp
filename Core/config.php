@@ -85,22 +85,22 @@ $youtube = 'https://www.youtube.com';
 $whatsapp = 'https://wa.me/55619999999999';
 
 /* Configurações de Níveis de Acesso */
-// define("LEVEL_USER", 1); //Nível de Acesso Para Usuários [Operacionais]
-// define("LEVEL_CLIENT", 2); //Nível de Acesso Para Clientes [Coordenadores de Equipes]
-// define("LEVEL_ADMIN", 9); //Nível de Acesso Para Administradores [Administrador Responsável pela Aplicação]
-// define("LEVEL_SUPER", 10); //Nível de Acesso Para Profissional Web [Você]
+define("LEVEL_USER", 1); //Nível de Acesso Para Usuários [Operacionais]
+define("LEVEL_CLIENT", 2); //Nível de Acesso Para Clientes [Coordenadores de Equipes]
+define("LEVEL_ADMIN", 9); //Nível de Acesso Para Administradores [Administrador Responsável pela Aplicação]
+define("LEVEL_SUPER", 10); //Nível de Acesso Para Profissional Web [Você]
 
-// define('BLOCKED', 1); //Bloqueio o Usuário Após 6 Tentativas de Senha Errado
-// define('TIMESBLOCKED', 6); //Quantas Tentativas Usuário Pode Fazer Antes de Bloquear
-// define('REMEMBER', 1); //Lembrar Senha
+define('BLOCKED', 1); //Bloqueio o Usuário Após 6 Tentativas de Senha Errado
+define('TIMESBLOCKED', 6); //Quantas Tentativas Usuário Pode Fazer Antes de Bloquear
+define('REMEMBER', 1); //Lembrar Senha
 
-echo '
-<html lang="pt-br">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="assets/Css/Style.css">
-<link rel="stylesheet" href="../../assets/Css/Style.css">
-<title>'."$titleSite" .'</title>
-';
+// echo '
+// <html lang="pt-br">
+// <meta charset="UTF-8">
+// <meta name="viewport" content="width=device-width, initial-scale=1.0">
+// <link rel="stylesheet" href="assets/Css/Style.css">
+// <link rel="stylesheet" href="../../assets/Css/Style.css">
+// <title>'."$titleSite" .'</title>
+// ';
 
 ?>

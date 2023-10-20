@@ -1,4 +1,4 @@
-@import "./../LibScss/index";
+// @import "./../LibScss/index";
 
 /* Modais */
 // .modal_fade_blur {
@@ -16,7 +16,7 @@
 // }
   
 .container_documents {
-background: $white-light;
+// background: $white-light;
 display: block;
 // gap: 10px;
 // left: 50%;
@@ -46,7 +46,7 @@ padding: 20px;
                 width: 100%;
                 &:focus~.label_input,
                 &:valid~.label_input{
-                    background: $white-light;
+                    // background: $white-light;
                     transform: translateY(-35px);
                 }
             }
