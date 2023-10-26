@@ -1,15 +1,8 @@
 
-.modal_container{
-    // @include config;
-    // background: #ccc; 
-    left: 50%;
+.container_recovery{
     padding: 20px;
-    position: fixed;
     text-align: center;
-    top: -100%;
-    transform: translate(-50%, -50%);
-    width: 40%;
-    z-index: 100;
+    width: 60%;
     .title_container{
         margin: 10px 0;
     }

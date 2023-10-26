@@ -1,4 +1,4 @@
-<div class="container_checklist" id="container_checklist">
+<div class="container_checklist border" id="container_checklist">
     <table class="table">
         <caption class="title_checklist color-green-dark">
             <h1>Confira seu Pedido</h1>
@@ -69,7 +69,7 @@
             <p class="font-weight-medium color-dark font-sub">B. Jardim Da Luz - Cidade/UF</p>
             <p class="font-weight-medium color-dark font-sub">CEP: 12345-678</p>
             <p class="font-weight-medium color-dark font-sub actions">
-                <a href="#" data-id="<?= $i ?>">
+                <a href="<?= $configBase ?>address" data-id="<?= $i ?>">
                     Atualizar Endereço
                 </a>
             </p>

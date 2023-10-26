@@ -1,6 +1,6 @@
 
 
-<fieldset class="container_documents border radius container_new_password" id="container_new_password">
+<fieldset class="container_documents border container_new_password" id="container_new_password">
 
     <div class="header_form">
         <h1 class="title_form color-green-dark font-extra">Nova Senha</h1>

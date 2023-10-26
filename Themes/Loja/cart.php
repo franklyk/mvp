@@ -1,5 +1,5 @@
 
-<div class="container_cart" id="container_cart">
+<div class="container_cart border" id="container_cart">
 
 
     <table class="table">

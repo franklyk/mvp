@@ -1,4 +1,3 @@
-// @use "vars";
 @use "mixins";
 @use "breakpoints";
 
@@ -75,6 +74,9 @@ html, body{
     height: 100vh;
     overflow-x: hidden;
     width: 100vw;
+}
+body{
+    background: #eee;
 }
 
 a{

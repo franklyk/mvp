@@ -1,15 +1,9 @@
 // @use "../LibScss";
 
 .container_cart{
-    // background: $white-light;
-    // height: 80%;
-    // left: 50%;
-    // overflow-y: scroll;
+    margin: auto;
     padding: 30px;
     pointer-events: all;
-    // position: fixed;
-    // transform: translate(-50%, -50%);
-    // top: 50%;
     width: 60%;
     // z-index: 100;
     .table{

@@ -8,7 +8,7 @@
 *********************************************
 */
 //iniciando a Seção em todas a Aplicação
-// session_start();
+@session_start();
 
 
 //Configurando o Timezone e a Data Hora do Nosso Servidor
@@ -17,11 +17,9 @@ date_default_timezone_set("America/Sao_paulo");
 $host = 'localhost';
 $user = 'root';
 $pass = '';
-$mydb = 'mvp';
+$dbase = 'mvp';
 
 $utf8 = 'utf8';
-
-$nome_adm = 'Franklin da Silva';
 
 $logo = '<img src="../img/K.png" width=100px>';
 
@@ -45,11 +43,11 @@ $statusSite = 1; //0=>offline, 1=>online, 2=>maintenance  [Status da aplicação
 $helloBar = 1;  //0=>offline, 1=>online [Status do HelloBar]
 
 /* Configurações do Autor */
-$nome_adm = 'Franklin da Silva';//Nome do Técnico
+$nameAdm = 'Franklin da Silva';//Nome do Técnico
+
+$mailSite = "contato@kws.com.br"; //E-mail do Autor
 
 $nameAuthorSite = "Klyk WEb Services - Construções de Sites"; //Nome do Autor
-
-$mailAuthorSite = "contato@klykwebservice.com.br"; //E-mail do Autor
 
 $phoneAuthorSite = "(61) xxxxx-xxxx"; //Telefone do Autor
 
@@ -90,17 +88,8 @@ define("LEVEL_CLIENT", 2); //Nível de Acesso Para Clientes [Coordenadores de Eq
 define("LEVEL_ADMIN", 9); //Nível de Acesso Para Administradores [Administrador Responsável pela Aplicação]
 define("LEVEL_SUPER", 10); //Nível de Acesso Para Profissional Web [Você]
 
-define('BLOCKED', 1); //Bloqueio o Usuário Após 6 Tentativas de Senha Errado
-define('TIMESBLOCKED', 6); //Quantas Tentativas Usuário Pode Fazer Antes de Bloquear
+define('BLOCKED', 1); //Bloqueio o Usuário Após 3 Tentativas de Senha Errado
+define('TIMESBLOCKED', 3); //Quantas Tentativas Usuário Pode Fazer Antes de Bloquear
 define('REMEMBER', 1); //Lembrar Senha
-
-// echo '
-// <html lang="pt-br">
-// <meta charset="UTF-8">
-// <meta name="viewport" content="width=device-width, initial-scale=1.0">
-// <link rel="stylesheet" href="assets/Css/Style.css">
-// <link rel="stylesheet" href="../../assets/Css/Style.css">
-// <title>'."$titleSite" .'</title>
-// ';
 
 ?>

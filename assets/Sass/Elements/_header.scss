@@ -1,6 +1,7 @@
 .header_container{
+    align-items: center;
     display: flex;
-    height: auto;
+    // height: 100px;
     justify-content: space-between;
     padding: 10px 30px;
     position: relative;
@@ -26,7 +27,6 @@
         width: 30%;
         .input_form_search{
             font-size: 20px;
-            color: black;
             height: auto;
             left: 0;
             padding: 6px 20px;

@@ -1,9 +1,14 @@
+.container_thanks{
+    line-height: 1.5;
+    text-indent: 30px;
+    width: 50%;
 
-h2{
-    margin-bottom: 20px;
-    text-align: center;
-}
-.btnThanks{
-    float: right;
-    margin: 20px auto;
+    h2{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .btn_thanks{
+        margin: 20px auto;
+        width: 100%;
+    }
 }

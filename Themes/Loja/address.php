@@ -9,37 +9,37 @@
 
         <div class="div_input input_cep">
             <input type="text" class="input_data border radius" name="input_cep_user" id="input_cep_user" required>
-            <label for="input_cep_user" class="label_input">Cep:</label>
+            <label for="input_cep_user" class="name_input">Cep:</label>
         </div>
         <div class="div_input input_ender">
             <input type="text" class="input_data border radius" name="input_ender_user" id="input_ender_user" required>
-            <label for="input_ender_user" class="label_input">Endereço:</label>
+            <label for="input_ender_user" class="name_input">Endereço:</label>
         </div>
 
         <div class="div_input input_num">
             <input type="text" class="input_data border radius" name="input_num_user" id="input_num_user" required>
-            <label for="input_num_user" class="label_input">Número:</label>
+            <label for="input_num_user" class="name_input">Número:</label>
         </div>
 
         <div class="div_input input_compl">
             <input type="text" class="input_data border radius" name="input_compl_user" id="input_compl_user" required>
-            <label for="input_compl_user" class="label_input">Complemento:</label>
+            <label for="input_compl_user" class="name_input">Complemento:</label>
         </div>
 
         <div class="div_input input_bairro">
             <input type="text" class="input_data border radius" name="input_bairro_user" id="input_bairro_user"
                 required>
-            <label for="input_bairro_user" class="label_input">Bairro:</label>
+            <label for="input_bairro_user" class="name_input">Bairro:</label>
         </div>
 
         <div class="div_input input_city">
             <input type="text" class="input_data border radius" name="input_city_user" id="input_city_user" required>
-            <label for="input_city_user" class="label_input">Cidade:</label>
+            <label for="input_city_user" class="name_input">Cidade:</label>
         </div>
 
         <div class="div_input input_uf">
             <input type="text" class="input_data border radius" name="input_uf_user" id="input_uf_user" required>
-            <label for="input_uf_user" class="label_input radius">UF:</label>
+            <label for="input_uf_user" class="name_input radius">UF:</label>
         </div>
 
         <div class="btn_input">

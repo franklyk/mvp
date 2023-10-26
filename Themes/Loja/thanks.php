@@ -1,5 +1,4 @@
-
-<div class="container_documents container_finality border">
+<div class="container_documents container_thanks border">
 
     <div class="reader_container">
         <h2 class=" title_container font-max color-green-dark">Pedido finalizado</h2>
@@ -13,9 +12,7 @@
             entrada.
         </p>
 
-        <p class="text-center font-min btnThanks">
-            <button class="btn_blue font-medium">Acompanhar pedido</button>
-        </p>
+        <button class="btn_thanks btn_blue font-medium"><a class="color-white" href="">Acompanhar pedido</a></button>
     </div>
 
 </div>

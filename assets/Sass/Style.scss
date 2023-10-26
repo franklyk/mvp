@@ -1,25 +1,3 @@
-@use "LibScss";
+@use "LibScss/paterns";
 @use "Elements";
 
-.window_general{
-    .container_admin{
-        display: flex;
-        flex-wrap: wrap;
-        height: 70%;
-        justify-content: space-evenly;
-        margin: auto;
-        padding-top: 50px;
-        width: 50%;
-        .controls{
-            align-items: center;
-            cursor: pointer;
-            display: flex;
-            flex-direction: column;
-            height: 30%;
-            justify-content: center;
-            // margin: 20px;
-            min-width: 250px;
-        }
-    }
-
-}

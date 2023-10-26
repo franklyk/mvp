@@ -42,6 +42,10 @@ html, body {
   width: 100vw;
 }
 
+body {
+  background: #eee;
+}
+
 a {
   text-decoration: none;
 }
@@ -354,8 +358,8 @@ ul, li {
 
 /* Opção para testes*/
 .header_container {
+  align-items: center;
   display: flex;
-  height: auto;
   justify-content: space-between;
   padding: 10px 30px;
   position: relative;
@@ -383,7 +387,6 @@ ul, li {
 }
 .header_container .form_search .input_form_search {
   font-size: 20px;
-  color: black;
   height: auto;
   left: 0;
   padding: 6px 20px;
@@ -589,7 +592,7 @@ ul, li {
 .container_checklist {
   margin: auto;
   padding: 20px;
-  width: 40%;
+  width: 60%;
 }
 .container_checklist .table {
   border-collapse: collapse;
@@ -673,53 +676,48 @@ ul, li {
   margin: 20px 0;
 }
 
-.window_general {
+.container {
   display: grid;
-  grid-template-areas: "header header" "sidebar main" "sidebar main" "sidebar footer";
+  grid-template-areas: "header header" "main main" "main main" "footer footer";
   grid-template-columns: 20% minmax(80%, 1fr);
-  margin-left: 10px;
 }
-.window_general .header {
+.container .header {
   grid-area: header;
+  height: 100px;
 }
-.window_general .sidebar {
-  grid-area: sidebar;
-}
-.window_general .main {
+.container .main {
   grid-area: main;
+  margin: auto;
+  width: 80%;
 }
-.window_general .footer {
-  grid-area: footer;
+.container .footer_bg {
+  grid-area: footer_bg;
+  width: 100%;
 }
 
-.modal_container {
-  left: 50%;
+.container_recovery {
   padding: 20px;
-  position: fixed;
   text-align: center;
-  top: -100%;
-  transform: translate(-50%, -50%);
-  width: 40%;
-  z-index: 100;
+  width: 60%;
 }
-.modal_container .title_container {
+.container_recovery .title_container {
   margin: 10px 0;
 }
-.modal_container .msg_recovery {
+.container_recovery .msg_recovery {
   margin: 10px 0;
 }
-.modal_container .buttons {
+.container_recovery .buttons {
   margin: 10px 0;
   padding: 20px 0;
   width: 100%;
 }
-.modal_container .buttons button {
+.container_recovery .buttons button {
   margin: 0 20px;
 }
 
 .container_new_password {
   height: auto;
-  width: 30%;
+  width: 40%;
 }
 .container_new_password .form_new_password {
   padding-bottom: 20px;
@@ -747,11 +745,13 @@ ul, li {
   width: 100%;
 }
 
-/* Modais */
 .container_documents {
   display: block;
   margin: auto;
   padding: 20px;
+}
+.container_documents .header_form {
+  text-align: center;
 }
 .container_documents .form_general {
   align-content: center;
@@ -774,10 +774,11 @@ ul, li {
   position: absolute;
   width: 100%;
 }
-.container_documents .form_general .div_input .input_data:focus ~ .label_input, .container_documents .form_general .div_input .input_data:valid ~ .label_input {
+.container_documents .form_general .div_input .input_data:focus ~ .name_input, .container_documents .form_general .div_input .input_data:valid ~ .name_input {
+  background: #fff;
   transform: translateY(-35px);
 }
-.container_documents .form_general .div_input .label_input {
+.container_documents .form_general .div_input .name_input {
   left: 10px;
   position: absolute;
   transition: 0.5s;
@@ -785,6 +786,7 @@ ul, li {
 }
 .container_documents .result_message {
   height: 70px;
+  margin-bottom: 20px;
   width: 100%;
 }
 
@@ -839,6 +841,7 @@ ul, li {
 }
 
 .container_cart {
+  margin: auto;
   padding: 30px;
   pointer-events: all;
   width: 60%;
@@ -969,24 +972,26 @@ ul, li {
   grid-area: btns;
 }
 
-h2 {
+.container_thanks {
+  line-height: 1.5;
+  text-indent: 30px;
+  width: 50%;
+}
+.container_thanks h2 {
   margin-bottom: 20px;
   text-align: center;
 }
-
-.btnThanks {
-  float: right;
+.container_thanks .btn_thanks {
   margin: 20px auto;
+  width: 100%;
 }
 
-.footer_bg {
-  background: black;
-  height: auto;
+.footer {
   position: absolute;
   top: 100%;
   width: 100%;
 }
-.footer_bg .footer_main {
+.footer .footer_main {
   align-items: center;
   display: flex;
   font-size: 0.8rem;
@@ -995,86 +1000,67 @@ h2 {
   padding: 50px 0;
   width: 80%;
 }
-.footer_bg .footer_main ul {
+.footer .footer_main ul {
   align-items: center;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   padding: 5px 10px;
 }
-.footer_bg .footer_main ul p {
+.footer .footer_main ul p {
   text-align: center;
 }
-.footer_bg .footer_main ul .footer_socials {
+.footer .footer_main ul .footer_socials {
   margin: 10px;
 }
-.footer_bg .footer_main ul .footer_contact {
+.footer .footer_main ul .footer_contact {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 10px;
 }
-.footer_bg .footer_main ul img {
+.footer .footer_main ul img {
   width: 30px;
 }
-.footer_bg .footer_main ul li a {
+.footer .footer_main ul li a {
   display: block;
 }
-.footer_bg .footer_main ul .security {
+.footer .footer_main ul .security {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.footer_bg .footer_main ul .footer_socials {
+.footer .footer_main ul .footer_socials {
   align-items: center;
   display: flex;
   justify-content: center;
   margin: 10px;
 }
-.footer_bg .footer_main ul .footer_contact div {
+.footer .footer_main ul .footer_contact div {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 10px;
 }
-.footer_bg .footer_down {
+.footer .footer_down {
   width: 100%;
   margin: 0;
   font-size: 0.8em;
   padding: 20px 0;
 }
-.footer_bg .footer_down h1 {
+.footer .footer_down h1 {
   font-size: 1em;
   font-weight: bold;
   text-align: center;
   color: #fff;
 }
-.footer_bg .footer_down p {
+.footer .footer_down p {
   font-size: 0.8em;
   text-align: center;
   color: #fff;
-}
-
-.window_general .container_admin {
-  display: flex;
-  flex-wrap: wrap;
-  height: 70%;
-  justify-content: space-evenly;
-  margin: auto;
-  padding-top: 50px;
-  width: 50%;
-}
-.window_general .container_admin .controls {
-  align-items: center;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  height: 30%;
-  justify-content: center;
-  min-width: 250px;
 }
 
 /*# sourceMappingURL=Style.css.map */
