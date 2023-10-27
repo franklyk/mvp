@@ -1,9 +1,19 @@
   
-.container_documents {
-display: block;
-margin: auto;
-padding: 20px;
-    .header_form{
+.container_modal {
+    display: block;
+    left: 50%;
+    max-height: 60%;
+    margin: auto;
+    overflow-y: scroll;
+    padding: 20px;
+    pointer-events: none;
+    position: fixed;
+    top: -100%;
+    transform: translate(-50%,-50%);
+    // width: 60%;
+    z-index: -1;
+    .header_modal{
+        position: relative;
         text-align: center;
     }
     .form_general{
@@ -39,11 +49,6 @@ padding: 20px;
 
         }
 
-    }
-    .result_message{
-        height: 70px;
-        margin-bottom: 20px;
-        width: 100%;
     }
 }
 

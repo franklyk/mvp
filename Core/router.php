@@ -2,6 +2,8 @@
 $url = explode("/", strip_tags(filter_input(INPUT_GET, "url", FILTER_DEFAULT)));
 $url[0] = (!empty($url[0]) ? $url[0] : "home");
 
+
+//Área do site
 if (file_exists("{$themePathSite}{$url[0]}.php") && !is_dir("{$themePathSite}{$url[0]}.php")){
     require "{$themePathSite}{$url[0]}.php";
     

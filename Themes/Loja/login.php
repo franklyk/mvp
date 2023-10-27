@@ -1,17 +1,20 @@
+<div class="modal_fade"></div>
+<fieldset class="container_modal container_login border radius bgcolor-white" id="container_login">
 
-
-<fieldset class="container_documents border radius container_login" id="container_login">
-
-    <div class="header_form">
-        <h1 class="title_form color-green-dark font-text-extra">Login</h1>
+    <div class="header_modal">
+        <h1 class="title_cart text-center color-green-dark">Login</h1>
+        <div class="btn_close_container border bgcolor-red radius" id="btn_close_login">
+            <span class="lines line1 bgcolor-white"></span>
+            <span class="lines line2 bgcolor-white"></span>
+        </div>
     </div>
+    <div class="result border radius"></div>
 
-    <div class="result_message border radius"></div>
-
-    <form action="" method="post" class="form_general form_login_user">
+    <form action="controller/Login/Login.php" method="post" class="form_general form_login_user">
 
         <div class="input_email div_input  radius">
-            <input class="input_data border radius" type="email" class="user_email" name="user_email" id="user_email" required>
+            <input class="input_data border radius" type="email" class="user_email" name="user_email" id="user_email"
+                required>
             <label class="label_input" for="user_email">E-mail: </label>
         </div>
 
@@ -22,24 +25,24 @@
                 <i class="fa fa-eye"></i>
             </span>
         </div>
-        
+
         <div class="remember">
             <input type="checkbox" id="remember" name="remember" value="remember">
             <label class="label_checkbox" for="remember">Salvar Senha</label>
         </div>
 
         <div class="recovery" id="btn_open_recovery">
-            <a href="<?= $configBase?>recovery">Esqueceu a senha?</a>
+            Esqueceu a senha?
         </div>
         <div class="create" id="btn_open_register">
-            <a href="<?= $configBase?>register">Criar Conta</a>
+            Criar Conta
         </div>
 
         <div class="input_confirm radius ">
-            <button type="submit" id="submit" name="submit" class="radius font-medium text-center btn_green btn_confirm_login">
+            <button id="btn_confirm_login" name="btn_confirm_login"
+                class="radius font-medium text-center btn_green btn_confirm_login">
                 Entrar
             </button>
         </div>
     </form>
 </fieldset>
-

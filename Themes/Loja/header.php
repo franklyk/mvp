@@ -9,8 +9,8 @@
 
         <nav class="menu_container border">
             <ul>
-                <li id="btn_open_cart"><a href="<?= $configBase?>cart"><img src="Images/cart.png"></a></li>
-                <li id="btn_open_login"><a href="<?= $configBase ?>login"><img src="Images/user.png"></a></li>
+                <li id="btn_open_cart"><img src="Images/cart.png"></li>
+                <li id="btn_open_login"><img src="Images/user.png"></li>
                 <li id="btn_socials_open"><img src="Images/internet.png" alt=""></li>
                 <li id="btn_socials_close"><img src="Images/internet.png" alt=""></li>
             </ul>

@@ -1,4 +1,4 @@
-<div class="container_documents container_thanks border">
+<div class="container_modal container_thanks border">
 
     <div class="reader_container">
         <h2 class=" title_container font-max color-green-dark">Pedido finalizado</h2>

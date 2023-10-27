@@ -2,7 +2,8 @@
 // CADASTRO
 .container_register{
     height: auto;
-    width: 45%;
+    overflow-y: hidden !important;
+    width: 45% !important;
     .form_register_user{
         // @include config;
         align-content: center;

@@ -1,5 +1,3 @@
-// @import "../LibScss/index";
-
 
 .container_exposed{
     display: grid;
@@ -29,7 +27,6 @@
             justify-content: center;
             grid-area: product_title;
             padding: 2% 5%;
-        
         }
         .discount_off{
             align-items: center;
@@ -38,7 +35,6 @@
             justify-content: center;
             grid-area: discount_off;
             padding: 2% 5%;
-        
         }
         .prices{
             display: flex;
@@ -49,7 +45,6 @@
             span{
                 padding: 0 10px;
             }
-        
         }
         .btn_actions{
             display: flex;

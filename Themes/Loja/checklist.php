@@ -1,4 +1,4 @@
-<div class="container_checklist border" id="container_checklist">
+<div class="container_modal container_checklist border" id="container_checklist">
     <table class="table">
         <caption class="title_checklist color-green-dark">
             <h1>Confira seu Pedido</h1>

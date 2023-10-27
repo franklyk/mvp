@@ -1,7 +1,8 @@
 
 .container_login{
-    height: auto;
-    width: 40%;
+    // height: auto;
+    overflow-y: hidden !important;
+    width: 40% !important;
     .form_login_user{
         padding-bottom: 20px;
         display: grid;

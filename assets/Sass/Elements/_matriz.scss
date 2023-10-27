@@ -7,8 +7,8 @@
     "main main"
     "footer footer"
     ;
-    grid-template-columns: 20% minmax(80%, 1fr);
-    // margin-left: 10px;
+    grid-template-columns: minmax(80%, 1fr);
+    
     .header{
         grid-area: header;
         height: 100px;

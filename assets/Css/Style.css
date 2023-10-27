@@ -356,201 +356,12 @@ ul, li {
   font-weight: 900;
 }
 
+/* Alinhamento das fontes*/
+.text-center {
+  text-align: center;
+}
+
 /* Opção para testes*/
-.header_container {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 30px;
-  position: relative;
-  width: 100%;
-}
-.header_container .logo {
-  height: 100%;
-  width: 20%;
-}
-.header_container .logo img {
-  margin: auto;
-  width: 100px;
-}
-.header_container .form_search {
-  align-items: center;
-  display: flex;
-  font-size: 1rem;
-  height: 2rem;
-  left: 50%;
-  justify-content: space-between;
-  position: absolute;
-  top: 30px;
-  transform: translateX(-50%);
-  width: 30%;
-}
-.header_container .form_search .input_form_search {
-  font-size: 20px;
-  height: auto;
-  left: 0;
-  padding: 6px 20px;
-  position: fixed;
-  width: 80%;
-  background: none;
-}
-.header_container .form_search .btn_form_search {
-  position: fixed;
-  right: 0;
-  width: 19%;
-}
-.header_container .menu_container {
-  align-items: center;
-  display: flex;
-}
-.header_container .menu_container #btn_socials_close {
-  display: none;
-}
-.header_container .menu_container ul {
-  align-items: center;
-  display: flex;
-}
-.header_container .menu_container ul li {
-  padding: 3px 5px;
-}
-.header_container .menu_container ul li img {
-  width: 50px;
-  cursor: pointer;
-}
-.header_container .socials_container {
-  display: flex;
-  justify-content: center;
-  height: 260px;
-  overflow-y: hidden;
-  position: absolute;
-  right: -100px;
-  text-align: right;
-  top: 110px;
-  transition: 0.5s;
-  width: auto;
-}
-.header_container .socials_container .menu_list {
-  display: block;
-  justify-content: space-around;
-  width: 100%;
-}
-.header_container .socials_container .menu_list li {
-  padding: 6px 5px;
-}
-.header_container .socials_container .menu_list li a img {
-  width: 50px;
-}
-
-.container_exposed {
-  display: grid;
-  gap: 10px;
-  grid-template-columns: repeat(2, 1fr);
-  margin: auto;
-  width: 95%;
-}
-.container_exposed .exposed {
-  display: grid;
-  grid-template-areas: "product_img discount_off discount_off" "product_img product_title product_title" "product_img  prices prices" "product_img btn_actions btn_actions";
-  grid-template-columns: repeat(3, 1fr);
-  padding: 1%;
-  width: 100%;
-}
-.container_exposed .exposed .product_img {
-  grid-area: product_img;
-  padding: 2% 5%;
-  width: 250px;
-}
-.container_exposed .exposed .product_title {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  grid-area: product_title;
-  padding: 2% 5%;
-}
-.container_exposed .exposed .discount_off {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  grid-area: discount_off;
-  padding: 2% 5%;
-}
-.container_exposed .exposed .prices {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  grid-area: prices;
-  padding: 2% 5%;
-}
-.container_exposed .exposed .prices span {
-  padding: 0 10px;
-}
-.container_exposed .exposed .btn_actions {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  grid-area: btn_actions;
-  padding: 2% 5%;
-}
-.container_exposed .exposed .btn_actions a {
-  margin: 0 20px;
-  padding: 0 5%;
-}
-.container_exposed .exposed .btn_actions a img {
-  width: 50px;
-}
-
-.img_tenis {
-  margin: auto;
-  padding: 20px;
-  width: 80%;
-}
-
-.container_banner {
-  display: flex;
-  gap: 20px;
-  margin: auto;
-  padding: 10px;
-  width: 80%;
-}
-
-.container_login {
-  height: auto;
-  width: 40%;
-}
-.container_login .form_login_user {
-  padding-bottom: 20px;
-  display: grid;
-  gap: 10px;
-  grid-template-areas: "input_email input_email" "input_pass input_pass" "recovery remember" "create input_confirm";
-  grid-template-columns: repeat(2, 1fr);
-  height: auto;
-}
-.container_login .form_login_user .input_email {
-  grid-area: input_email;
-}
-.container_login .form_login_user .input_pass {
-  grid-area: input_pass;
-}
-.container_login .form_login_user .remember {
-  grid-area: remember;
-  margin: 10px 0;
-}
-.container_login .form_login_user .recovery {
-  grid-area: recovery;
-  margin: 10px 0;
-}
-.container_login .form_login_user .input_confirm {
-  align-items: center;
-  display: flex;
-  grid-area: input_confirm;
-}
-.container_login .form_login_user .input_confirm .btn_confirm_login {
-  margin: auto;
-  padding: 10px auto;
-  width: 100%;
-}
-
 .container_address {
   height: auto;
   width: 60%;
@@ -587,6 +398,147 @@ ul, li {
   height: 10%;
   text-align: center;
   width: 100%;
+}
+
+.img_tenis {
+  margin: auto;
+  padding: 20px;
+  width: 80%;
+}
+
+.container_banner {
+  display: flex;
+  gap: 20px;
+  margin: auto;
+  padding: 10px;
+  width: 80%;
+}
+
+.btn_close_container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 35px;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 35px;
+}
+.btn_close_container .lines {
+  display: block;
+  height: 2px;
+  transform-origin: center;
+  width: 25px;
+}
+.btn_close_container .line1 {
+  transform: translateY(3px) rotate(-45deg);
+}
+.btn_close_container .line2 {
+  transform: translateY(-4px) rotate(45deg);
+}
+
+.container_cart {
+  margin: auto;
+  pointer-events: all;
+  border-collapse: collapse;
+  width: 100%;
+}
+.container_cart .thead {
+  border-bottom: 1px solid black;
+}
+.container_cart .thead tr th {
+  padding: 10px 0;
+}
+.container_cart .tbody {
+  border-bottom: 1px solid black;
+  text-align: center;
+  width: 100%;
+}
+.container_cart .tbody .td_img {
+  padding: 5px;
+  text-align: left;
+  width: 20%;
+}
+.container_cart .tbody .td_img img {
+  height: 50%;
+}
+.container_cart .tbody .td_product {
+  width: 50%;
+}
+.container_cart .tbody .td_quantity {
+  text-align: center;
+  width: 70px;
+}
+.container_cart .tbody .td_quantity input[type=number] {
+  text-align: center;
+  width: 50%;
+}
+.container_cart .tbody .td_delete {
+  position: relative;
+}
+.container_cart .tbody .td_delete .btn_delete {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 35px;
+  justify-content: center;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 35px;
+}
+.container_cart .tbody .td_delete .btn_delete .lines {
+  display: block;
+  height: 2px;
+  transform-origin: center;
+  width: 25px;
+}
+.container_cart .tbody .td_delete .btn_delete .line1 {
+  transform: translateY(3px) rotate(-45deg);
+}
+.container_cart .tbody .td_delete .btn_delete .line2 {
+  transform: translateY(-4px) rotate(45deg);
+}
+.container_cart .finality {
+  display: grid;
+  gap: 10px;
+  grid-template-areas: "container_frete container_frete container_frete container_frete" "cupom_discount cupom_discount cupom_discount cupom_discount" "frete_value frete_value frete_value frete_value" "total_value total_value total_value total_value" "... btns btns btns";
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 5%;
+}
+.container_cart .finality .container_frete, .container_cart .finality .choose_shipping, .container_cart .finality .cupom_discount, .container_cart .finality .frete_value, .container_cart .finality .total_value, .container_cart .finality .btns {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.container_cart .finality .container_frete {
+  grid-area: container_frete;
+  height: auto;
+}
+.container_cart .finality .container_frete .choose_shipping {
+  justify-content: space-evenly;
+  width: 50%;
+}
+.container_cart .finality .cupom_discount {
+  grid-area: cupom_discount;
+  width: 100%;
+}
+.container_cart .finality .cupom_discount input {
+  height: 100%;
+  width: 60%;
+}
+.container_cart .finality .frete_value {
+  grid-area: frete_value;
+}
+.container_cart .finality .total_value {
+  grid-area: total_value;
+}
+.container_cart .finality .btns {
+  grid-area: btns;
 }
 
 .container_checklist {
@@ -676,314 +628,74 @@ ul, li {
   margin: 20px 0;
 }
 
-.container {
-  display: grid;
-  grid-template-areas: "header header" "main main" "main main" "footer footer";
-  grid-template-columns: 20% minmax(80%, 1fr);
-}
-.container .header {
-  grid-area: header;
-  height: 100px;
-}
-.container .main {
-  grid-area: main;
-  margin: auto;
-  width: 80%;
-}
-.container .footer_bg {
-  grid-area: footer_bg;
-  width: 100%;
-}
-
-.container_recovery {
-  padding: 20px;
-  text-align: center;
-  width: 60%;
-}
-.container_recovery .title_container {
-  margin: 10px 0;
-}
-.container_recovery .msg_recovery {
-  margin: 10px 0;
-}
-.container_recovery .buttons {
-  margin: 10px 0;
-  padding: 20px 0;
-  width: 100%;
-}
-.container_recovery .buttons button {
-  margin: 0 20px;
-}
-
-.container_new_password {
-  height: auto;
-  width: 40%;
-}
-.container_new_password .form_new_password {
-  padding-bottom: 20px;
+.container_exposed {
   display: grid;
   gap: 10px;
-  grid-template-areas: "input_pass_recovery input_pass_recovery input_pass_recovery" "input_pass_recovery_conf input_pass_recovery_conf input_pass_recovery_conf" "input_confirm_recovery input_confirm_recovery input_confirm_recovery";
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+  width: 95%;
+}
+.container_exposed .exposed {
+  display: grid;
+  grid-template-areas: "product_img discount_off discount_off" "product_img product_title product_title" "product_img  prices prices" "product_img btn_actions btn_actions";
   grid-template-columns: repeat(3, 1fr);
-  height: auto;
+  padding: 1%;
+  width: 100%;
 }
-.container_new_password .form_new_password .input_pass_recovery {
-  grid-area: input_pass_recovery;
+.container_exposed .exposed .product_img {
+  grid-area: product_img;
+  padding: 2% 5%;
+  width: 250px;
 }
-.container_new_password .form_new_password .input_pass_recovery_conf {
-  grid-area: input_pass_recovery_conf;
+.container_exposed .exposed .product_title {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-area: product_title;
+  padding: 2% 5%;
 }
-.container_new_password .form_new_password .input_confirm_recovery {
+.container_exposed .exposed .discount_off {
   align-items: center;
   display: flex;
-  grid-area: input_confirm_recovery;
-  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  grid-area: discount_off;
+  padding: 2% 5%;
 }
-.container_new_password .form_new_password .input_confirm_recovery .confirm_recovery {
-  margin: auto;
-  padding: 5px 10px;
-  width: 100%;
+.container_exposed .exposed .prices {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: prices;
+  padding: 2% 5%;
+}
+.container_exposed .exposed .prices span {
+  padding: 0 10px;
+}
+.container_exposed .exposed .btn_actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: btn_actions;
+  padding: 2% 5%;
+}
+.container_exposed .exposed .btn_actions a {
+  margin: 0 20px;
+  padding: 0 5%;
+}
+.container_exposed .exposed .btn_actions a img {
+  width: 50px;
 }
 
-.container_documents {
-  display: block;
-  margin: auto;
-  padding: 20px;
-}
-.container_documents .header_form {
-  text-align: center;
-}
-.container_documents .form_general {
-  align-content: center;
-  display: grid;
-  gap: 25px;
-  margin: 10px;
-}
-.container_documents .form_general .div_input {
-  height: 40px;
-  position: relative;
-  width: 100%;
-}
-.container_documents .form_general .div_input .input_data {
-  background: none;
-  bottom: 0;
-  font-size: 1rem;
+.modal_fade {
+  background: rgba(37, 37, 37, 0.3960784314);
   height: 100%;
   left: 0;
-  padding-left: 20px;
-  position: absolute;
-  width: 100%;
-}
-.container_documents .form_general .div_input .input_data:focus ~ .name_input, .container_documents .form_general .div_input .input_data:valid ~ .name_input {
-  background: #fff;
-  transform: translateY(-35px);
-}
-.container_documents .form_general .div_input .name_input {
-  left: 10px;
-  position: absolute;
-  transition: 0.5s;
-  bottom: 0;
-}
-.container_documents .result_message {
-  height: 70px;
-  margin-bottom: 20px;
-  width: 100%;
-}
-
-.container_register {
-  height: auto;
-  width: 45%;
-}
-.container_register .form_register_user {
-  align-content: center;
-  display: grid;
-  gap: 10px;
-  grid-template-areas: "input_firstname input_lastname input_lastname" "input_email input_email input_email" "input_ender input_ender input_cep" "input_phone input_city input_uf" "input_nasc input_pass input_confirm_create" "result_message result_message result_message";
-  grid-template-columns: repeat(3, 1fr);
-  height: auto;
-}
-.container_register .form_register_user .input_firstname {
-  grid-area: input_firstname;
-}
-.container_register .form_register_user .input_lastname {
-  grid-area: input_lastname;
-}
-.container_register .form_register_user .input_email {
-  grid-area: input_email;
-}
-.container_register .form_register_user .input_ender {
-  grid-area: input_ender;
-}
-.container_register .form_register_user .input_cep {
-  grid-area: input_cep;
-}
-.container_register .form_register_user .input_phone {
-  grid-area: input_phone;
-}
-.container_register .form_register_user .input_city {
-  grid-area: input_city;
-}
-.container_register .form_register_user .input_uf {
-  grid-area: input_uf;
-}
-.container_register .form_register_user .input_nasc {
-  grid-area: input_nasc;
-}
-.container_register .form_register_user .input_pass {
-  grid-area: input_pass;
-}
-.container_register .form_register_user .input_confirm_create {
-  align-items: center;
-  display: flex;
-  grid-area: input_confirm_create;
-  justify-content: center;
-  text-align: center;
-}
-
-.container_cart {
-  margin: auto;
-  padding: 30px;
-  pointer-events: all;
-  width: 60%;
-}
-.container_cart .table {
-  border-collapse: collapse;
-  width: 100%;
-}
-.container_cart .table .title_cart {
-  padding: 5px 0;
-}
-.container_cart .table .title_cart .btn_close_container {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  height: 35px;
-  justify-content: center;
+  opacity: 0;
   position: fixed;
-  right: 0;
   top: 0;
-  width: 35px;
-}
-.container_cart .table .title_cart .btn_close_container .lines {
-  display: block;
-  height: 2px;
-  transform-origin: center;
-  width: 25px;
-}
-.container_cart .table .title_cart .btn_close_container .line1 {
-  transform: translateY(3px) rotate(-45deg);
-}
-.container_cart .table .title_cart .btn_close_container .line2 {
-  transform: translateY(-4px) rotate(45deg);
-}
-.container_cart .table .thead {
-  border-bottom: 1px solid black;
-}
-.container_cart .table .thead tr th {
-  padding: 10px 0;
-}
-.container_cart .table .tbody {
-  border-bottom: 1px solid black;
-  text-align: center;
-}
-.container_cart .table .tbody .td_img {
-  padding: 5px;
-  text-align: left;
-  width: 20%;
-}
-.container_cart .table .tbody .td_img img {
-  height: 50%;
-}
-.container_cart .table .tbody .td_product {
-  width: 50%;
-}
-.container_cart .table .tbody .td_quantity {
-  text-align: center;
-  width: 70px;
-}
-.container_cart .table .tbody .td_quantity input[type=number] {
-  text-align: center;
-  width: 50%;
-}
-.container_cart .table .tbody .td_delete {
-  position: relative;
-}
-.container_cart .table .tbody .td_delete .btn_delete {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  height: 35px;
-  justify-content: center;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 35px;
-}
-.container_cart .table .tbody .td_delete .btn_delete .lines {
-  display: block;
-  height: 2px;
-  transform-origin: center;
-  width: 25px;
-}
-.container_cart .table .tbody .td_delete .btn_delete .line1 {
-  transform: translateY(3px) rotate(-45deg);
-}
-.container_cart .table .tbody .td_delete .btn_delete .line2 {
-  transform: translateY(-4px) rotate(45deg);
-}
-.container_cart .finality {
-  display: grid;
-  gap: 10px;
-  grid-template-areas: "container_frete container_frete container_frete container_frete" "cupom_discount cupom_discount cupom_discount cupom_discount" "frete_value frete_value frete_value frete_value" "total_value total_value total_value total_value" "... btns btns btns";
-  grid-template-columns: repeat(4, 1fr);
-  margin-top: 5%;
-}
-.container_cart .finality .container_frete, .container_cart .finality .choose_shipping, .container_cart .finality .cupom_discount, .container_cart .finality .frete_value, .container_cart .finality .total_value, .container_cart .finality .btns {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-}
-.container_cart .finality .container_frete {
-  grid-area: container_frete;
-  height: auto;
-}
-.container_cart .finality .container_frete .choose_shipping {
-  justify-content: space-evenly;
-  width: 50%;
-}
-.container_cart .finality .cupom_discount {
-  grid-area: cupom_discount;
   width: 100%;
-}
-.container_cart .finality .cupom_discount input {
-  height: 100%;
-  width: 60%;
-}
-.container_cart .finality .frete_value {
-  grid-area: frete_value;
-}
-.container_cart .finality .total_value {
-  grid-area: total_value;
-}
-.container_cart .finality .btns {
-  grid-area: btns;
-}
-
-.container_thanks {
-  line-height: 1.5;
-  text-indent: 30px;
-  width: 50%;
-}
-.container_thanks h2 {
-  margin-bottom: 20px;
-  text-align: center;
-}
-.container_thanks .btn_thanks {
-  margin: 20px auto;
-  width: 100%;
+  z-index: -1;
 }
 
 .footer {
@@ -1061,6 +773,348 @@ ul, li {
   font-size: 0.8em;
   text-align: center;
   color: #fff;
+}
+
+.header_container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  position: relative;
+  width: 100%;
+}
+.header_container .logo {
+  height: 100%;
+  width: 20%;
+}
+.header_container .logo img {
+  margin: auto;
+  width: 100px;
+}
+.header_container .form_search {
+  align-items: center;
+  display: flex;
+  font-size: 1rem;
+  height: 2rem;
+  left: 50%;
+  justify-content: space-between;
+  position: absolute;
+  top: 30px;
+  transform: translateX(-50%);
+  width: 30%;
+}
+.header_container .form_search .input_form_search {
+  font-size: 20px;
+  height: auto;
+  left: 0;
+  padding: 6px 20px;
+  position: fixed;
+  width: 80%;
+  background: none;
+}
+.header_container .form_search .btn_form_search {
+  position: fixed;
+  right: 0;
+  width: 19%;
+}
+.header_container .menu_container {
+  align-items: center;
+  display: flex;
+}
+.header_container .menu_container #btn_socials_close {
+  display: none;
+}
+.header_container .menu_container ul {
+  align-items: center;
+  display: flex;
+}
+.header_container .menu_container ul li {
+  padding: 3px 5px;
+}
+.header_container .menu_container ul li img {
+  width: 50px;
+  cursor: pointer;
+}
+.header_container .socials_container {
+  display: flex;
+  justify-content: center;
+  height: 260px;
+  overflow-y: hidden;
+  position: absolute;
+  right: -100px;
+  text-align: right;
+  top: 110px;
+  transition: 0.5s;
+  width: auto;
+}
+.header_container .socials_container .menu_list {
+  display: block;
+  justify-content: space-around;
+  width: 100%;
+}
+.header_container .socials_container .menu_list li {
+  padding: 6px 5px;
+}
+.header_container .socials_container .menu_list li a img {
+  width: 50px;
+}
+
+.container_login {
+  overflow-y: hidden !important;
+  width: 40% !important;
+}
+.container_login .form_login_user {
+  padding-bottom: 20px;
+  display: grid;
+  gap: 10px;
+  grid-template-areas: "input_email input_email" "input_pass input_pass" "recovery remember" "create input_confirm";
+  grid-template-columns: repeat(2, 1fr);
+  height: auto;
+}
+.container_login .form_login_user .input_email {
+  grid-area: input_email;
+}
+.container_login .form_login_user .input_pass {
+  grid-area: input_pass;
+}
+.container_login .form_login_user .remember {
+  grid-area: remember;
+  margin: 10px 0;
+}
+.container_login .form_login_user .recovery {
+  grid-area: recovery;
+  margin: 10px 0;
+}
+.container_login .form_login_user .input_confirm {
+  align-items: center;
+  display: flex;
+  grid-area: input_confirm;
+}
+.container_login .form_login_user .input_confirm .btn_confirm_login {
+  margin: auto;
+  padding: 10px auto;
+  width: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-areas: "header header" "main main" "main main" "footer footer";
+  grid-template-columns: minmax(80%, 1fr);
+}
+.container .header {
+  grid-area: header;
+  height: 100px;
+}
+.container .main {
+  grid-area: main;
+  margin: auto;
+  width: 80%;
+}
+.container .footer_bg {
+  grid-area: footer_bg;
+  width: 100%;
+}
+
+.container_modal {
+  display: block;
+  left: 50%;
+  max-height: 60%;
+  margin: auto;
+  overflow-y: scroll;
+  padding: 20px;
+  pointer-events: none;
+  position: fixed;
+  top: -100%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.container_modal .header_modal {
+  position: relative;
+  text-align: center;
+}
+.container_modal .form_general {
+  align-content: center;
+  display: grid;
+  gap: 25px;
+  margin: 10px;
+}
+.container_modal .form_general .div_input {
+  height: 40px;
+  position: relative;
+  width: 100%;
+}
+.container_modal .form_general .div_input .input_data {
+  background: none;
+  bottom: 0;
+  font-size: 1rem;
+  height: 100%;
+  left: 0;
+  padding-left: 20px;
+  position: absolute;
+  width: 100%;
+}
+.container_modal .form_general .div_input .input_data:focus ~ .name_input, .container_modal .form_general .div_input .input_data:valid ~ .name_input {
+  background: #fff;
+  transform: translateY(-35px);
+}
+.container_modal .form_general .div_input .name_input {
+  left: 10px;
+  position: absolute;
+  transition: 0.5s;
+  bottom: 0;
+}
+
+.container_new_password {
+  height: auto;
+  width: 40%;
+}
+.container_new_password .form_new_password {
+  padding-bottom: 20px;
+  display: grid;
+  gap: 10px;
+  grid-template-areas: "input_pass_recovery input_pass_recovery input_pass_recovery" "input_pass_recovery_conf input_pass_recovery_conf input_pass_recovery_conf" "input_confirm_recovery input_confirm_recovery input_confirm_recovery";
+  grid-template-columns: repeat(3, 1fr);
+  height: auto;
+}
+.container_new_password .form_new_password .input_pass_recovery {
+  grid-area: input_pass_recovery;
+}
+.container_new_password .form_new_password .input_pass_recovery_conf {
+  grid-area: input_pass_recovery_conf;
+}
+.container_new_password .form_new_password .input_confirm_recovery {
+  align-items: center;
+  display: flex;
+  grid-area: input_confirm_recovery;
+  width: 100%;
+}
+.container_new_password .form_new_password .input_confirm_recovery .confirm_recovery {
+  margin: auto;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+.container_recovery {
+  padding: 20px;
+  text-align: center;
+  width: 40% !important;
+}
+.container_recovery .title_container {
+  margin: 10px 0;
+}
+.container_recovery .msg_recovery {
+  margin: 10px 0;
+}
+.container_recovery .buttons {
+  margin: 10px 0;
+  padding: 20px 0;
+  width: 100%;
+}
+.container_recovery .buttons button {
+  margin: 0 20px;
+}
+
+.container_register {
+  height: auto;
+  overflow-y: hidden !important;
+  width: 45% !important;
+}
+.container_register .form_register_user {
+  align-content: center;
+  display: grid;
+  gap: 10px;
+  grid-template-areas: "input_firstname input_lastname input_lastname" "input_email input_email input_email" "input_ender input_ender input_cep" "input_phone input_city input_uf" "input_nasc input_pass input_confirm_create" "result_message result_message result_message";
+  grid-template-columns: repeat(3, 1fr);
+  height: auto;
+}
+.container_register .form_register_user .input_firstname {
+  grid-area: input_firstname;
+}
+.container_register .form_register_user .input_lastname {
+  grid-area: input_lastname;
+}
+.container_register .form_register_user .input_email {
+  grid-area: input_email;
+}
+.container_register .form_register_user .input_ender {
+  grid-area: input_ender;
+}
+.container_register .form_register_user .input_cep {
+  grid-area: input_cep;
+}
+.container_register .form_register_user .input_phone {
+  grid-area: input_phone;
+}
+.container_register .form_register_user .input_city {
+  grid-area: input_city;
+}
+.container_register .form_register_user .input_uf {
+  grid-area: input_uf;
+}
+.container_register .form_register_user .input_nasc {
+  grid-area: input_nasc;
+}
+.container_register .form_register_user .input_pass {
+  grid-area: input_pass;
+}
+.container_register .form_register_user .input_confirm_create {
+  align-items: center;
+  display: flex;
+  grid-area: input_confirm_create;
+  justify-content: center;
+  text-align: center;
+}
+
+.result {
+  height: 70px;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+}
+.result #status-container {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  z-index: 100;
+}
+.result #status-container div {
+  border-radius: 3px;
+  color: #fff;
+  display: block;
+  padding: 15px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+.result #status-container .status-success {
+  background-color: #247c40;
+}
+.result #status-container .status-error {
+  background-color: #d4383a;
+}
+.result #status-container .status-info {
+  background-color: #09316f;
+}
+.result #status-container .status-warning {
+  background-color: #cc4b0c;
+}
+.result #status-container .status-message {
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.container_thanks {
+  line-height: 1.5;
+  text-indent: 30px;
+  width: 50%;
+}
+.container_thanks h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.container_thanks .btn_thanks {
+  margin: 20px auto;
+  width: 100%;
 }
 
 /*# sourceMappingURL=Style.css.map */

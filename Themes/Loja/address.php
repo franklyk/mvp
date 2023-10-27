@@ -1,6 +1,6 @@
 
 
-<fieldset class="container_documents border radius container_address" id="container_address">
+<fieldset class="container_modal border radius container_address" id="container_address">
 
     <div class="header_address header_form">
         <h1 class="title_form color-green-dark font-extra">Novo Endereço</h1>

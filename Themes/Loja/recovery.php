@@ -1,4 +1,4 @@
-<div class="container_documents container_recovery border radius" id="container_recovery">
+<div class="container_modal container_recovery border radius bgcolor-white" id="container_recovery">
 
     <h1 class="title_container color-dark text_shadow">Recuperar Senha</h1>
 
@@ -11,16 +11,13 @@
     </p>
 
     <div class="buttons">
-        <a href="<?= $configBase?>register">
             <button class="recovery_open_register btn_dark" id="recovery_open_register">
                 Cadastrar
             </button>
-        </a>
-        <a href="<?= $configBase?>new_password">
+
             <button class="send_recovery btn_blue" id="send_recovery">
                 Enviar
             </button>
-        </a>
     </div>
 
 </div>

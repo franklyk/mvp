@@ -6,7 +6,7 @@
 
         <?php for($i=0; $i < 6; $i++): ?>
 
-        <div class="exposed bgcolor-white-light">
+            <div class="exposed bgcolor-white-light border radius">
 
             <img class="product_img" src="<?php $configBase ?>Images/Products/product.png"
                 title="Imagem do produto: Tênis Adidas Sporting" alt="Imagem do produto: Tênis Adidas Sporting">

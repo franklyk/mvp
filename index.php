@@ -16,6 +16,19 @@
 
     <?php include_once "Themes/Loja/header.php";?>
 
+    <?php include_once "Themes/Loja/address.php"; ?>
+    <?php include_once "Themes/Loja/cart.php"; ?>
+    <?php include_once "Themes/Loja/checklist.php"; ?>
+    <?php include_once "Themes/Loja/details.php"; ?>
+    <?php include_once "Themes/Loja/login.php"; ?>
+    <?php include_once "Themes/Loja/new_password.php"; ?>
+    <?php include_once "Themes/Loja/payment.php"; ?>
+    <?php include_once "Themes/Loja/payments.php"; ?>
+    <?php include_once "Themes/Loja/recovery.php"; ?>
+    <?php include_once "Themes/Loja/register.php"; ?>
+    <?php include_once "Themes/Loja/thanks.php"; ?>
+
+
 
     <main class="main">
         <?php require_once "Core/Router.php"; ?>
@@ -25,6 +38,7 @@
 
     <script src="assets/Js/jquery.js"></script>
     <script src="assets/Js/ajax.js"></script>
+    <script src="assets/Js/script.js"></script>
     <!-- <script src=" assets/Js/Autocomplete.js"></script> -->
     <!-- <script src=" assets/Js/jquery-form.js"></script> -->
     <!-- <script src=" assets/Js/jquery-money.js"></script> -->
