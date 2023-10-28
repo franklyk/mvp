@@ -16,7 +16,7 @@
         <div class="input_pass_recovery div_input  radius">
             <input type="password" class="input_data user_pass border radius" name="user_pass_recovery"
                 id="user_pass_recovery" required>
-            <label class="label_input" for="user_pass">Digite a nova Senha:</label>
+            <label class="label_input color-white-dark font-medium font-weight-min" for="user_pass">Digite a nova Senha:</label>
             <span class="showHide">
                 <i class="fa fa-eye"></i>
             </span>
@@ -25,7 +25,7 @@
         <div class="input_pass_recovery_conf div_input  radius">
             <input type="password" class="input_data user_pass border radius" name="user_pass" id="user_confirm_pass"
                 required>
-            <label class="label_input" for="user_pass"> Redigite a Senha:</label>
+            <label class="label_input color-white-dark font-medium font-weight-min" for="user_pass"> Redigite a Senha:</label>
             <span class="showHide">
                 <i class="fa fa-eye"></i>
             </span>

@@ -972,31 +972,30 @@ ul, li {
   transition: 0.5s;
 }
 
-.container_new_password {
+#container_new_password {
   height: auto;
   width: 40%;
 }
-.container_new_password .form_new_password {
+#container_new_password .form_new_password {
   padding-bottom: 20px;
   display: grid;
-  gap: 10px;
   grid-template-areas: "input_pass_recovery input_pass_recovery input_pass_recovery" "input_pass_recovery_conf input_pass_recovery_conf input_pass_recovery_conf" "input_confirm_recovery input_confirm_recovery input_confirm_recovery";
   grid-template-columns: repeat(3, 1fr);
   height: auto;
 }
-.container_new_password .form_new_password .input_pass_recovery {
+#container_new_password .form_new_password .input_pass_recovery {
   grid-area: input_pass_recovery;
 }
-.container_new_password .form_new_password .input_pass_recovery_conf {
+#container_new_password .form_new_password .input_pass_recovery_conf {
   grid-area: input_pass_recovery_conf;
 }
-.container_new_password .form_new_password .input_confirm_recovery {
+#container_new_password .form_new_password .input_confirm_recovery {
   align-items: center;
   display: flex;
   grid-area: input_confirm_recovery;
   width: 100%;
 }
-.container_new_password .form_new_password .input_confirm_recovery .confirm_recovery {
+#container_new_password .form_new_password .input_confirm_recovery .confirm_recovery {
   margin: auto;
   padding: 5px 10px;
   width: 100%;
