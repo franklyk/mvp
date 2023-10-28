@@ -12,29 +12,33 @@
 
     <form action="controller/Login/Login.php" method="post" class="form_general form_login_user">
 
-        <div class="input_email div_input  radius">
+        <div class="input_email div_input radius">
             <input class="input_data border radius" type="email" class="user_email" name="user_email" id="user_email"
                 required>
-            <label class="label_input" for="user_email">E-mail: </label>
+
+            <label class="label_input font-medium font-weight-min color-white-dark" for="user_email">E-mail: </label>
         </div>
 
-        <div class="input_pass div_input  radius">
+        <div class="input_pass div_input radius">
             <input type="password" class="input_data user_pass border radius" name="user_pass" id="user_pass" required>
-            <label class="label_input" for="user_pass">Senha:</label>
+
+            <label class="label_input font-medium font-weight-min color-white-dark" for="user_pass">Senha:</label>
+
             <span class="showHide">
                 <i class="fa fa-eye"></i>
             </span>
         </div>
 
-        <div class="remember">
+        <div class="div_remember">
             <input type="checkbox" id="remember" name="remember" value="remember">
-            <label class="label_checkbox" for="remember">Salvar Senha</label>
+            
+            <label class="label_checkbox color-red" for="remember">Salvar Senha</label>
         </div>
 
-        <div class="recovery" id="btn_open_recovery">
+        <div class="recovery color-blue" id="btn_open_recovery">
             Esqueceu a senha?
         </div>
-        <div class="create" id="btn_open_register">
+        <div class="create color-blue" id="btn_open_register">
             Criar Conta
         </div>
 

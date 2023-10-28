@@ -2,7 +2,7 @@
 .container_modal {
     display: block;
     left: 50%;
-    max-height: 60%;
+    max-height: 80%;
     margin: auto;
     overflow-y: scroll;
     padding: 20px;
@@ -10,7 +10,6 @@
     position: fixed;
     top: -100%;
     transform: translate(-50%,-50%);
-    // width: 60%;
     z-index: -1;
     .header_modal{
         position: relative;
@@ -34,17 +33,17 @@
                 padding-left: 20px;
                 position: absolute;
                 width: 100%;
-                &:focus~.name_input,
-                &:valid~.name_input{
+                &:focus~.label_input,
+                &:valid~.label_input{
                     background: #fff;
                     transform: translateY(-35px);
                 }
             }
-            .name_input{
+            .label_input{
+                bottom: 0;
                 left: 10px;
                 position: absolute;
                 transition: .5s;
-                bottom: 0;
             }
 
         }

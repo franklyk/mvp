@@ -5,5 +5,7 @@
     $Post_Filter = array_map('strip_tags', $Post);
 
     var_dump($Post_Filter);
+    $email = $_POST['email'];
+    $email = $_POST['email'];
 
 ?>

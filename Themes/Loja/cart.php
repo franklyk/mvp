@@ -8,17 +8,7 @@
             <span class="lines line2 bgcolor-white"></span>
         </div>
     </div>
-    <div class="result border">
-        <div class="text-center" id="status-container">
-            <div class="status status-info">
-                <div class="status-message text-center">
-                    <span class="fa fa-check-circle">
-                    </span>
-                    MENSAGEM DE TESTE
-                </div>
-            </div>
-        </div>
-    </div>
+    <div class="result border"></div>
     <table class="container_cart">
 
         <thead class="thead font-sub color-green-dark">

@@ -885,6 +885,14 @@ ul, li {
   grid-area: recovery;
   margin: 10px 0;
 }
+.container_login .form_login_user #btn_open_recovery,
+.container_login .form_login_user #btn_open_register {
+  cursor: pointer;
+}
+.container_login .form_login_user #btn_open_recovery:hover,
+.container_login .form_login_user #btn_open_register:hover {
+  text-decoration: underline;
+}
 .container_login .form_login_user .input_confirm {
   align-items: center;
   display: flex;
@@ -918,7 +926,7 @@ ul, li {
 .container_modal {
   display: block;
   left: 50%;
-  max-height: 60%;
+  max-height: 80%;
   margin: auto;
   overflow-y: scroll;
   padding: 20px;
@@ -953,15 +961,15 @@ ul, li {
   position: absolute;
   width: 100%;
 }
-.container_modal .form_general .div_input .input_data:focus ~ .name_input, .container_modal .form_general .div_input .input_data:valid ~ .name_input {
+.container_modal .form_general .div_input .input_data:focus ~ .label_input, .container_modal .form_general .div_input .input_data:valid ~ .label_input {
   background: #fff;
   transform: translateY(-35px);
 }
-.container_modal .form_general .div_input .name_input {
+.container_modal .form_general .div_input .label_input {
+  bottom: 0;
   left: 10px;
   position: absolute;
   transition: 0.5s;
-  bottom: 0;
 }
 
 .container_new_password {
@@ -1014,50 +1022,50 @@ ul, li {
   margin: 0 20px;
 }
 
-.container_register {
-  height: auto;
+#container_register {
+  height: 70%;
   overflow-y: hidden !important;
-  width: 45% !important;
+  width: 60%;
 }
-.container_register .form_register_user {
+#container_register .form_register_user {
   align-content: center;
   display: grid;
-  gap: 10px;
-  grid-template-areas: "input_firstname input_lastname input_lastname" "input_email input_email input_email" "input_ender input_ender input_cep" "input_phone input_city input_uf" "input_nasc input_pass input_confirm_create" "result_message result_message result_message";
+  gap: 20px;
+  grid-template-areas: "input_firstname input_lastname input_lastname" "input_email input_email input_email" "input_address input_address input_cep" "input_phone input_city input_uf" "input_nasc input_pass input_confirm_create";
   grid-template-columns: repeat(3, 1fr);
   height: auto;
 }
-.container_register .form_register_user .input_firstname {
+#container_register .form_register_user .input_firstname {
   grid-area: input_firstname;
 }
-.container_register .form_register_user .input_lastname {
+#container_register .form_register_user .input_lastname {
   grid-area: input_lastname;
 }
-.container_register .form_register_user .input_email {
+#container_register .form_register_user .input_email {
   grid-area: input_email;
 }
-.container_register .form_register_user .input_ender {
-  grid-area: input_ender;
+#container_register .form_register_user .input_address {
+  grid-area: input_address;
 }
-.container_register .form_register_user .input_cep {
+#container_register .form_register_user .input_cep {
   grid-area: input_cep;
 }
-.container_register .form_register_user .input_phone {
+#container_register .form_register_user .input_phone {
   grid-area: input_phone;
 }
-.container_register .form_register_user .input_city {
+#container_register .form_register_user .input_city {
   grid-area: input_city;
 }
-.container_register .form_register_user .input_uf {
+#container_register .form_register_user .input_uf {
   grid-area: input_uf;
 }
-.container_register .form_register_user .input_nasc {
+#container_register .form_register_user .input_nasc {
   grid-area: input_nasc;
 }
-.container_register .form_register_user .input_pass {
+#container_register .form_register_user .input_pass {
   grid-area: input_pass;
 }
-.container_register .form_register_user .input_confirm_create {
+#container_register .form_register_user .input_confirm_create {
   align-items: center;
   display: flex;
   grid-area: input_confirm_create;

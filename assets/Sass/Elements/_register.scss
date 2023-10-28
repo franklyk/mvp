@@ -1,21 +1,19 @@
 
 // CADASTRO
-.container_register{
-    height: auto;
+#container_register{
+    height: 70%;
     overflow-y: hidden !important;
-    width: 45% !important;
+    width: 60%;
     .form_register_user{
-        // @include config;
         align-content: center;
         display: grid;
-        gap: 10px;
+        gap: 20px;
         grid-template-areas: 
         "input_firstname input_lastname input_lastname"
         "input_email input_email input_email"
-        "input_ender input_ender input_cep"
+        "input_address input_address input_cep"
         "input_phone input_city input_uf"
         "input_nasc input_pass input_confirm_create"
-        "result_message result_message result_message"
         ;
         grid-template-columns: repeat(3, 1fr);
         height: auto;
@@ -28,8 +26,8 @@
         .input_email{
             grid-area: input_email;
         }
-        .input_ender{
-            grid-area: input_ender;
+        .input_address{
+            grid-area: input_address;
         }
         .input_cep{
             grid-area: input_cep;
@@ -50,7 +48,6 @@
             grid-area: input_pass;
         }
         .input_confirm_create{
-            // @include config;
             align-items: center;
             display: flex;
             grid-area: input_confirm_create;

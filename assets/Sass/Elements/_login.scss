@@ -1,6 +1,5 @@
 
 .container_login{
-    // height: auto;
     overflow-y: hidden !important;
     width: 40% !important;
     .form_login_user{
@@ -30,6 +29,13 @@
         .recovery{
             grid-area: recovery;
             margin: 10px 0;
+        }
+        #btn_open_recovery,
+        #btn_open_register{
+            cursor: pointer;
+            &:hover{
+                text-decoration: underline;
+            }
         }
         .input_confirm{
             align-items: center;
