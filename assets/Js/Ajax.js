@@ -1,5 +1,5 @@
 $(document).ready(
     function(){
-        window.alert('Teste Ajax');
+        // window.alert('Teste Ajax');
     }
 )

@@ -43,9 +43,10 @@ $statusSite = 1; //0=>offline, 1=>online, 2=>maintenance  [Status da aplicação
 $helloBar = 1;  //0=>offline, 1=>online [Status do HelloBar]
 
 /* Configurações do Autor */
-$nameAdm = 'Franklin da Silva';//Nome do Técnico
-
-$mailSite = "contato@kws.com.br"; //E-mail do Autor
+$nameAdm = 'Franklin';//Nome do Técnico
+$nicknameAdm = 'da Silva Batista'; //Sobrenome do Técnico
+$mailAdm = "contato@kws.com.br"; //E-mail do Autor
+$phoneAdm = "6199999999";
 
 $nameAuthorSite = "Klyk WEb Services - Construções de Sites"; //Nome do Autor
 
@@ -81,6 +82,9 @@ $instagram = 'https://www.instagram.com';
 $youtube = 'https://www.youtube.com';
 
 $whatsapp = 'https://wa.me/55619999999999';
+
+define("DATE", date("Y-m-d H:i:s"));
+define("ADM_RASH", password_hash('admin', PASSWORD_DEFAULT));
 
 /* Configurações de Níveis de Acesso */
 define("LEVEL_USER", 1); //Nível de Acesso Para Usuários [Operacionais]

@@ -1,5 +1,15 @@
 <?php 
     @require "Core/conection.php";
+
+    $query = $pdo->query('SELECT adm_firstname, adm_lastname, adm_email, adm_pass FROM adm WHERE  adm_nivel = "'.LEVEL_SUPER.'" ');
+    $res_set = $query->fetchAll(PDO::FETCH_ASSOC);
+    
+    $row_count = count($res_set);
+    
+    if($row_count == 0){
+        
+    }
+
 ?>
 
 <!DOCTYPE html>
