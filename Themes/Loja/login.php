@@ -10,7 +10,7 @@
     </div>
     <div class="result border radius"></div>
 
-    <form action="controller/Login/Login.php" method="post" class="form_general form_login_user">
+    <form method="post" class="form_general form_login_user" id="form_login_user">
 
         <div class="input_email div_input radius">
             <input class="input_data border radius" type="email" class="user_email" name="user_email" id="user_email"
@@ -30,7 +30,7 @@
         </div>
 
         <div class="div_remember">
-            <input type="checkbox" id="remember" name="remember" value="remember">
+            <input type="checkbox" id="user_remember" name="user_remember" value="remember">
             
             <label class="label_checkbox color-red" for="remember">Salvar Senha</label>
         </div>

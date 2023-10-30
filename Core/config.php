@@ -84,7 +84,7 @@ $youtube = 'https://www.youtube.com';
 $whatsapp = 'https://wa.me/55619999999999';
 
 define("DATE", date("Y-m-d H:i:s"));
-define("ADM_RASH", password_hash('admin', PASSWORD_DEFAULT));
+define("ADM_RASH", password_hash('123456', PASSWORD_DEFAULT));
 
 /* Configurações de Níveis de Acesso */
 define("LEVEL_USER", 1); //Nível de Acesso Para Usuários [Operacionais]

@@ -361,7 +361,6 @@ ul, li {
   text-align: center;
 }
 
-/* Opção para testes*/
 .container_address {
   height: auto;
   width: 60%;
@@ -857,6 +856,12 @@ ul, li {
 }
 .header_container .socials_container .menu_list li a img {
   width: 50px;
+}
+
+#container_login {
+  top: 50% !important;
+  pointer-events: all !important;
+  z-index: 200 !important;
 }
 
 .container_login {
