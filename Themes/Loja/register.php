@@ -1,15 +1,12 @@
-<fieldset class="container_modal border radius bgcolor-white" id="container_register">
+<fieldset class="container_document container_register border radius bgcolor-white">
 
-    <div class="header_modal">
+    <div class="header_document">
         <h1 class="title_cart text-center color-green-dark">Faça seu Cadastro</h1>
-        <div class="btn_close_container border bgcolor-red radius" id="btn_close_register">
-            <span class="lines line1 bgcolor-white"></span>
-            <span class="lines line2 bgcolor-white"></span>
-        </div>
     </div>
-    <div class="result border radius"></div>
 
-    <form action="" method="post" class="form_general form_register_user">
+    <div class="result"></div>
+
+    <form method="post" class="form_general form_register_user">
 
         <div class="div_input input_firstname radius">
             <input type="text" class="input_data user_firstname border radius" name="user_firstname"
@@ -55,6 +52,13 @@
             <input type="password" class="input_data user_pass border radius" name="user_pass" id="userPass" required>
             <label class="label_input color-white-dark font-medium font-weight-min" for="user_pass">Senha:</label>
         </div>
-        <button class="btn_green" id="btn_salvar" name="btn_salvar">Cadastrar</button>
+        <div class="btns">
+            <button class="btn_dark">
+                CANCELAR
+            </button>
+            <button class="btn_blue btn_salvar" id="btn_salvar" name="btn_salvar">
+                CADASTRAR
+            </button>
+        </div>
     </form>
 </fieldset>

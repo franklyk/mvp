@@ -42,10 +42,6 @@ html, body {
   width: 100vw;
 }
 
-body {
-  background: #eee;
-}
-
 a {
   text-decoration: none;
 }
@@ -76,24 +72,20 @@ ul, li {
 }
 
 .radius {
-  border-radius: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
 }
 
 .title-folder {
-  background-image: linear-gradient(to right, #0aaaff, #09316f);
+  background-image: linear-gradient(to right, #555, #000);
   -moz-background-image: linear-gradient(to right, #0aaaff, #09316f);
   -webkit-background-image: linear-gradient(to right, #0aaaff, #09316f);
   text-indent: 30px;
 }
 
 .border {
-  border: 1px solid rgba(104, 104, 104, 0.3490196078);
-}
-
-.box_shadow {
-  box-shadow: 5px 5px 10px rgba(102, 99, 99, 0.5058823529);
+  border: 1px solid rgba(152, 147, 147, 0.2901960784);
 }
 
 .rules {
@@ -101,7 +93,7 @@ ul, li {
 }
 
 .text_shadow {
-  text-shadow: 1px 1px 2px rgba(59, 59, 59, 0.5137254902);
+  text-shadow: 1px 1px 2px rgba(59, 59, 59, 0.6156862745);
 }
 
 /* Mensagens Dinâmicas */
@@ -134,6 +126,14 @@ ul, li {
 }
 
 /* Planos de Fundo */
+.bgcolor-black {
+  background: #000;
+}
+
+.bgcolor-black-light {
+  background: rgba(1, 0, 0, 0.6705882353);
+}
+
 .bgcolor-red {
   background: #de0c11;
 }
@@ -231,12 +231,12 @@ ul, li {
 }
 
 .btn_red {
-  background: transparent;
+  background: #de0c11;
   color: #fff;
   padding: 10px 20px;
 }
 .btn_red:hover {
-  background: #de0c11;
+  background: #8b0002;
 }
 .btn_red:hover .lines {
   background: #fff;
@@ -366,7 +366,7 @@ ul, li {
   width: 60%;
 }
 .container_address .form_register_address {
-  grid-template-areas: "input_ender input_ender input_cep" "input_num input_compl input_bairro" "input_city input_uf btn_input";
+  grid-template-areas: "input_ender input_ender input_num" "input_compl input_bairro input_cep" "input_city input_uf btn_input";
   grid-template-columns: repeat(3, 1fr);
 }
 .container_address .form_register_address .input_ender {
@@ -385,18 +385,13 @@ ul, li {
   grid-area: input_uf;
 }
 .container_address .form_register_address .btn_input {
-  align-items: center;
+  align-self: flex-end;
   display: flex;
+  gap: 10px;
   grid-area: btn_input;
   justify-content: center;
-  margin-bottom: 10px;
   padding: 3px 0;
   text-align: center;
-}
-.container_address .result_message {
-  height: 10%;
-  text-align: center;
-  width: 100%;
 }
 
 .img_tenis {
@@ -439,45 +434,49 @@ ul, li {
 }
 
 .container_cart {
+  margin: 20px auto;
+  padding: 30px;
+  width: 85%;
+}
+.container_cart .cart_table {
   margin: auto;
   pointer-events: all;
   border-collapse: collapse;
   width: 100%;
 }
-.container_cart .thead {
+.container_cart .cart_table .thead {
   border-bottom: 1px solid black;
 }
-.container_cart .thead tr th {
+.container_cart .cart_table .thead tr th {
   padding: 10px 0;
 }
-.container_cart .tbody {
+.container_cart .cart_table .tbody {
   border-bottom: 1px solid black;
   text-align: center;
   width: 100%;
 }
-.container_cart .tbody .td_img {
+.container_cart .cart_table .tbody .td_img {
   padding: 5px;
   text-align: left;
+  width: 10%;
+}
+.container_cart .cart_table .tbody .td_product {
   width: 20%;
 }
-.container_cart .tbody .td_img img {
-  height: 50%;
+.container_cart .cart_table .tbody .td_color {
+  width: auto;
 }
-.container_cart .tbody .td_product {
-  width: 50%;
-}
-.container_cart .tbody .td_quantity {
+.container_cart .cart_table .tbody .td_quantity {
   text-align: center;
-  width: 70px;
 }
-.container_cart .tbody .td_quantity input[type=number] {
+.container_cart .cart_table .tbody .td_quantity input[type=number] {
   text-align: center;
-  width: 50%;
+  width: 30px;
 }
-.container_cart .tbody .td_delete {
+.container_cart .cart_table .tbody .td_delete {
   position: relative;
 }
-.container_cart .tbody .td_delete .btn_delete {
+.container_cart .cart_table .tbody .td_delete .btn_delete {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -490,16 +489,16 @@ ul, li {
   transform: translate(-50%, -50%);
   width: 35px;
 }
-.container_cart .tbody .td_delete .btn_delete .lines {
+.container_cart .cart_table .tbody .td_delete .btn_delete .lines {
   display: block;
   height: 2px;
   transform-origin: center;
   width: 25px;
 }
-.container_cart .tbody .td_delete .btn_delete .line1 {
+.container_cart .cart_table .tbody .td_delete .btn_delete .line1 {
   transform: translateY(3px) rotate(-45deg);
 }
-.container_cart .tbody .td_delete .btn_delete .line2 {
+.container_cart .cart_table .tbody .td_delete .btn_delete .line2 {
   transform: translateY(-4px) rotate(45deg);
 }
 .container_cart .finality {
@@ -509,12 +508,18 @@ ul, li {
   grid-template-columns: repeat(4, 1fr);
   margin-top: 5%;
 }
-.container_cart .finality .container_frete, .container_cart .finality .choose_shipping, .container_cart .finality .cupom_discount, .container_cart .finality .frete_value, .container_cart .finality .total_value, .container_cart .finality .btns {
+.container_cart .finality .container_frete,
+.container_cart .finality .choose_shipping,
+.container_cart .finality .cupom_discount,
+.container_cart .finality .frete_value,
+.container_cart .finality .total_value,
+.container_cart .finality .btns {
   align-items: center;
   display: flex;
   justify-content: space-between;
 }
 .container_cart .finality .container_frete {
+  display: flex;
   grid-area: container_frete;
   height: auto;
 }
@@ -537,93 +542,77 @@ ul, li {
   grid-area: total_value;
 }
 .container_cart .finality .btns {
+  display: flex;
+  gap: 10px;
   grid-area: btns;
+  justify-content: end;
 }
 
 .container_checklist {
-  margin: auto;
+  margin: 20px auto;
   padding: 20px;
-  width: 60%;
+  width: 80%;
 }
-.container_checklist .table {
+.container_checklist .checklist_table {
   border-collapse: collapse;
   width: 100%;
 }
-.container_checklist .table .title_checklist {
-  padding: 5px 0;
-}
-.container_checklist .table .title_checklist .btn_close_container {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  height: 35px;
-  justify-content: center;
-  position: fixed;
-  right: 0;
-  top: 0;
-  width: 35px;
-}
-.container_checklist .table .title_checklist .btn_close_container .lines {
-  display: block;
-  height: 2px;
-  transform-origin: center;
-  width: 25px;
-}
-.container_checklist .table .title_checklist .btn_close_container .line1 {
-  transform: translateY(3px) rotate(-45deg);
-}
-.container_checklist .table .title_checklist .btn_close_container .line2 {
-  transform: translateY(-4px) rotate(45deg);
-}
-.container_checklist .table .thead {
+.container_checklist .checklist_table .thead {
   border-bottom: 1px solid black;
 }
-.container_checklist .table .thead tr th {
-  padding: 10px 0;
-}
-.container_checklist .table .tbody {
+.container_checklist .checklist_table .tbody {
   border-bottom: 1px solid black;
   text-align: center;
 }
-.container_checklist .table .tbody .td_img {
+.container_checklist .checklist_table .tbody .td_img {
   padding: 5px;
   text-align: left;
-  width: 20%;
+  width: 10%;
 }
-.container_checklist .table .tbody .td_img img {
-  height: 50px;
+.container_checklist .checklist_table .tbody .td_product {
+  width: auto;
 }
-.container_checklist .table .tbody .td_product {
-  width: 50%;
-}
-.container_checklist .table .tbody .td_quantity {
+.container_checklist .checklist_table .tbody .td_quantity {
   text-align: center;
   width: 70px;
 }
-.container_checklist .table .tbody .td_quantity input[type=number] {
+.container_checklist .checklist_table .tbody .td_quantity input[type=number] {
   text-align: center;
   width: 50%;
 }
-.container_checklist .details_checklist .frete_checklist,
-.container_checklist .details_checklist .desconto_cheklist,
-.container_checklist .details_checklist .total_checklist {
+.container_checklist .footer_checklist {
+  display: inline-flex;
+  width: 100%;
+}
+.container_checklist .footer_checklist .container_address_checklist {
+  line-height: 1.3rem;
+  margin: 20px 0;
+  padding: 10px;
+  width: 50%;
+}
+.container_checklist .footer_checklist .container_address_checklist h2 {
+  margin: 10px 0;
+}
+.container_checklist .footer_checklist .container_address_checklist .address_checklist a:hover {
+  transform: scale(1.3);
+  text-decoration: underline;
+}
+.container_checklist .footer_checklist .closer_checklist {
+  width: 50%;
+}
+.container_checklist .footer_checklist .frete_checklist,
+.container_checklist .footer_checklist .desconto_cheklist,
+.container_checklist .footer_checklist .total_checklist {
   align-items: center;
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
-.container_checklist .container_address_checklist {
-  margin: 20px 0;
-  padding: 10px;
-}
-.container_checklist .container_address_checklist h2 {
-  margin: 10px 0;
-}
 .container_checklist .btns_checklist {
   align-items: center;
   display: flex;
-  justify-content: space-evenly;
+  gap: 20px;
+  justify-content: end;
   margin: 20px 0;
 }
 
@@ -632,7 +621,7 @@ ul, li {
   gap: 10px;
   grid-template-columns: repeat(2, 1fr);
   margin: auto;
-  width: 95%;
+  width: 80%;
 }
 .container_exposed .exposed {
   display: grid;
@@ -686,28 +675,49 @@ ul, li {
   width: 50px;
 }
 
-.modal_fade {
-  background: rgba(37, 37, 37, 0.3960784314);
-  height: 100%;
-  left: 0;
-  opacity: 0;
-  position: fixed;
-  top: 0;
+.container_document {
+  box-shadow: 10px 10px 20px 1px rgba(125, 119, 119, 0.2941176471);
+  display: block;
+}
+.container_document .header_document {
+  margin: 20px auto 0 auto;
+  text-align: center;
+}
+.container_document .form_general {
+  align-content: center;
+  display: grid;
+  gap: 10px;
+  margin: 10px 20px;
+  padding: 30px;
+}
+.container_document .form_general .div_input {
+  height: 60px;
+  position: relative;
   width: 100%;
-  z-index: -1;
+}
+.container_document .form_general .div_input .input_data {
+  background: none;
+  bottom: 0;
+  font-size: 1.3rem;
+  height: 2.5rem;
+  padding-left: 20px;
+  position: absolute;
+  width: 100%;
+}
+.container_document .form_general .div_input .label_input {
+  left: 10px;
+  position: absolute;
 }
 
 .footer {
-  position: absolute;
-  top: 100%;
+  margin: auto;
   width: 100%;
 }
 .footer .footer_main {
   align-items: center;
   display: flex;
-  font-size: 0.8rem;
-  justify-content: space-evenly;
-  margin: 0 auto;
+  justify-content: space-between;
+  margin: 20px auto;
   padding: 50px 0;
   width: 80%;
 }
@@ -757,63 +767,43 @@ ul, li {
   margin: 10px;
 }
 .footer .footer_down {
-  width: 100%;
-  margin: 0;
-  font-size: 0.8em;
+  margin: 20px auto;
   padding: 20px 0;
-}
-.footer .footer_down h1 {
-  font-size: 1em;
-  font-weight: bold;
-  text-align: center;
-  color: #fff;
-}
-.footer .footer_down p {
-  font-size: 0.8em;
-  text-align: center;
-  color: #fff;
+  width: 50%;
 }
 
 .header_container {
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 10px 30px;
-  position: relative;
+  padding: 20px 30px;
   width: 100%;
 }
 .header_container .logo {
-  height: 100%;
-  width: 20%;
+  width: 10%;
 }
 .header_container .logo img {
   margin: auto;
-  width: 100px;
+  width: 50%;
 }
 .header_container .form_search {
   align-items: center;
   display: flex;
   font-size: 1rem;
-  height: 2rem;
-  left: 50%;
-  justify-content: space-between;
-  position: absolute;
-  top: 30px;
-  transform: translateX(-50%);
+  gap: 1px;
+  height: 2.1rem;
   width: 30%;
 }
 .header_container .form_search .input_form_search {
   font-size: 20px;
-  height: auto;
-  left: 0;
+  height: 100%;
   padding: 6px 20px;
-  position: fixed;
   width: 80%;
-  background: none;
 }
 .header_container .form_search .btn_form_search {
-  position: fixed;
-  right: 0;
+  align-items: center;
+  display: flex;
+  height: 2.1rem;
   width: 19%;
 }
 .header_container .menu_container {
@@ -858,52 +848,48 @@ ul, li {
   width: 50px;
 }
 
-#container_login {
-  top: 50% !important;
-  pointer-events: all !important;
-  z-index: 200 !important;
-}
-
 .container_login {
   overflow-y: hidden !important;
   width: 40% !important;
 }
-.container_login .form_login_user {
+.container_login .form_login {
   padding-bottom: 20px;
   display: grid;
   gap: 10px;
-  grid-template-areas: "input_email input_email" "input_pass input_pass" "recovery remember" "create input_confirm";
+  grid-template-areas: "input_email input_email" "input_pass input_pass" "recovery remember" "create btns";
   grid-template-columns: repeat(2, 1fr);
   height: auto;
 }
-.container_login .form_login_user .input_email {
+.container_login .form_login .input_email {
   grid-area: input_email;
 }
-.container_login .form_login_user .input_pass {
+.container_login .form_login .input_pass {
   grid-area: input_pass;
 }
-.container_login .form_login_user .remember {
+.container_login .form_login .remember {
   grid-area: remember;
   margin: 10px 0;
 }
-.container_login .form_login_user .recovery {
+.container_login .form_login .recovery {
   grid-area: recovery;
   margin: 10px 0;
 }
-.container_login .form_login_user #btn_open_recovery,
-.container_login .form_login_user #btn_open_register {
+.container_login .form_login #btn_open_recovery,
+.container_login .form_login #btn_open_register {
   cursor: pointer;
 }
-.container_login .form_login_user #btn_open_recovery:hover,
-.container_login .form_login_user #btn_open_register:hover {
+.container_login .form_login #btn_open_recovery:hover,
+.container_login .form_login #btn_open_register:hover {
   text-decoration: underline;
 }
-.container_login .form_login_user .input_confirm {
+.container_login .form_login .btns {
   align-items: center;
   display: flex;
-  grid-area: input_confirm;
+  gap: 10px;
+  grid-area: btns;
+  justify-content: end;
 }
-.container_login .form_login_user .input_confirm .btn_confirm_login {
+.container_login .form_login .btns .btn_confirm_login {
   margin: auto;
   padding: 10px auto;
   width: 100%;
@@ -912,79 +898,33 @@ ul, li {
 .container {
   display: grid;
   grid-template-areas: "header header" "main main" "main main" "footer footer";
-  grid-template-columns: minmax(80%, 1fr);
+  grid-template-columns: minmax(80%, 100%);
 }
 .container .header {
   grid-area: header;
-  height: 100px;
+  height: 50px;
+  padding: 20px;
 }
 .container .main {
   grid-area: main;
-  margin: auto;
-  width: 80%;
-}
-.container .footer_bg {
-  grid-area: footer_bg;
-  width: 100%;
-}
-
-.container_modal {
-  display: block;
-  left: 50%;
-  max-height: 80%;
-  margin: auto;
-  overflow-y: scroll;
-  padding: 20px;
-  pointer-events: none;
-  position: fixed;
-  top: -100%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-}
-.container_modal .header_modal {
-  position: relative;
-  text-align: center;
-}
-.container_modal .form_general {
-  align-content: center;
-  display: grid;
-  gap: 25px;
-  margin: 10px;
-}
-.container_modal .form_general .div_input {
-  height: 40px;
-  position: relative;
-  width: 100%;
-}
-.container_modal .form_general .div_input .input_data {
-  background: none;
-  bottom: 0;
-  font-size: 1rem;
   height: 100%;
-  left: 0;
-  padding-left: 20px;
-  position: absolute;
   width: 100%;
 }
-.container_modal .form_general .div_input .input_data:focus ~ .label_input, .container_modal .form_general .div_input .input_data:valid ~ .label_input {
-  background: #fff;
-  transform: translateY(-35px);
-}
-.container_modal .form_general .div_input .label_input {
-  bottom: 0;
-  left: 10px;
-  position: absolute;
-  transition: 0.5s;
+.container .footer {
+  grid-area: footer;
+  width: 100%;
 }
 
 #container_new_password {
   height: auto;
+  margin: 30px auto;
   width: 40%;
 }
 #container_new_password .form_new_password {
   padding-bottom: 20px;
   display: grid;
-  grid-template-areas: "input_pass_recovery input_pass_recovery input_pass_recovery" "input_pass_recovery_conf input_pass_recovery_conf input_pass_recovery_conf" "input_confirm_recovery input_confirm_recovery input_confirm_recovery";
+  gap: 20px;
+  grid-template-areas: "input_pass_recovery input_pass_recovery input_pass_recovery" "input_pass_recovery_conf input_pass_recovery_conf input_pass_recovery_conf" "... ... btns ";
   grid-template-columns: repeat(3, 1fr);
   height: auto;
 }
@@ -994,18 +934,13 @@ ul, li {
 #container_new_password .form_new_password .input_pass_recovery_conf {
   grid-area: input_pass_recovery_conf;
 }
-#container_new_password .form_new_password .input_confirm_recovery {
+#container_new_password .form_new_password .btns {
   align-items: center;
   display: flex;
-  grid-area: input_confirm_recovery;
-  width: 100%;
+  gap: 10px;
+  grid-area: btns;
+  justify-content: end;
 }
-#container_new_password .form_new_password .input_confirm_recovery .confirm_recovery {
-  margin: auto;
-  padding: 5px 10px;
-  width: 100%;
-}
-
 .container_recovery {
   padding: 20px;
   text-align: center;
@@ -1026,107 +961,113 @@ ul, li {
   margin: 0 20px;
 }
 
-#container_register {
-  height: 70%;
-  overflow-y: hidden !important;
+.container_register {
+  margin: 20px auto;
   width: 60%;
 }
-#container_register .form_register_user {
+.container_register .form_register_user {
   align-content: center;
   display: grid;
-  gap: 20px;
-  grid-template-areas: "input_firstname input_lastname input_lastname" "input_email input_email input_email" "input_address input_address input_cep" "input_phone input_city input_uf" "input_nasc input_pass input_confirm_create";
+  gap: 10px;
+  grid-template-areas: "input_firstname input_lastname input_lastname" "input_email input_email input_email" "input_address input_address input_cep" "input_phone input_city input_uf" "input_nasc input_pass ..." "... ... btns ";
   grid-template-columns: repeat(3, 1fr);
   height: auto;
 }
-#container_register .form_register_user .input_firstname {
+.container_register .form_register_user .input_firstname {
   grid-area: input_firstname;
 }
-#container_register .form_register_user .input_lastname {
+.container_register .form_register_user .input_lastname {
   grid-area: input_lastname;
 }
-#container_register .form_register_user .input_email {
+.container_register .form_register_user .input_email {
   grid-area: input_email;
 }
-#container_register .form_register_user .input_address {
+.container_register .form_register_user .input_address {
   grid-area: input_address;
 }
-#container_register .form_register_user .input_cep {
+.container_register .form_register_user .input_cep {
   grid-area: input_cep;
 }
-#container_register .form_register_user .input_phone {
+.container_register .form_register_user .input_phone {
   grid-area: input_phone;
 }
-#container_register .form_register_user .input_city {
+.container_register .form_register_user .input_city {
   grid-area: input_city;
 }
-#container_register .form_register_user .input_uf {
+.container_register .form_register_user .input_uf {
   grid-area: input_uf;
 }
-#container_register .form_register_user .input_nasc {
+.container_register .form_register_user .input_nasc {
   grid-area: input_nasc;
 }
-#container_register .form_register_user .input_pass {
+.container_register .form_register_user .input_pass {
   grid-area: input_pass;
 }
-#container_register .form_register_user .input_confirm_create {
-  align-items: center;
+.container_register .form_register_user .btns {
   display: flex;
-  grid-area: input_confirm_create;
-  justify-content: center;
-  text-align: center;
+  gap: 10px;
+  grid-area: btns;
 }
 
 .result {
-  height: 70px;
+  height: 2rem;
   margin-bottom: 20px;
   position: relative;
   width: 100%;
 }
-.result #status-container {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 100%;
-  z-index: 100;
-}
-.result #status-container div {
-  border-radius: 3px;
-  color: #fff;
-  display: block;
-  padding: 15px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-}
-.result #status-container .status-success {
+.result .status-success {
   background-color: #247c40;
+  box-shadow: inset 0px 0px 5px 10px rgba(165, 245, 165, 0.3254901961);
 }
-.result #status-container .status-error {
+.result .status-error {
   background-color: #d4383a;
+  box-shadow: inset 0px 0px 5px 10px rgba(245, 165, 169, 0.3254901961);
 }
-.result #status-container .status-info {
+.result .status-info {
   background-color: #09316f;
+  box-shadow: inset 0px 0px 5px 10px rgba(174, 165, 245, 0.3254901961);
 }
-.result #status-container .status-warning {
+.result .status-warning {
   background-color: #cc4b0c;
+  box-shadow: inset 0px 0px 5px 10px rgba(245, 200, 165, 0.3254901961);
 }
-.result #status-container .status-message {
+.result .status-message {
   -ms-word-wrap: break-word;
   word-wrap: break-word;
 }
+.result #status-container {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.result #status-container .result-message {
+  color: #ffffff;
+  font-size: x-large;
+  padding: 3px;
+  text-shadow: 2px 2px 1px black;
+}
 
 .container_thanks {
-  line-height: 1.5;
-  text-indent: 30px;
-  width: 50%;
+  margin: 30px auto;
+  padding: 30px;
+  width: 60%;
 }
 .container_thanks h2 {
   margin-bottom: 20px;
   text-align: center;
 }
-.container_thanks .btn_thanks {
-  margin: 20px auto;
-  width: 100%;
+.container_thanks .finality_information {
+  line-height: 3;
+}
+.container_thanks .btns {
+  display: flex;
+  gap: 10px;
+  justify-content: end;
 }
 
 /*# sourceMappingURL=Style.css.map */

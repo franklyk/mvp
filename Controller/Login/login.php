@@ -4,14 +4,15 @@
     $Post = filter_input_array(INPUT_POST, FILTER_DEFAULT);
     $Post_Filters = array_map('strip_tags', $Post);
 
-    $email = $_POST['user_email'];
-    $pass = $_POST['user_pass'];
-    
-    // var_dump($pass);
+    $message = null;
 
+    $email = $Post_Filters['user_email'];
+    $pass = $Post_Filters['user_pass'];
+    
     if(!$email || empty($email)  || $email == null){
         $message = ['status'=> 'error','message'=>'Dados invalidos!','redirect'=>''];
         echo json_encode($message);
+        return;
     }else{
         //Consulta a base de dados sobre o EMAIL
         $Read = $pdo-> prepare("SELECT adm_id, adm_firstname, adm_lastname, adm_phone, adm_email, adm_pass, adm_nivel FROM adm WHERE adm_email = :user_email");
@@ -29,10 +30,11 @@
 
             $VerifyPass = password_verify($pass, $Show['adm_pass']);
             if(!$VerifyPass){
+                $count = $_SESSION['blocked'] += 1;
                 $message = [
-                    'status' => 'info', 
+                    'status' => 'error', 
                     'message' => 'Email e/ou senha incorretos...', 
-                    'redirect' => 'Themes/Admin/index.php'
+                    'redirect' => ''
                 ];
                 echo json_encode($message);
                 return;
@@ -48,7 +50,7 @@
                 }
 
                 $_SESSION['adm_id'] = $Show['adm_id'];
-                $_SESSION['adm_firstname'] = $Show['adm_firstname'] .''.$Show['adm_lastname'];
+                $_SESSION['adm_firstname'] = $Show['adm_firstname'];
                 $_SESSION['adm_phone'] = $Show['adm_phone'];
                 $_SESSION['adm_email'] = $Show['adm_email'];
                 $_SESSION['adm_nivel'] = $Show['adm_nivel'];
@@ -57,7 +59,7 @@
                 $message = [
                     'status' => 'success', 
                     'message' => 'Aguarde...', 
-                    'redirect' => 'Themes/Admin/index.php'
+                    'redirect' => 'Controller/Login/Redirect.php'
                 ];
                 echo json_encode($message);
                 return;

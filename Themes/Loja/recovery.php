@@ -1,4 +1,4 @@
-<div class="container_modal container_recovery border radius bgcolor-white" id="container_recovery">
+<div class="container_document container_recovery border radius bgcolor-white" id="container_recovery">
 
     <h1 class="title_container color-dark text_shadow">Recuperar Senha</h1>
 

@@ -6,8 +6,8 @@
     .form_register_address{
         // @include config;
         grid-template-areas: 
-        "input_ender input_ender input_cep"
-        "input_num input_compl input_bairro"
+        "input_ender input_ender input_num"
+        "input_compl input_bairro input_cep"
         "input_city input_uf btn_input"
         ;
         grid-template-columns: repeat(3, 1fr);
@@ -28,20 +28,14 @@
             grid-area: input_uf;
         }
         .btn_input{
-            align-items: center;
+            align-self: flex-end;
             display: flex;
+            gap: 10px;
             grid-area: btn_input;
             justify-content: center;
-            margin-bottom: 10px;
             padding: 3px 0;
             text-align: center;
-        }
-        
-    }
-    .result_message{
-        height: 10%;
-        text-align: center;
-        width: 100%;
+        }   
     }
 }
 

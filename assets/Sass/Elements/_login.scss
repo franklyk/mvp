@@ -1,12 +1,12 @@
-#container_login{
-    top: 50% !important;
-    pointer-events: all !important;
-    z-index: 200 !important;
-}
+// #container_login{
+//     top: 50% !important;
+//     pointer-events: all !important;
+//     z-index: 200 !important;
+// }
 .container_login{
     overflow-y: hidden !important;
     width: 40% !important;
-    .form_login_user{
+    .form_login{
         padding-bottom: 20px;
         display: grid;
         gap: 10px;
@@ -14,7 +14,7 @@
         "input_email input_email"
         "input_pass input_pass"
         "recovery remember"
-        "create input_confirm"
+        "create btns"
         ;
         grid-template-columns: repeat(2, 1fr);
         height: auto;
@@ -41,10 +41,12 @@
                 text-decoration: underline;
             }
         }
-        .input_confirm{
+        .btns{
             align-items: center;
             display: flex;
-            grid-area: input_confirm;
+            gap: 10px;
+            grid-area: btns;
+            justify-content: end;
             .btn_confirm_login{
                 margin: auto;
                 padding: 10px auto;

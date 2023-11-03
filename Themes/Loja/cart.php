@@ -1,70 +1,76 @@
-<div class="modal_fade" id="modal_fade"></div>
-<div class="container_modal border bgcolor-white" id="container_cart">
+<div class="container_document container_cart border radius bgcolor-white-light">
 
-    <div class="header_modal">
-        <h1 class="title_cart text-center color-green-dark">Finalizar compra</h1>
-        <div class="btn_close_container border bgcolor-red radius" id="btn_close_cart">
-            <span class="lines line1 bgcolor-white"></span>
-            <span class="lines line2 bgcolor-white"></span>
-        </div>
+    <div class="header_document">
+        <h1 class="font-max color-green-dark">Finalizar compra</h1>
     </div>
-    <div class="result border"></div>
-    <table class="container_cart">
+
+    <div class="result"></div>
+
+    <table class="cart_table">
 
         <thead class="thead font-sub color-green-dark">
             <tr>
                 <th scope="colgroup" colspan="2">
                     <h3>Produtos</h3>
                 </th>
+                <th>
+                    <h3>Cor</h3>
+                </th>
+                <th>
+                    <h3>Tamanho</h3>
+                </th>
                 <th scope="col">
                     <h3>Quant</h3>
                 </th>
                 <th scope="col">
-                    <h3>Valor</h3>
+                    <h3>R$</h3>
                 </th>
                 <th scope="col">
-                    <h3>Del</h3>
+                    <h3>Excluir</h3>
                 </th>
             </tr>
         </thead>
-        <?php for($i = 0; $i < 2; $i++): ?>
+        <?php for($i = 0; $i < 10; $i++): ?>
 
         <tbody class="tbody font-sub">
             <tr>
-                <td rowspan="3" class="td_img">
+                <td rowspan="1" class="td_img">
                     <img src="images/products/product.png">
                 </td>
                 <td class="td_product">
                     <h4>Tênis Adidas Sporting</h4>
                 </td>
-                <td rowspan="3" class="td_quantity">
+                <td class="td_color">
+                    <p class="font-extra font-weight-medium color-white-dark">azul</p>
+                </td>
+                <td class="td_size">
+                    <p class="font-extra font-weight-medium color-white-dark">40</p>
+                </td>
+                <td rowspan="1" class="td_quantity">
                     <input type="number" value="1">
                 </td>
-                <td rowspan="3" class="td_value">
-                    <span>R$</span>315,00
+                <td rowspan="1" class="td_value">
+                    <span></span>
+                    <p class="font-extra font-weight-medium color-white-dark">315,00</p>
                 </td>
-                <td rowspan="3" class="td_delete">
-                    <div class="btn_delete btn_red radius">
+                <td rowspan="1" class="td_delete">
+                    <div class="btn_delete btn_red">
                         <span class="lines line1 bgcolor-white"></span>
                         <span class="lines line2 bgcolor-white"></span>
                     </div>
                 </td>
             </tr>
             <tr>
-                <td class="td_color">
-                    <p>Cor: <span>azul</span></p>
-                </td>
+
             </tr>
-            <td class="td_size">
-                <p>Tamanho: <span>40</span></p>
-            </td>
+
         </tbody>
         <?php endfor; ?>
     </table>
     <div class="finality">
         <fieldset class="container_frete">
             <h3 class="color-green-dark font-min">Calcular Frete</h3>
-            <form method="post" class="choose_shipping" id="choose_shipping">
+            <form method="post" class="choose_shipping border" id="choose_shipping">
                 <div>
                     <input type="radio" name="shipping_option" id="shipping_option_pac" value="1" checked>
                     <label for="shipping_option" class="font-medium font-weight-medium">Pac</label>
@@ -88,10 +94,9 @@
             <span class="value_total font-medium font-weight-max">315,00</span>
         </div>
         <div class="btns">
-            <!-- <button class="btn_blue">Calcular</button> -->
-            <a href="<?= $configBase ?>home"><button class="btn_orange border font-weight-max">Continuar a
+            <a href="<?= $configBase ?>home"><button class="btn_orange border text_shadow font-weight-max">Continuar a
                     Compra</button></a>
-            <a href="<?= $configBase ?>checklist"><button class="btn_blue border font-weight-max">Finalizar</button></a>
+            <a href="<?= $configBase ?>checklist"><button class="btn_blue border text_shadow font-weight-max">Finalizar</button></a>
         </div>
     </div>
 

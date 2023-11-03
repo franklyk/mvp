@@ -3,6 +3,8 @@
 
 
 //  Padrões de Cores 
+$black: #000;
+$black-light: #010000ab;
 $red: #de0c11;
 $red-dark: #8b0002;
 
@@ -75,9 +77,9 @@ html, body{
     overflow-x: hidden;
     width: 100vw;
 }
-body{
-    background: #eee;
-}
+// body{
+//     background: #eee;
+// }
 
 a{
     text-decoration: none;
@@ -103,29 +105,25 @@ ul, li {
     margin: 50px 30px;
 }
 .radius{
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
 }
 .title-folder{
-    background-image: linear-gradient(to right, $blue, $blue-dark);
+    background-image: linear-gradient(to right, $dark, $black);
     -moz-background-image: linear-gradient(to right, $blue, $blue-dark);
     -webkit-background-image: linear-gradient(to right, $blue, $blue-dark);
-    // margin: 50px 10%;
     text-indent: 30px;
 }
 
 .border{
-    border: 1px solid #68686859;
-}
-.box_shadow{
-    box-shadow: 5px 5px 10px #66636381;
+    border: 1px solid #9893934a;
 }
 .rules{
     margin: 15px auto;
 }
 .text_shadow{
-    text-shadow: 1px 1px 2px #3b3b3b83;
+    text-shadow: 1px 1px 2px #3b3b3b9d;
 }
 /* Mensagens Dinâmicas */
 .alert-error{
@@ -156,56 +154,13 @@ ul, li {
     text-align: center;
 }
 
-// #status-container{
-//     -moz-box-sizing:border-box;
-//     -webkit-box-sizing:border-box;
-//     box-sizing:border-box;
-//     position:fixed;
-//     z-index:999999;
-//     pointer-events:none;
-// }
-// .status-message{
-//     -ms-word-wrap:break-word;
-//     word-wrap:break-word;
-// }
-// #status-container>div{
-//     display: block;
-//     position:relative;
-//     pointer-events:auto;
-//     overflow:hidden;
-//     margin:0 0 6px;
-//     padding:15px 15px 15px 15px;
-//     width:350px;
-//     -moz-border-radius:3px;
-//     -webkit-border-radius:3px;
-//     border-radius:3px;
-//     background-position:15px center;
-//     background-repeat:no-repeat;
-//     -moz-box-shadow:0 0 12px #999;
-//     -webkit-box-shadow:0 0 12px #999;
-//     box-shadow:0 0 12px #999;
-//     color:#FFF;
-//     opacity:1.0;
-//     -ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
-//     filter:alpha(opacity=40);
-// }
-// .status-success{
-//     background-color: #247c40;
-// }
-
-// .status-error{
-//     background-color: #d4383a;
-// }
-
-// .status-info{
-//     background-color:#09316f;
-// }
-
-// .status-warning{
-//     background-color: #cc4b0c;
-// }
-
 /* Planos de Fundo */
+.bgcolor-black{
+    background: $black;
+}
+.bgcolor-black-light{
+    background: $black-light;
+}
 .bgcolor-red{
     background: $red;
     &:hover{
@@ -309,11 +264,11 @@ ul, li {
     }
 }
 .btn_red{
-    background: transparent;
+    background: $red;
     color: $white;
     padding: 10px 20px;
     &:hover{
-        background: $red;
+        background: $red_dark   ;
         .lines{
             background: $white;
         }

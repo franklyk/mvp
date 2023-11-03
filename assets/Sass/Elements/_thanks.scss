@@ -1,14 +1,21 @@
 .container_thanks{
-    line-height: 1.5;
-    text-indent: 30px;
-    width: 50%;
+    margin: 30px auto;
+    padding: 30px;
+    width: 60%;
 
     h2{
         margin-bottom: 20px;
         text-align: center;
     }
-    .btn_thanks{
-        margin: 20px auto;
-        width: 100%;
+    .finality_information{
+        line-height: 3;
+
+    }
+    .btns{
+        display: flex;
+        gap: 10px;
+        justify-content: end;
+        .btn_thanks{
+        }
     }
 }

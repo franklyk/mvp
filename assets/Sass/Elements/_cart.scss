@@ -1,69 +1,64 @@
-
 .container_cart{
-    margin: auto;
-    pointer-events: all;
-    border-collapse: collapse;
-    width: 100%;
-    // z-index: 100;
-    .thead{
-        border-bottom: 1px solid black;
-        tr{
-            th{
-                padding: 10px 0;
-            }
-        }
-    }
-    .tbody{
-        border-bottom: 1px solid black;
-        text-align: center;
+    margin: 20px auto;
+    padding: 30px;
+    width: 85%;
+    .cart_table{
+        margin: auto;
+        pointer-events: all;
+        border-collapse: collapse;
         width: 100%;
-        .td_img{
-            padding: 5px;
-            text-align: left;
-            width: 20%;
-            img{
-                height: 50%;
-            }
-        }
-        .td_product{
-            
-            width: 50%;
-
-        }
-
-        .td_quantity{
-            
-            text-align: center;
-            width: 70px;
-            input[type=number]{
-                
-                text-align: center;
-                width: 50%
-            }
-        }
-        
-        .td_delete{
-            
-            position: relative;
-            .btn_delete{
-                align-items: center;
-                display: flex;
-                flex-direction: column;
-                gap: 5px;
-                height: 35px;
-                justify-content: center;
-                left: 50%;
-                position: absolute;
-                top: 50%;
-                transform: translate(-50%, -50%);
-                width: 35px;
-                .lines{
-                    display: block;
-                    height: 2px;
-                    transform-origin: center;
-                    width: 25px;
+        .thead{
+            border-bottom: 1px solid black;
+            tr{
+                th{
+                    padding: 10px 0;
                 }
-                .line1{
+            }
+        }
+        .tbody{
+            border-bottom: 1px solid black;
+            text-align: center;
+            width: 100%;
+            .td_img{
+                padding: 5px;
+                text-align: left;
+                width: 10%;
+            }
+            .td_product{
+                width: 20%;
+            }
+            .td_color{
+                width: auto;
+            }
+            .td_quantity{
+                // border: 1px solid black;
+                text-align: center;
+                input[type=number]{
+                    text-align: center;
+                    width: 30px
+                }
+            }
+            .td_delete{
+                position: relative;
+                .btn_delete{
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    height: 35px;
+                    justify-content: center;
+                    left: 50%;
+                    position: absolute;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 35px;
+                    .lines{
+                        display: block;
+                        height: 2px;
+                        transform-origin: center;
+                        width: 25px;
+                    }
+                    .line1{
                         transform: translateY(3px) rotate(-45deg);
                     }
                     .line2{
@@ -72,7 +67,8 @@
                 }
             }
         }
-
+    }
+            
     .finality{
         display: grid;
         gap: 10px;
@@ -85,20 +81,24 @@
         ;
         grid-template-columns: repeat(4, 1fr);
         margin-top: 5%;
-        .container_frete, .choose_shipping, .cupom_discount, .frete_value, .total_value,.btns{
+        .container_frete, 
+        .choose_shipping, 
+        .cupom_discount, 
+        .frete_value, 
+        .total_value,
+        .btns{
             align-items: center;
             display: flex;
             justify-content: space-between;
-            // padding: 0 20px;
         }
         .container_frete{
+            display: flex;
             grid-area: container_frete;
             height: auto;
             .choose_shipping{
                 justify-content: space-evenly;
                 width: 50%;
             }
-
         }
         .cupom_discount{
             grid-area: cupom_discount;
@@ -115,77 +115,13 @@
             grid-area: total_value;
         }
         .btns{
+            display: flex;
+            gap: 10px;
             grid-area: btns;
+            justify-content: end;
         }
     }
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// .container_cart{
-//     
-//     background: $white-light;
-//     display: block;
-//     left: 50%;
-//     margin: auto;
-//     // padding: 20px;
-//     pointer-events: none;
-//     position: fixed;
-//     top: 50%;
-//     transform: translate(-50%, -50%);
-//     // transition: 0.2s;
-//     width: 60%;
-//     z-index: 100;
-//     td{
-//         
-//         height: 70px !important;
-
-//     }
-//     .table{
-//         
-//         margin: auto;
-//         width: 100%;
-//     }
-//     .td_img{
-//         padding: 10px;
-//     }
-//     .td_title{
-//         align-items: center;
-//         display: flex;
-//         flex-direction: column;
-//         justify-content: center;
-//         width: 300px;
-//     }
-//     .td_quantity{
-//         text-align: center;
-//         width: 20%;
-//         input[type=number]{
-//             width: 30%;
-//         }
-//     }
-//     .td_actions{
-//         width: 10%;
-//     }
-//     .td_price{
-//         text-align: center;
-//     }
-
-// }
+    

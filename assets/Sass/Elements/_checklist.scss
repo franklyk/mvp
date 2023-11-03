@@ -1,83 +1,58 @@
-// @import "../LibScss/index";
 
 .container_checklist{
-
-    margin: auto;
+    margin: 20px auto;
     padding: 20px;
-
-    width: 60%;
-    // z-index: 100;
-    .table{
-        // background: $white-light;
+    width: 80%;
+    .checklist_table{
         border-collapse: collapse;
         width: 100%;
-        .title_checklist{
-            padding: 5px 0;
-            .btn_close_container{
-                align-items: center;
-                display: flex;
-                flex-direction: column;
-                gap: 5px;
-                height: 35px;
-                justify-content: center;
-                position: fixed;
-                right: 0;
-                top: 0;
-                width: 35px;
-                .lines{
-                    display: block;
-                    height: 2px;
-                    transform-origin: center;
-                    width: 25px;
-                }
-                .line1{
-                    transform: translateY(3px) rotate(-45deg);
-                }
-                .line2{
-                    transform: translateY(-4px) rotate(45deg);
-                }
-            }
-        }
         .thead{
             border-bottom: 1px solid black;
-            tr{
-                th{
-                    padding: 10px 0;
-    
-                }
-            }
         }
         .tbody{
             border-bottom: 1px solid black;
             text-align: center;
             .td_img{
-                
                 padding: 5px;
                 text-align: left;
-                width: 20%;
-                img{
-                    height:50px;
-                }
+                width: 10%;
             }
             .td_product{
-                
-                width: 50%;
-
+                width: auto;
             }
-
             .td_quantity{
-                
                 text-align: center;
                 width: 70px;
                 input[type=number]{
-                    
                     text-align: center;
                     width: 50%
                 }
             }
         }
     }
-    .details_checklist{
+    .footer_checklist{
+        display: inline-flex;
+        width: 100%;
+        .container_address_checklist{
+            line-height: 1.3rem;
+            margin: 20px 0;
+            padding: 10px;
+            width: 50%;
+            h2{
+                margin: 10px 0;
+            }
+            .address_checklist{
+                a{
+                    &:hover{
+                        transform: scale(1.3);
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .closer_checklist{
+            width: 50%
+        }
         .frete_checklist,
         .desconto_cheklist,
         .total_checklist{
@@ -87,18 +62,12 @@
             margin-top: 20px;
         }
     }
-    .container_address_checklist{
-        margin: 20px 0;
-        padding: 10px;
-        h2{
-            margin: 10px 0;
-        }
-    }
+
     .btns_checklist{
         align-items: center;
         display: flex;
-        // gap: 20px;
-        justify-content: space-evenly;
+        gap: 20px;
+        justify-content: end;
         margin: 20px 0;
     }
 }

@@ -10,7 +10,7 @@
 
             <img class="product_img" src="<?php $configBase ?>Images/Products/product.png" title="Imagem do produto: Tênis Adidas Sporting" alt="Imagem do produto: Tênis Adidas Sporting">
 
-            <h3 class="product_title color-blue-dark text_shadow font-medium text-right">
+            <h3 class="product_title color-dark text_shadow font-medium text-right">
                 Tênis Adidas Sporting
             </h3>
 
