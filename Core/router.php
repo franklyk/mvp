@@ -1,6 +1,6 @@
 <?php
 $url = explode("/", strip_tags(filter_input(INPUT_GET, "url", FILTER_DEFAULT)));
-$url[0] = (!empty($url[0]) ? $url[0] : "thanks");
+$url[0] = (!empty($url[0]) ? $url[0] : "details");
 
 
 //Área do site
